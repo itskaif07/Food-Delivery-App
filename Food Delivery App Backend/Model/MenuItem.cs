@@ -1,5 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Food_Delivery_App_Backend.Model
 {
@@ -12,12 +14,15 @@ namespace Food_Delivery_App_Backend.Model
         public decimal Price { get; set; }
         public string? ImageUrl { get; set; }
 
-        public string Category { get; set; } //(e.g., Appetizer, Main Course, Dessert
+        public string Category { get; set; }
 
         public bool isAvailable { get; set; } = false;
 
         [ForeignKey("RestaurantId")]
         public int RestaurantId { get; set; }
+
+        [ValidateNever]
+        [JsonIgnore]
         public Restaurant Restaurant { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace Food_Delivery_App_Backend.Model
         public string? Description { get; set; }
 
         public required string Address { get; set; }
-
+        
         public required string PhoneNumber { get; set; }
 
         public string? Email { get; set; }
@@ -23,7 +23,7 @@ namespace Food_Delivery_App_Backend.Model
 
         public string? Category { get; set; }
 
-        public ICollection<MenuItem> MenuItems { get; set; }
+        public ICollection<MenuItem> MenuItems { get; set; } = new List<MenuItem>();
 
     }
 

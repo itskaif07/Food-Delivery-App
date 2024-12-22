@@ -1,27 +1,32 @@
 <div class="flex items-center justify-center flex-col mt-5 w-full h-full relative space-y-12">
 
     <!-- Heading -->
-    <h1 class="text-3xl font-bold text-[#222222] tracking-wide">Order from your <span class="text-[#EA7926]">favourite</span> restaurant</h1>
+    <h1 class="text-3xl font-bold text-[#222222] tracking-wide">Order from your <span
+            class="text-[#EA7926]">favourite</span> restaurant</h1>
 
     <!-- + Sign (Positioned Absolute) -->
-    <a [routerLink]="['/add-Restaurant']" class="absolute top-[-4rem] right-4 md:right-10 flex items-center justify-center w-12 h-12 rounded-full shadow-xl text-2xl hover:bg-gray-300">
+    <a [routerLink]="['/add-Restaurant']"
+        class="absolute top-[-4rem] right-4 md:right-10 flex items-center justify-center w-12 h-12 rounded-full shadow-xl text-2xl hover:bg-gray-300">
         <h1>+</h1>
     </a>
 
     <div id="maindiv" class="w-full h-[60vh] flex items-center justify-between flex-wrap px-3 space-x-4">
 
+        @for (restaurant of restaurantsList; track $index) {
+
         <div id="box" class="border w-11/12 sm:w-[48%] lg:w-[24%] h-full rounded">
             <div class="w-full h-3/4">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKAbR1ftXAMzmyvO4JaJQ8R_tsQugvWKaqmQ&s" alt="" class="object-cover object-center w-full h-full">
+                <img src="{{restaurant.imageUrl || restaurant.imageUrl == '' ? 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg':'{{restaurant.imageUrl}}' }}"
+                    alt="{{restaurant.name}}" class="object-cover object-center w-full h-full">
             </div>
             <div>
-                <h1>dsfad</h1>
-                <h1>dsfad</h1>
-                <h1>dsfad</h1>
+                <h1>{{restaurant.name}}</h1>
+                <h1>{{restaurant.phoneNumber}}</h1>
+                <h1>{{restaurant.category}}</h1>
             </div>
         </div>
+        }
     </div>
 </div>
 
 <router-outlet></router-outlet>
-

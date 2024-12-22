@@ -4,6 +4,10 @@ import { RestaurantslistComponent } from './Components/restaurant/restaurantslis
 import { AddrestaurantComponent } from './Components/restaurant/addrestaurant/addrestaurant.component';
 import { EditrestaurantComponent } from './Components/restaurant/editrestaurant/editrestaurant.component';
 import { DeleterestaurantComponent } from './Components/restaurant/deleterestaurant/deleterestaurant.component';
+import { MenulistComponent } from './Components/menu/menulist/menulist.component';
+import { AddMenuComponent } from './Components/menu/add-menu/add-menu.component';
+import { EditMenuComponent } from './Components/menu/edit-menu/edit-menu.component';
+import { DeleteMenuComponent } from './Components/menu/delete-menu/delete-menu.component';
 
 
 export const routes: Routes =
@@ -32,5 +36,21 @@ export const routes: Routes =
         {
             path: "delete-Restaurant",
             component: DeleterestaurantComponent
+        },
+        {
+            path: "menu-list",
+            component: MenulistComponent
+        },
+        {
+            path: "add-menu",
+            component: AddMenuComponent
+        },
+        {
+            path: "edit-menu",
+            component: EditMenuComponent
+        },
+        {
+            path: "delete-menu",
+            component: DeleteMenuComponent
         },
     ];

@@ -32,6 +32,8 @@ builder.Services.AddScoped<MenuItemsRepository>();
 
 var app = builder.Build();
 
+app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
 
 using (var scope = app.Services.CreateScope())
 {
