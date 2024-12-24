@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\0a396ca4-1c68-4d44-b3e8-27f02c254faf.jpg",
+      "PackagePath": "staticwebassets\\images\\0a396ca4-1c68-4d44-b3e8-27f02c254faf.jpg"
+    },
+    {
       "Id": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\0cfb6455-afa1-4702-ab9a-c60a3d33a5ee.jpg",
       "PackagePath": "staticwebassets\\images\\0cfb6455-afa1-4702-ab9a-c60a3d33a5ee.jpg"
     },
@@ -33,6 +37,10 @@
       "PackagePath": "staticwebassets\\images\\3764ad7e-fae0-4f71-a647-892002f86326.jpeg"
     },
     {
+      "Id": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\3cbc490c-45c4-43d8-8fff-79740da00b8f.jpg",
+      "PackagePath": "staticwebassets\\images\\3cbc490c-45c4-43d8-8fff-79740da00b8f.jpg"
+    },
+    {
       "Id": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4094f032-9a81-46c1-90e0-45b286573761.jpeg",
       "PackagePath": "staticwebassets\\images\\4094f032-9a81-46c1-90e0-45b286573761.jpeg"
     },
@@ -55,6 +63,14 @@
     {
       "Id": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\5388e292-118b-42fb-8860-b645f4c6ed6c.jpg",
       "PackagePath": "staticwebassets\\images\\5388e292-118b-42fb-8860-b645f4c6ed6c.jpg"
+    },
+    {
+      "Id": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\578c4347-2ffd-47fc-8b58-1d46baac77ba.jpg",
+      "PackagePath": "staticwebassets\\images\\578c4347-2ffd-47fc-8b58-1d46baac77ba.jpg"
+    },
+    {
+      "Id": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\58799300-1018-4f71-87e0-1bd318b5d9d7.jpg",
+      "PackagePath": "staticwebassets\\images\\58799300-1018-4f71-87e0-1bd318b5d9d7.jpg"
     },
     {
       "Id": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\6a80a5d7-4408-4336-8699-ac1c38647515.jpg",
@@ -95,6 +111,10 @@
     {
       "Id": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c09f2d35-07ff-453b-b2c6-809babbd222b.jpg",
       "PackagePath": "staticwebassets\\images\\c09f2d35-07ff-453b-b2c6-809babbd222b.jpg"
+    },
+    {
+      "Id": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c199e635-444a-4231-b57c-39062596f655.jpg",
+      "PackagePath": "staticwebassets\\images\\c199e635-444a-4231-b57c-39062596f655.jpg"
     },
     {
       "Id": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c24d3e14-d169-4bfc-a691-feecc382fc52.jpeg",
