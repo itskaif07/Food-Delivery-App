@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|d:\\asp.net web api\\food delivery app\\food delivery app backend\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|solutionrelative:controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|d:\\asp.net web api\\food delivery app\\food delivery app backend\\repository\\restaurantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|solutionrelative:repository\\restaurantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|d:\\asp.net web api\\food delivery app\\food delivery app backend\\model\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|solutionrelative:model\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|d:\\asp.net web api\\food delivery app\\food delivery app backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|d:\\asp.net web api\\food delivery app\\food delivery app backend\\model\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|solutionrelative:model\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|d:\\asp.net web api\\food delivery app\\food delivery app backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|d:\\asp.net web api\\food delivery app\\food delivery app backend\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|solutionrelative:controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Restaurant.cs",
+              "DocumentMoniker": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Model\\Restaurant.cs",
+              "RelativeDocumentMoniker": "Model\\Restaurant.cs",
+              "ToolTip": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Model\\Restaurant.cs",
+              "RelativeToolTip": "Model\\Restaurant.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T11:42:31.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RestaurantController.cs",
+              "DocumentMoniker": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Controllers\\RestaurantController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RestaurantController.cs",
+              "ToolTip": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Controllers\\RestaurantController.cs",
+              "RelativeToolTip": "Controllers\\RestaurantController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAcwGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T19:18:25.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RestaurantRepository.cs",
+              "DocumentMoniker": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Repository\\RestaurantRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\RestaurantRepository.cs",
+              "ToolTip": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Repository\\RestaurantRepository.cs",
+              "RelativeToolTip": "Repository\\RestaurantRepository.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAwwFMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T19:02:39.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T10:58:11.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuItem.cs",
+              "DocumentMoniker": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Model\\MenuItem.cs",
+              "RelativeDocumentMoniker": "Model\\MenuItem.cs",
+              "ToolTip": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Model\\MenuItem.cs",
+              "RelativeToolTip": "Model\\MenuItem.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T10:28:13.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MenuController.cs",
+              "ToolTip": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "Controllers\\MenuController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T10:18:05.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwBYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T08:21:01.253Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

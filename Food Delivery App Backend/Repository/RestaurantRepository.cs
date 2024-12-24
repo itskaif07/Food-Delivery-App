@@ -1,6 +1,8 @@
 ﻿using Food_Delivery_App_Backend.Data;
 using Food_Delivery_App_Backend.Model;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 namespace Food_Delivery_App_Backend.Repository
 {
@@ -20,8 +22,63 @@ namespace Food_Delivery_App_Backend.Repository
 
         public async Task AddRestaurant(Restaurant restaurant)
         {
-            await _context.restaurants.AddAsync(restaurant);
-            await _context.SaveChangesAsync();
+            if (restaurant == null)
+            {
+                throw new ArgumentNullException(nameof(restaurant), "Restaurant object cannot be null");
+            }
+
+            if (string.IsNullOrEmpty(restaurant.ImageUrl))
+            {
+                throw new ArgumentException("Image URL is required", nameof(restaurant.ImageUrl));
+            }
+
+            try
+            {
+                await _context.restaurants.AddAsync(restaurant);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error occurred while adding restaurant: {ex.Message}", ex);
+            }
+        }
+
+
+        public async Task<string> UploadImage(IFormFile file)
+        {
+            if(file == null || file.Length == 0)
+            {
+                throw new Exception("No File Uploaded");
+            }
+
+            //folder path to save the image
+
+            var uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+
+            if (!Directory.Exists(uploadFolder))
+            {
+                Directory.CreateDirectory(uploadFolder);
+            }
+
+            // Create a unique file name
+
+            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+
+            var filePath = Path.Combine(uploadFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            var fileUrl = $"/images/{fileName}";
+            return fileUrl;
+
+        }
+
+        public async Task<Restaurant> RestaurantDetails(int id)
+        {
+            return await _context.restaurants.FindAsync(id);
         }
 
         public async Task EditRestaurant(int id, Restaurant obj)

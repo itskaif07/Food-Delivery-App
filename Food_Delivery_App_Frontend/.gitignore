@@ -40,3 +40,13 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# IDEs and editors
+.vs/
+
+# Static web assets
+*.staticwebassets.*
+
+# Build output directories
+bin/
+obj/

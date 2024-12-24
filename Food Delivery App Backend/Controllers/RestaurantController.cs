@@ -26,12 +26,65 @@ namespace Food_Delivery_App_Backend.Controllers
         [HttpPost]
         public async Task<ActionResult> AddRestaurant(Restaurant restaurant)
         {
-            await _repository.AddRestaurant(restaurant);
-            return Ok(restaurant);
+            if (restaurant == null)
+            {
+                return BadRequest(new { Message = "Restaurant data is required" });
+            }
+
+            try
+            {
+                await _repository.AddRestaurant(restaurant);
+
+                return Ok(new { Message = "Restaurant added successfully", Data = restaurant });
+            }
+            catch (ArgumentException ex)
+            {
+                // Handling specific error for missing ImageUrl or other validation issues
+                return BadRequest(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                // Handling generic errors
+                return StatusCode(500, new { Message = "An error occurred while adding the restaurant", Details = ex.Message });
+            }
         }
 
-        [HttpPut("{id}")]
 
+        [HttpPost("UploadImage")]
+        public async Task<ActionResult> UploadImage(IFormFile file)
+        {
+            try
+            {
+                var imagePath = await _repository.UploadImage(file);
+
+                // Construct the full image URL
+                var baseUrl = $"{Request.Scheme}://{Request.Host}";
+                var imageUrl = $"{baseUrl}{imagePath}";
+
+                return Ok(new { imageUrl }); 
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult> RestaurantDetails(int id)
+        {
+            var restaurant = await _repository.RestaurantDetails(id);
+
+            if(restaurant == null)
+            {
+                throw new Exception("Restaurant Not Found");
+            }
+
+            return Ok(restaurant);
+
+        }
+
+
+        [HttpPut("{id}")]
         public async Task<ActionResult> EditRestaurant(int id, [FromBody] Restaurant restaurant)
         {
             await _repository.EditRestaurant(id, restaurant);
@@ -46,3 +99,4 @@ namespace Food_Delivery_App_Backend.Controllers
         }
     }
 }
+

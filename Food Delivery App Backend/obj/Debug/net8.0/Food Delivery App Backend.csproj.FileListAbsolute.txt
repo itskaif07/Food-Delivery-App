@@ -180,3 +180,4 @@ D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\Food Delivery App Backend.genruntimeconfig.cache
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\ref\Food Delivery App Backend.dll
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\Food Delivery App Backend.sourcelink.json
+D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\Food Delivery App Backend.staticwebassets.runtime.json

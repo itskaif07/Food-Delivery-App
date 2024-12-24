@@ -1,12 +1,3524 @@
 {
   "Version": 1,
-  "Hash": "A7Bme9kQjsQEg6S13A4frut1qsncl43069lRYsUu+cU=",
+  "Hash": "keCiwoZ0JUGenGGQaR93SzaxhTarVqNnSOO+u1XAxsw=",
   "Source": "Food Delivery App Backend",
   "BasePath": "_content/Food Delivery App Backend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Food Delivery App Backend\\wwwroot",
+      "Source": "Food Delivery App Backend",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\0cfb6455-afa1-4702-ab9a-c60a3d33a5ee.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/0cfb6455-afa1-4702-ab9a-c60a3d33a5ee#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6k7vnmv4e4",
+      "Integrity": "BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0cfb6455-afa1-4702-ab9a-c60a3d33a5ee.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\0e12f4d1-c363-43a0-8e19-e86389ad11d1.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/0e12f4d1-c363-43a0-8e19-e86389ad11d1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x3floarp0n",
+      "Integrity": "Q1DYUh3ZFq+y+KUOA2/chNi2fDwW7sjtHQSYutu+Tcc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0e12f4d1-c363-43a0-8e19-e86389ad11d1.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\0e86d7a6-76f9-4c5b-b613-46bb8044edd1.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/0e86d7a6-76f9-4c5b-b613-46bb8044edd1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wshgmv4sic",
+      "Integrity": "ILCG3DRyNAE6+RTAGWbe/YfD1mLf2rNv+2/gqj/gvw0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0e86d7a6-76f9-4c5b-b613-46bb8044edd1.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\1c593793-efd5-460f-8617-51917ba32f58.jpeg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/1c593793-efd5-460f-8617-51917ba32f58#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zph7cwiya9",
+      "Integrity": "dwFvYou9N8Nhegr3X+pRAZMCjbepgQGU6M4Eqrt7XzY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1c593793-efd5-460f-8617-51917ba32f58.jpeg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\20128b3f-1421-4d39-b125-009083ebe0b4.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/20128b3f-1421-4d39-b125-009083ebe0b4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6x40b7yz3",
+      "Integrity": "+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\20128b3f-1421-4d39-b125-009083ebe0b4.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\25f1bd02-803a-4e71-937b-e44e8ed69afc.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/25f1bd02-803a-4e71-937b-e44e8ed69afc#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6k7vnmv4e4",
+      "Integrity": "BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\25f1bd02-803a-4e71-937b-e44e8ed69afc.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\2e5356a7-9aa1-44f8-bc7d-5e4d58ef108a.jpeg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/2e5356a7-9aa1-44f8-bc7d-5e4d58ef108a#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g9dzo4jd1b",
+      "Integrity": "5EXf83S3re1NO7pSVkC1mGcdUuBdWsdI5t1L70pJkDg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2e5356a7-9aa1-44f8-bc7d-5e4d58ef108a.jpeg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\3764ad7e-fae0-4f71-a647-892002f86326.jpeg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/3764ad7e-fae0-4f71-a647-892002f86326#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7t9bay77af",
+      "Integrity": "lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3764ad7e-fae0-4f71-a647-892002f86326.jpeg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4094f032-9a81-46c1-90e0-45b286573761.jpeg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/4094f032-9a81-46c1-90e0-45b286573761#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g9dzo4jd1b",
+      "Integrity": "5EXf83S3re1NO7pSVkC1mGcdUuBdWsdI5t1L70pJkDg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4094f032-9a81-46c1-90e0-45b286573761.jpeg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4a51194c-0ba1-4f10-a3f1-a508532ecdbb.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/4a51194c-0ba1-4f10-a3f1-a508532ecdbb#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6x40b7yz3",
+      "Integrity": "+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4a51194c-0ba1-4f10-a3f1-a508532ecdbb.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4d01df28-7cd1-403f-a31e-2edd3f1bfe3c.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/4d01df28-7cd1-403f-a31e-2edd3f1bfe3c#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6k7vnmv4e4",
+      "Integrity": "BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4d01df28-7cd1-403f-a31e-2edd3f1bfe3c.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4ffb7796-4c71-4f7a-869c-8528f93a5c58.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/4ffb7796-4c71-4f7a-869c-8528f93a5c58#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ozh624j60",
+      "Integrity": "1dzsbWTvJP5iqnw1Iy/R2MPhfAbWQ5WSCCHBrYJIy64=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4ffb7796-4c71-4f7a-869c-8528f93a5c58.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\522000db-4858-497c-b370-260d2d1e6e78.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/522000db-4858-497c-b370-260d2d1e6e78#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y7i60kc27d",
+      "Integrity": "vrGlogz/beZ76Yux6DCTHme+H7zdnF7iiCY4JiIxNWo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\522000db-4858-497c-b370-260d2d1e6e78.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\5388e292-118b-42fb-8860-b645f4c6ed6c.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/5388e292-118b-42fb-8860-b645f4c6ed6c#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6k7vnmv4e4",
+      "Integrity": "BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\5388e292-118b-42fb-8860-b645f4c6ed6c.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\6a80a5d7-4408-4336-8699-ac1c38647515.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/6a80a5d7-4408-4336-8699-ac1c38647515#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6x40b7yz3",
+      "Integrity": "+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6a80a5d7-4408-4336-8699-ac1c38647515.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\6e89fd26-3805-42e6-9a89-db37f4d05df4.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/6e89fd26-3805-42e6-9a89-db37f4d05df4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u7f5v5eicw",
+      "Integrity": "Su8iERWE/WZDiQloZ026n9gy7qA1YwB818SpZvkp0r0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6e89fd26-3805-42e6-9a89-db37f4d05df4.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\8894ff48-5a00-4e99-a8ee-55aeabcc0ce0.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/8894ff48-5a00-4e99-a8ee-55aeabcc0ce0#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cujfaolmkg",
+      "Integrity": "zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8894ff48-5a00-4e99-a8ee-55aeabcc0ce0.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\8a6912d7-1c91-4a63-a666-7a105a6ccd09.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/8a6912d7-1c91-4a63-a666-7a105a6ccd09#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cujfaolmkg",
+      "Integrity": "zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8a6912d7-1c91-4a63-a666-7a105a6ccd09.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\8fafbc7b-f68f-4f91-8d20-a33db6d16a51.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/8fafbc7b-f68f-4f91-8d20-a33db6d16a51#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cujfaolmkg",
+      "Integrity": "zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8fafbc7b-f68f-4f91-8d20-a33db6d16a51.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\92d6153f-518f-4c47-84b6-5a536ce29fa1.jpeg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/92d6153f-518f-4c47-84b6-5a536ce29fa1#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7t9bay77af",
+      "Integrity": "lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\92d6153f-518f-4c47-84b6-5a536ce29fa1.jpeg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\a22dc0f6-00ca-49cb-9e03-1f3ea633f966.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/a22dc0f6-00ca-49cb-9e03-1f3ea633f966#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wshgmv4sic",
+      "Integrity": "ILCG3DRyNAE6+RTAGWbe/YfD1mLf2rNv+2/gqj/gvw0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a22dc0f6-00ca-49cb-9e03-1f3ea633f966.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\b067d167-7df0-4d8a-95dd-9c1c0f572391.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/b067d167-7df0-4d8a-95dd-9c1c0f572391#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6k7vnmv4e4",
+      "Integrity": "BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b067d167-7df0-4d8a-95dd-9c1c0f572391.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\bbd949a8-959b-4118-92f2-8078807ff43d.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/bbd949a8-959b-4118-92f2-8078807ff43d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6x40b7yz3",
+      "Integrity": "+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bbd949a8-959b-4118-92f2-8078807ff43d.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c09f2d35-07ff-453b-b2c6-809babbd222b.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/c09f2d35-07ff-453b-b2c6-809babbd222b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cujfaolmkg",
+      "Integrity": "zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c09f2d35-07ff-453b-b2c6-809babbd222b.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c24d3e14-d169-4bfc-a691-feecc382fc52.jpeg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/c24d3e14-d169-4bfc-a691-feecc382fc52#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "97aex5razk",
+      "Integrity": "269ayfmTXj2UTMmeAWrayNFjsIGzKj6Kx5UezRwUQh0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c24d3e14-d169-4bfc-a691-feecc382fc52.jpeg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c28df58b-0bb4-497a-916f-00120f7fc4c1.jpeg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/c28df58b-0bb4-497a-916f-00120f7fc4c1#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7t9bay77af",
+      "Integrity": "lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c28df58b-0bb4-497a-916f-00120f7fc4c1.jpeg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c713f888-fd86-485e-bf4e-395e53504d77.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/c713f888-fd86-485e-bf4e-395e53504d77#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jgcvcrybvp",
+      "Integrity": "LfdGQRf9+PPz2V2NTYprnHTDGLoRdpXoPFMhEYzthJA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c713f888-fd86-485e-bf4e-395e53504d77.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c78aaa27-eea6-4d12-91e9-7aa0568c0994.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/c78aaa27-eea6-4d12-91e9-7aa0568c0994#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6x40b7yz3",
+      "Integrity": "+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c78aaa27-eea6-4d12-91e9-7aa0568c0994.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\dcdaf8cc-2477-4ab9-b735-2ddf7b56eae4.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/dcdaf8cc-2477-4ab9-b735-2ddf7b56eae4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6x40b7yz3",
+      "Integrity": "+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\dcdaf8cc-2477-4ab9-b735-2ddf7b56eae4.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\e2f0d9af-f1ff-41fb-abfe-80dd7cb8697f.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/e2f0d9af-f1ff-41fb-abfe-80dd7cb8697f#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6x40b7yz3",
+      "Integrity": "+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\e2f0d9af-f1ff-41fb-abfe-80dd7cb8697f.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\ee3291eb-efcc-4010-8317-948817ff6d5c.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/ee3291eb-efcc-4010-8317-948817ff6d5c#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6x40b7yz3",
+      "Integrity": "+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ee3291eb-efcc-4010-8317-948817ff6d5c.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\f25e5c13-edc4-44ee-8a0a-75685fb7d0bb.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/f25e5c13-edc4-44ee-8a0a-75685fb7d0bb#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6x40b7yz3",
+      "Integrity": "+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f25e5c13-edc4-44ee-8a0a-75685fb7d0bb.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\f312ca35-6008-40af-a6cc-2a60a3ce5d30.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/f312ca35-6008-40af-a6cc-2a60a3ce5d30#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ozh624j60",
+      "Integrity": "1dzsbWTvJP5iqnw1Iy/R2MPhfAbWQ5WSCCHBrYJIy64=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f312ca35-6008-40af-a6cc-2a60a3ce5d30.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\f8d7ea70-53f6-4f34-822c-2af3e5526bec.jpg",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/f8d7ea70-53f6-4f34-822c-2af3e5526bec#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6x40b7yz3",
+      "Integrity": "+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\f8d7ea70-53f6-4f34-822c-2af3e5526bec.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/0cfb6455-afa1-4702-ab9a-c60a3d33a5ee.6k7vnmv4e4.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\0cfb6455-afa1-4702-ab9a-c60a3d33a5ee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:34:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6k7vnmv4e4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/0cfb6455-afa1-4702-ab9a-c60a3d33a5ee.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs="
+        }
+      ]
+    },
+    {
+      "Route": "images/0cfb6455-afa1-4702-ab9a-c60a3d33a5ee.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\0cfb6455-afa1-4702-ab9a-c60a3d33a5ee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:34:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs="
+        }
+      ]
+    },
+    {
+      "Route": "images/0e12f4d1-c363-43a0-8e19-e86389ad11d1.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\0e12f4d1-c363-43a0-8e19-e86389ad11d1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1541768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q1DYUh3ZFq+y+KUOA2/chNi2fDwW7sjtHQSYutu+Tcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:31:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q1DYUh3ZFq+y+KUOA2/chNi2fDwW7sjtHQSYutu+Tcc="
+        }
+      ]
+    },
+    {
+      "Route": "images/0e12f4d1-c363-43a0-8e19-e86389ad11d1.x3floarp0n.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\0e12f4d1-c363-43a0-8e19-e86389ad11d1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1541768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q1DYUh3ZFq+y+KUOA2/chNi2fDwW7sjtHQSYutu+Tcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:31:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x3floarp0n"
+        },
+        {
+          "Name": "label",
+          "Value": "images/0e12f4d1-c363-43a0-8e19-e86389ad11d1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q1DYUh3ZFq+y+KUOA2/chNi2fDwW7sjtHQSYutu+Tcc="
+        }
+      ]
+    },
+    {
+      "Route": "images/0e86d7a6-76f9-4c5b-b613-46bb8044edd1.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\0e86d7a6-76f9-4c5b-b613-46bb8044edd1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176396"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ILCG3DRyNAE6+RTAGWbe/YfD1mLf2rNv+2/gqj/gvw0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 19:40:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ILCG3DRyNAE6+RTAGWbe/YfD1mLf2rNv+2/gqj/gvw0="
+        }
+      ]
+    },
+    {
+      "Route": "images/0e86d7a6-76f9-4c5b-b613-46bb8044edd1.wshgmv4sic.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\0e86d7a6-76f9-4c5b-b613-46bb8044edd1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176396"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ILCG3DRyNAE6+RTAGWbe/YfD1mLf2rNv+2/gqj/gvw0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 19:40:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wshgmv4sic"
+        },
+        {
+          "Name": "label",
+          "Value": "images/0e86d7a6-76f9-4c5b-b613-46bb8044edd1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ILCG3DRyNAE6+RTAGWbe/YfD1mLf2rNv+2/gqj/gvw0="
+        }
+      ]
+    },
+    {
+      "Route": "images/1c593793-efd5-460f-8617-51917ba32f58.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\1c593793-efd5-460f-8617-51917ba32f58.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4300157"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dwFvYou9N8Nhegr3X+pRAZMCjbepgQGU6M4Eqrt7XzY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:55:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dwFvYou9N8Nhegr3X+pRAZMCjbepgQGU6M4Eqrt7XzY="
+        }
+      ]
+    },
+    {
+      "Route": "images/1c593793-efd5-460f-8617-51917ba32f58.zph7cwiya9.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\1c593793-efd5-460f-8617-51917ba32f58.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4300157"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dwFvYou9N8Nhegr3X+pRAZMCjbepgQGU6M4Eqrt7XzY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:55:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zph7cwiya9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/1c593793-efd5-460f-8617-51917ba32f58.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dwFvYou9N8Nhegr3X+pRAZMCjbepgQGU6M4Eqrt7XzY="
+        }
+      ]
+    },
+    {
+      "Route": "images/20128b3f-1421-4d39-b125-009083ebe0b4.h6x40b7yz3.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\20128b3f-1421-4d39-b125-009083ebe0b4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 10:38:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6x40b7yz3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/20128b3f-1421-4d39-b125-009083ebe0b4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/20128b3f-1421-4d39-b125-009083ebe0b4.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\20128b3f-1421-4d39-b125-009083ebe0b4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 10:38:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/25f1bd02-803a-4e71-937b-e44e8ed69afc.6k7vnmv4e4.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\25f1bd02-803a-4e71-937b-e44e8ed69afc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 10:56:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6k7vnmv4e4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/25f1bd02-803a-4e71-937b-e44e8ed69afc.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs="
+        }
+      ]
+    },
+    {
+      "Route": "images/25f1bd02-803a-4e71-937b-e44e8ed69afc.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\25f1bd02-803a-4e71-937b-e44e8ed69afc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 10:56:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs="
+        }
+      ]
+    },
+    {
+      "Route": "images/2e5356a7-9aa1-44f8-bc7d-5e4d58ef108a.g9dzo4jd1b.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\2e5356a7-9aa1-44f8-bc7d-5e4d58ef108a.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1553956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5EXf83S3re1NO7pSVkC1mGcdUuBdWsdI5t1L70pJkDg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:18:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g9dzo4jd1b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/2e5356a7-9aa1-44f8-bc7d-5e4d58ef108a.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5EXf83S3re1NO7pSVkC1mGcdUuBdWsdI5t1L70pJkDg="
+        }
+      ]
+    },
+    {
+      "Route": "images/2e5356a7-9aa1-44f8-bc7d-5e4d58ef108a.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\2e5356a7-9aa1-44f8-bc7d-5e4d58ef108a.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1553956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5EXf83S3re1NO7pSVkC1mGcdUuBdWsdI5t1L70pJkDg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:18:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5EXf83S3re1NO7pSVkC1mGcdUuBdWsdI5t1L70pJkDg="
+        }
+      ]
+    },
+    {
+      "Route": "images/3764ad7e-fae0-4f71-a647-892002f86326.7t9bay77af.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\3764ad7e-fae0-4f71-a647-892002f86326.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1731608"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:15:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7t9bay77af"
+        },
+        {
+          "Name": "label",
+          "Value": "images/3764ad7e-fae0-4f71-a647-892002f86326.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo="
+        }
+      ]
+    },
+    {
+      "Route": "images/3764ad7e-fae0-4f71-a647-892002f86326.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\3764ad7e-fae0-4f71-a647-892002f86326.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1731608"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:15:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo="
+        }
+      ]
+    },
+    {
+      "Route": "images/4094f032-9a81-46c1-90e0-45b286573761.g9dzo4jd1b.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4094f032-9a81-46c1-90e0-45b286573761.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1553956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5EXf83S3re1NO7pSVkC1mGcdUuBdWsdI5t1L70pJkDg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:15:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g9dzo4jd1b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4094f032-9a81-46c1-90e0-45b286573761.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5EXf83S3re1NO7pSVkC1mGcdUuBdWsdI5t1L70pJkDg="
+        }
+      ]
+    },
+    {
+      "Route": "images/4094f032-9a81-46c1-90e0-45b286573761.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4094f032-9a81-46c1-90e0-45b286573761.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1553956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5EXf83S3re1NO7pSVkC1mGcdUuBdWsdI5t1L70pJkDg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:15:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5EXf83S3re1NO7pSVkC1mGcdUuBdWsdI5t1L70pJkDg="
+        }
+      ]
+    },
+    {
+      "Route": "images/4a51194c-0ba1-4f10-a3f1-a508532ecdbb.h6x40b7yz3.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4a51194c-0ba1-4f10-a3f1-a508532ecdbb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:25:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6x40b7yz3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4a51194c-0ba1-4f10-a3f1-a508532ecdbb.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/4a51194c-0ba1-4f10-a3f1-a508532ecdbb.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4a51194c-0ba1-4f10-a3f1-a508532ecdbb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:25:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/4d01df28-7cd1-403f-a31e-2edd3f1bfe3c.6k7vnmv4e4.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4d01df28-7cd1-403f-a31e-2edd3f1bfe3c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:55:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6k7vnmv4e4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4d01df28-7cd1-403f-a31e-2edd3f1bfe3c.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs="
+        }
+      ]
+    },
+    {
+      "Route": "images/4d01df28-7cd1-403f-a31e-2edd3f1bfe3c.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4d01df28-7cd1-403f-a31e-2edd3f1bfe3c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:55:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs="
+        }
+      ]
+    },
+    {
+      "Route": "images/4ffb7796-4c71-4f7a-869c-8528f93a5c58.5ozh624j60.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4ffb7796-4c71-4f7a-869c-8528f93a5c58.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4172779"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1dzsbWTvJP5iqnw1Iy/R2MPhfAbWQ5WSCCHBrYJIy64=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:47:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ozh624j60"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4ffb7796-4c71-4f7a-869c-8528f93a5c58.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1dzsbWTvJP5iqnw1Iy/R2MPhfAbWQ5WSCCHBrYJIy64="
+        }
+      ]
+    },
+    {
+      "Route": "images/4ffb7796-4c71-4f7a-869c-8528f93a5c58.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\4ffb7796-4c71-4f7a-869c-8528f93a5c58.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4172779"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1dzsbWTvJP5iqnw1Iy/R2MPhfAbWQ5WSCCHBrYJIy64=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:47:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1dzsbWTvJP5iqnw1Iy/R2MPhfAbWQ5WSCCHBrYJIy64="
+        }
+      ]
+    },
+    {
+      "Route": "images/522000db-4858-497c-b370-260d2d1e6e78.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\522000db-4858-497c-b370-260d2d1e6e78.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4901657"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vrGlogz/beZ76Yux6DCTHme+H7zdnF7iiCY4JiIxNWo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:30:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vrGlogz/beZ76Yux6DCTHme+H7zdnF7iiCY4JiIxNWo="
+        }
+      ]
+    },
+    {
+      "Route": "images/522000db-4858-497c-b370-260d2d1e6e78.y7i60kc27d.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\522000db-4858-497c-b370-260d2d1e6e78.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4901657"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vrGlogz/beZ76Yux6DCTHme+H7zdnF7iiCY4JiIxNWo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:30:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y7i60kc27d"
+        },
+        {
+          "Name": "label",
+          "Value": "images/522000db-4858-497c-b370-260d2d1e6e78.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vrGlogz/beZ76Yux6DCTHme+H7zdnF7iiCY4JiIxNWo="
+        }
+      ]
+    },
+    {
+      "Route": "images/5388e292-118b-42fb-8860-b645f4c6ed6c.6k7vnmv4e4.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\5388e292-118b-42fb-8860-b645f4c6ed6c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:59:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6k7vnmv4e4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/5388e292-118b-42fb-8860-b645f4c6ed6c.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs="
+        }
+      ]
+    },
+    {
+      "Route": "images/5388e292-118b-42fb-8860-b645f4c6ed6c.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\5388e292-118b-42fb-8860-b645f4c6ed6c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:59:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs="
+        }
+      ]
+    },
+    {
+      "Route": "images/6a80a5d7-4408-4336-8699-ac1c38647515.h6x40b7yz3.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\6a80a5d7-4408-4336-8699-ac1c38647515.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:53:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6x40b7yz3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/6a80a5d7-4408-4336-8699-ac1c38647515.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/6a80a5d7-4408-4336-8699-ac1c38647515.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\6a80a5d7-4408-4336-8699-ac1c38647515.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:53:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/6e89fd26-3805-42e6-9a89-db37f4d05df4.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\6e89fd26-3805-42e6-9a89-db37f4d05df4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1712307"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Su8iERWE/WZDiQloZ026n9gy7qA1YwB818SpZvkp0r0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:07:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Su8iERWE/WZDiQloZ026n9gy7qA1YwB818SpZvkp0r0="
+        }
+      ]
+    },
+    {
+      "Route": "images/6e89fd26-3805-42e6-9a89-db37f4d05df4.u7f5v5eicw.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\6e89fd26-3805-42e6-9a89-db37f4d05df4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1712307"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Su8iERWE/WZDiQloZ026n9gy7qA1YwB818SpZvkp0r0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:07:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u7f5v5eicw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/6e89fd26-3805-42e6-9a89-db37f4d05df4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Su8iERWE/WZDiQloZ026n9gy7qA1YwB818SpZvkp0r0="
+        }
+      ]
+    },
+    {
+      "Route": "images/8894ff48-5a00-4e99-a8ee-55aeabcc0ce0.cujfaolmkg.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\8894ff48-5a00-4e99-a8ee-55aeabcc0ce0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 10:47:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cujfaolmkg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/8894ff48-5a00-4e99-a8ee-55aeabcc0ce0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/8894ff48-5a00-4e99-a8ee-55aeabcc0ce0.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\8894ff48-5a00-4e99-a8ee-55aeabcc0ce0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 10:47:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/8a6912d7-1c91-4a63-a666-7a105a6ccd09.cujfaolmkg.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\8a6912d7-1c91-4a63-a666-7a105a6ccd09.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 21:14:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cujfaolmkg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/8a6912d7-1c91-4a63-a666-7a105a6ccd09.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/8a6912d7-1c91-4a63-a666-7a105a6ccd09.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\8a6912d7-1c91-4a63-a666-7a105a6ccd09.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 21:14:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/8fafbc7b-f68f-4f91-8d20-a33db6d16a51.cujfaolmkg.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\8fafbc7b-f68f-4f91-8d20-a33db6d16a51.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 12:10:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cujfaolmkg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/8fafbc7b-f68f-4f91-8d20-a33db6d16a51.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/8fafbc7b-f68f-4f91-8d20-a33db6d16a51.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\8fafbc7b-f68f-4f91-8d20-a33db6d16a51.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 12:10:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/92d6153f-518f-4c47-84b6-5a536ce29fa1.7t9bay77af.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\92d6153f-518f-4c47-84b6-5a536ce29fa1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1731608"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7t9bay77af"
+        },
+        {
+          "Name": "label",
+          "Value": "images/92d6153f-518f-4c47-84b6-5a536ce29fa1.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo="
+        }
+      ]
+    },
+    {
+      "Route": "images/92d6153f-518f-4c47-84b6-5a536ce29fa1.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\92d6153f-518f-4c47-84b6-5a536ce29fa1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1731608"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo="
+        }
+      ]
+    },
+    {
+      "Route": "images/a22dc0f6-00ca-49cb-9e03-1f3ea633f966.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\a22dc0f6-00ca-49cb-9e03-1f3ea633f966.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176396"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ILCG3DRyNAE6+RTAGWbe/YfD1mLf2rNv+2/gqj/gvw0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 10:39:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ILCG3DRyNAE6+RTAGWbe/YfD1mLf2rNv+2/gqj/gvw0="
+        }
+      ]
+    },
+    {
+      "Route": "images/a22dc0f6-00ca-49cb-9e03-1f3ea633f966.wshgmv4sic.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\a22dc0f6-00ca-49cb-9e03-1f3ea633f966.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176396"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ILCG3DRyNAE6+RTAGWbe/YfD1mLf2rNv+2/gqj/gvw0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 10:39:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wshgmv4sic"
+        },
+        {
+          "Name": "label",
+          "Value": "images/a22dc0f6-00ca-49cb-9e03-1f3ea633f966.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ILCG3DRyNAE6+RTAGWbe/YfD1mLf2rNv+2/gqj/gvw0="
+        }
+      ]
+    },
+    {
+      "Route": "images/b067d167-7df0-4d8a-95dd-9c1c0f572391.6k7vnmv4e4.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\b067d167-7df0-4d8a-95dd-9c1c0f572391.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:13:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6k7vnmv4e4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/b067d167-7df0-4d8a-95dd-9c1c0f572391.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs="
+        }
+      ]
+    },
+    {
+      "Route": "images/b067d167-7df0-4d8a-95dd-9c1c0f572391.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\b067d167-7df0-4d8a-95dd-9c1c0f572391.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:13:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BrdH3WPeqztsqxXXwqexFfzp4XzXukZvdICzWSASvvs="
+        }
+      ]
+    },
+    {
+      "Route": "images/bbd949a8-959b-4118-92f2-8078807ff43d.h6x40b7yz3.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\bbd949a8-959b-4118-92f2-8078807ff43d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:24:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6x40b7yz3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/bbd949a8-959b-4118-92f2-8078807ff43d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/bbd949a8-959b-4118-92f2-8078807ff43d.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\bbd949a8-959b-4118-92f2-8078807ff43d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:24:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/c09f2d35-07ff-453b-b2c6-809babbd222b.cujfaolmkg.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c09f2d35-07ff-453b-b2c6-809babbd222b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:55:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cujfaolmkg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/c09f2d35-07ff-453b-b2c6-809babbd222b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/c09f2d35-07ff-453b-b2c6-809babbd222b.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c09f2d35-07ff-453b-b2c6-809babbd222b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1559420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:55:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zHMLXyPS4MfDzFQxyP+YtKCxn6iT19sjtBEm8al7OYQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/c24d3e14-d169-4bfc-a691-feecc382fc52.97aex5razk.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c24d3e14-d169-4bfc-a691-feecc382fc52.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1908989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"269ayfmTXj2UTMmeAWrayNFjsIGzKj6Kx5UezRwUQh0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 21:01:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "97aex5razk"
+        },
+        {
+          "Name": "label",
+          "Value": "images/c24d3e14-d169-4bfc-a691-feecc382fc52.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-269ayfmTXj2UTMmeAWrayNFjsIGzKj6Kx5UezRwUQh0="
+        }
+      ]
+    },
+    {
+      "Route": "images/c24d3e14-d169-4bfc-a691-feecc382fc52.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c24d3e14-d169-4bfc-a691-feecc382fc52.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1908989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"269ayfmTXj2UTMmeAWrayNFjsIGzKj6Kx5UezRwUQh0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 21:01:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-269ayfmTXj2UTMmeAWrayNFjsIGzKj6Kx5UezRwUQh0="
+        }
+      ]
+    },
+    {
+      "Route": "images/c28df58b-0bb4-497a-916f-00120f7fc4c1.7t9bay77af.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c28df58b-0bb4-497a-916f-00120f7fc4c1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1731608"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:39:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7t9bay77af"
+        },
+        {
+          "Name": "label",
+          "Value": "images/c28df58b-0bb4-497a-916f-00120f7fc4c1.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo="
+        }
+      ]
+    },
+    {
+      "Route": "images/c28df58b-0bb4-497a-916f-00120f7fc4c1.jpeg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c28df58b-0bb4-497a-916f-00120f7fc4c1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1731608"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:39:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo="
+        }
+      ]
+    },
+    {
+      "Route": "images/c713f888-fd86-485e-bf4e-395e53504d77.jgcvcrybvp.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c713f888-fd86-485e-bf4e-395e53504d77.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6695566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LfdGQRf9+PPz2V2NTYprnHTDGLoRdpXoPFMhEYzthJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 10:42:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jgcvcrybvp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/c713f888-fd86-485e-bf4e-395e53504d77.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LfdGQRf9+PPz2V2NTYprnHTDGLoRdpXoPFMhEYzthJA="
+        }
+      ]
+    },
+    {
+      "Route": "images/c713f888-fd86-485e-bf4e-395e53504d77.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c713f888-fd86-485e-bf4e-395e53504d77.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6695566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LfdGQRf9+PPz2V2NTYprnHTDGLoRdpXoPFMhEYzthJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 10:42:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LfdGQRf9+PPz2V2NTYprnHTDGLoRdpXoPFMhEYzthJA="
+        }
+      ]
+    },
+    {
+      "Route": "images/c78aaa27-eea6-4d12-91e9-7aa0568c0994.h6x40b7yz3.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c78aaa27-eea6-4d12-91e9-7aa0568c0994.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:30:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6x40b7yz3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/c78aaa27-eea6-4d12-91e9-7aa0568c0994.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/c78aaa27-eea6-4d12-91e9-7aa0568c0994.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\c78aaa27-eea6-4d12-91e9-7aa0568c0994.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:30:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/dcdaf8cc-2477-4ab9-b735-2ddf7b56eae4.h6x40b7yz3.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\dcdaf8cc-2477-4ab9-b735-2ddf7b56eae4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 21:13:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6x40b7yz3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/dcdaf8cc-2477-4ab9-b735-2ddf7b56eae4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/dcdaf8cc-2477-4ab9-b735-2ddf7b56eae4.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\dcdaf8cc-2477-4ab9-b735-2ddf7b56eae4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 21:13:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/e2f0d9af-f1ff-41fb-abfe-80dd7cb8697f.h6x40b7yz3.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\e2f0d9af-f1ff-41fb-abfe-80dd7cb8697f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:30:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6x40b7yz3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/e2f0d9af-f1ff-41fb-abfe-80dd7cb8697f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/e2f0d9af-f1ff-41fb-abfe-80dd7cb8697f.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\e2f0d9af-f1ff-41fb-abfe-80dd7cb8697f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:30:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/ee3291eb-efcc-4010-8317-948817ff6d5c.h6x40b7yz3.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\ee3291eb-efcc-4010-8317-948817ff6d5c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:41:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6x40b7yz3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ee3291eb-efcc-4010-8317-948817ff6d5c.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/ee3291eb-efcc-4010-8317-948817ff6d5c.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\ee3291eb-efcc-4010-8317-948817ff6d5c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:41:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/f25e5c13-edc4-44ee-8a0a-75685fb7d0bb.h6x40b7yz3.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\f25e5c13-edc4-44ee-8a0a-75685fb7d0bb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:31:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6x40b7yz3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/f25e5c13-edc4-44ee-8a0a-75685fb7d0bb.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/f25e5c13-edc4-44ee-8a0a-75685fb7d0bb.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\f25e5c13-edc4-44ee-8a0a-75685fb7d0bb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:31:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/f312ca35-6008-40af-a6cc-2a60a3ce5d30.5ozh624j60.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\f312ca35-6008-40af-a6cc-2a60a3ce5d30.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4172779"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1dzsbWTvJP5iqnw1Iy/R2MPhfAbWQ5WSCCHBrYJIy64=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:09:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ozh624j60"
+        },
+        {
+          "Name": "label",
+          "Value": "images/f312ca35-6008-40af-a6cc-2a60a3ce5d30.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1dzsbWTvJP5iqnw1Iy/R2MPhfAbWQ5WSCCHBrYJIy64="
+        }
+      ]
+    },
+    {
+      "Route": "images/f312ca35-6008-40af-a6cc-2a60a3ce5d30.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\f312ca35-6008-40af-a6cc-2a60a3ce5d30.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4172779"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1dzsbWTvJP5iqnw1Iy/R2MPhfAbWQ5WSCCHBrYJIy64=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:09:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1dzsbWTvJP5iqnw1Iy/R2MPhfAbWQ5WSCCHBrYJIy64="
+        }
+      ]
+    },
+    {
+      "Route": "images/f8d7ea70-53f6-4f34-822c-2af3e5526bec.h6x40b7yz3.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\f8d7ea70-53f6-4f34-822c-2af3e5526bec.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:36:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6x40b7yz3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/f8d7ea70-53f6-4f34-822c-2af3e5526bec.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    },
+    {
+      "Route": "images/f8d7ea70-53f6-4f34-822c-2af3e5526bec.jpg",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\f8d7ea70-53f6-4f34-822c-2af3e5526bec.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8361917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Dec 2024 20:36:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs="
+        }
+      ]
+    }
+  ]
 }
