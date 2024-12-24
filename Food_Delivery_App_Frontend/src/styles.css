@@ -1,0 +1,27 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply the Poppins font globally */
+body, html {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .custom-orange-bg {
+    background-color: #EA7926;
+  }
+  
+  .custom-orange-text {
+    color: #EA7926; /* For text color */
+  }
+  
+  .custom-orange-border {
+    border: 2px solid #EA7926; /* For border color */
+  }
+  
+  .custom-orange-hover:hover {
+    background-color: #CC6922; /* For hover effect */
+    color: white; /* For text color on hover */
+  }
+  

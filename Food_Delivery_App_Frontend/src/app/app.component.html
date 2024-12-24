@@ -1,0 +1,36 @@
+
+<nav class="h-24 w-full flex items-center justify-between px-12">
+  <div class="flex items-center justify-start space-x-4 w-1/2">
+    <h1 class="text-xl">🍔🍕</h1>
+    <h1 class="font-bold text-lg">FoodieFusion</h1>
+  </div>
+
+  <div class="flex items-center justify-between space-x-8 w-1/2">
+
+    <div class="space-x-8">
+      <a [routerLink]="'home'" [ngClass]="{'font-semibold drop-shadow-md': isActiveRoute('/home')}">Home</a>
+      <a [routerLink]="'menu'" [ngClass]="{'font-semibold drop-shadow-md': isActiveRoute('/menu')}">Menu</a>
+      <a [routerLink]="'Restaurants-list'" [ngClass]="{'font-semibold drop-shadow-md': isActiveRoute('/Restaurants-list')}">Restaurant</a>
+    </div>
+    
+    <div class="flex items-center justify-center w-full h-full space-x-10">
+      
+      <div class="flex items-center justify-center py-2 h-full shadow-xl pl-2 rounded-md space-x-3 w-3/5 border-t-2">
+        <img src="assets/search.png" alt="not available" class="w-6">
+          <input type="text" class="w-full h-full outline-none text-sm">
+        </div>
+
+        <div class="w-14 h-14 rounded-full shadow-xl flex items-center justify-center  hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
+          <img src="assets/trolley.png" alt="" class="w-5">
+        </div>
+
+        <div class="w-14 h-14 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
+          <img src="assets/login.png" alt="" class="w-6">
+        </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>

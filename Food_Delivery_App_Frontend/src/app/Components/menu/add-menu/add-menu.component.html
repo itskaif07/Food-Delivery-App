@@ -1,0 +1,103 @@
+<form [formGroup]="menuForm" (ngSubmit)="onSubmit(menuForm.value)"
+    class="w-full h-full px-12 my-4 flex flex-col items-start justify-center">
+
+    <div class="flex items-center justify-between w-full">
+
+        <div class="flex items-center justify-center space-x-5">
+            <a [routerLink]="['/menu-list']" class="flex items-center justify-center w-14 h-14 rounded-lg border">
+                <img src="assets/back.png" alt="back" class="w-10">
+            </a>
+
+            <div>
+                <h1 class="text-sm text-gray-500">To Menu List</h1>
+                <h1 class="font-bold text-lg">Build Your <span class="custom-orange-text">Menu </span></h1>
+            </div>
+
+        </div>
+
+        <button type="submit" [disabled]="menuForm.invalid" [ngClass]="{'bg-[#CC6922]': menuForm.invalid}"
+            class="bg-[#EA7926] w-28 h-12 rounded-md text-sm text-white  font-medium">Submit</button>
+
+    </div>
+
+
+    <div class="w-full h-full space-y-6 flex flex-col items-center justify-center">
+
+        <div id="name" class="w-1/2 flex flex-col items-start justify-center space-y-1">
+            <label for="" class="text-sm text-gray-500">Item name</label>
+            <input type="text" formControlName="name"
+                class="w-[98%] h-8 placeholder:text-sm outline-none border rounded text-sm pl-2">
+
+            @if(menuForm.get('name')?.invalid && menuForm.get('name')?.touched){
+            <div class="text-red-500 text-xs">
+                Item name is required.
+            </div>
+            }
+        </div>
+
+
+        <div id="desc" class="w-1/2 flex flex-col items-start justify-center space-y-1">
+            <label for="" class="text-sm text-gray-500">Item Description</label>
+            <textarea rows="3" formControlName="description"
+                class="w-[98%] placeholder:text-sm outline-none border rounded text-sm pl-2"></textarea>
+        </div>
+
+        <div id="" class="w-1/2 h-full py-5 flex items-center justify-center space-x-2 border rounded-md px-3">
+
+            <div class="w-full h-full flex items-start flex-col justify-center space-y-4">
+
+                <div class="w-full h-full flex items-center justify-start space-x-2">
+                    <input type="checkbox" id="isAvailable" name="isAvailable" formControlName="isAvailable"
+                        class="w-4">
+                    <label for="opentime" class="text-sm text-gray-500">Is Item Available</label>
+                </div>
+
+                <div class="w-full h-full flex items-start justify-center flex-col space-y-2">
+                    <label for="price" class="text-sm text-gray-500 ">Price</label>
+                    <input type="number" formControlName="price"
+                        class="w-11/12 h-8 placeholder:text-sm outline-none border rounded text-sm pl-2">
+                    @if(menuForm.get('price')?.invalid && menuForm.get('price')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Price is required and must be a valid number.
+                    </div>
+                    }
+                </div>
+
+            </div>
+
+            <div class="w-full h-full space-y-4 pl-4 py-3 border rounded">
+                <div class="w-full h-full space-y-2">
+                    <label for="category" class="text-sm text-gray-500">Select Category</label>
+                    <select id="category" name="category" formControlName="category"
+                        class="w-[98%] h-full py-1 placeholder:text-sm outline-none border rounded">
+                        <option value="appetizers">Appetizers / Starters</option>
+                        <option value="mainCourse">Main Course</option>
+                        <option value="desserts">Desserts</option>
+                        <option value="drinks">Drinks / Beverages</option>
+                        <option value="salads">Salads</option>
+                        <option value="sides">Sides</option>
+                        <option value="combos">Combos / Meal Deals</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="nonVegetarian">Non-Vegetarian</option>
+                        <option value="specials">Specials / Chef's Special</option>
+                    </select>
+                    @if(menuForm.get('category')?.invalid && menuForm.get('category')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Category is required.
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="w-1/2 h-44 space-y-4 rounded">
+            <div id="image"
+                class="w-full h-full border-dotted border-2 bg-gray-100 flex items-center justify-center flex-col">
+                <img src="assets/upload.png" alt="" class="w-20">
+                <h3 class="text-xs tracking-wider">Upload or Drag and drop your image here</h3>
+                <input type="file" formControlName="imageUrl" class="w-[98%] hidden">
+            </div>
+        </div>
+
+    </div>
+</form>
