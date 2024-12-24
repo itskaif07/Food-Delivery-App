@@ -43,6 +43,8 @@ Thumbs.db
 
 # IDEs and editors
 .vs/
+**/.vs/
+
 
 # Static web assets
 *.staticwebassets.*
