@@ -1,9 +1,11 @@
-<form [formGroup]="restaurantForm" (ngSubmit)="onSubmit(restaurantForm.value)" class="w-full h-full px-12 space-y-6 my-4">
+<form [formGroup]="restaurantForm" (ngSubmit)="onSubmit(restaurantForm.value)"
+    class="w-full h-full px-12 space-y-6 my-4">
 
     <div class="flex items-center justify-between">
 
         <div class="flex items-center justify-center space-x-5">
-            <a [routerLink]="'Restaurants-list'" class="flex items-center justify-center w-14 h-14 rounded-lg border">
+            <a [routerLink]="['/Restaurants-list']"
+                class="flex items-center justify-center w-14 h-14 rounded-lg border">
                 <img src="assets/back.png" alt="back" class="w-10">
             </a>
 
@@ -14,7 +16,8 @@
 
         </div>
 
-        <button type="submit" [disabled]="restaurantForm.invalid" [ngClass]="{'bg-[#CC6922]': restaurantForm.invalid}" class="bg-[#EA7926] w-24 h-12 rounded-md text-sm text-white  font-medium">Next</button>
+        <button type="submit" [disabled]="restaurantForm.invalid" [ngClass]="{'bg-[#CC6922]': restaurantForm.invalid}"
+            class="bg-[#EA7926] w-24 h-12 rounded-md text-sm text-white  font-medium">Next</button>
 
     </div>
 
@@ -27,7 +30,8 @@
             <div class="w-full h-full space-y-4 pl-4 py-1 border rounded">
                 <div id="name" class="w-full space-y-1">
                     <label for="" class="text-sm text-gray-500">Restaurant Name</label>
-                    <input type="text" formControlName="name" class="w-[98%] h-7 placeholder:text-sm outline-none border rounded text-sm pl-2">
+                    <input type="text" formControlName="name"
+                        class="w-[98%] h-7 placeholder:text-sm outline-none border rounded text-sm pl-2">
                 </div>
 
                 <div id="desc" class="w-full space-y-1">
@@ -46,7 +50,8 @@
 
                 <div id="phone" class="w-full space-y-1">
                     <label for="email" class="text-sm text-gray-500">Restaurant Email</label>
-                    <input type="text" formControlName="email" class="w-[98%] h-7 placeholder:text-sm outline-none border rounded text-sm pl-2">
+                    <input type="text" formControlName="email"
+                        class="w-[98%] h-7 placeholder:text-sm outline-none border rounded text-sm pl-2">
                 </div>
 
                 <div id="address" class="w-full space-y-1">
@@ -62,20 +67,35 @@
 
         <div class="w-1/2 h-full rounded-md space-y-6">
 
-            <div class="w-full h-56 space-y-4 rounded">
-                <div id="image"
+            <div class="w-full h-full space-y-4 rounded" [ngClass]="imageUpload === '' ? 'h-52' : 'h-full'">
+                <div id="imageDiv" (click)="triggerFileInput()"
                     class="w-full h-full border-dotted border-2 bg-gray-100 flex items-center justify-center flex-col">
-                    <img src="assets/upload.png" alt="" class="w-20">
-                    <h3 class="text-xs tracking-wider">Upload or Drag and drop your image here</h3>
-                    <input type="file" formControlName="imageUrl" class="w-[98%] hidden">
+
+                    @if(imageUpload === ''){
+                    <div>
+                        <img src="assets/upload.png" alt="image" class="w-20">
+                        <h3 class="text-xs tracking-wider">Upload your restaurant image here</h3>
+                    </div>
+                    }
+                    @else if (imageUpload !== '') {
+                    <img [src]="imageUpload" alt="Uploaded Image" class="w-full h-full object-cover object-center">
+                    }
+
+                    <!-- Hidden File Input -->
+                    <input type="file" accept="image/*" class="w-[98%] hidden" (change)="onFileChange($event)"
+                        #fileInput>
                 </div>
             </div>
+
+
+
 
             <div class="w-full h-full space-y-4 pl-4 py-3 border rounded">
                 <div class="w-full h-full space-y-2">
                     <label for="category" class="text-sm text-gray-500">Select Category</label>
                     <select id="category" name="category" formControlName="category"
                         class="w-[98%] h-full py-1 placeholder:text-sm outline-none border rounded">
+                        <option value="italian">General</option>
                         <option value="italian">Italian</option>
                         <option value="chinese">Chinese</option>
                         <option value="indian">Indian</option>
@@ -93,7 +113,7 @@
                 class="w-full h-full py-5 flex items-center justify-center space-x-2 border rounded-md px-3">
                 <div class="w-full h-full flex flex-col items-start justify-center space-y-2">
                     <label for="opentime" class="text-sm text-gray-500">Opening Time</label>
-                    <input type="time" id="openTime" name="openTime" formControlName="openTime" 
+                    <input type="time" id="openTime" name="openTime" formControlName="openTime"
                         class="placeholder:text-sm outline-none border rounded text-sm pl-2 py-2 w-full">
                 </div>
                 <div class="w-full h-full flex flex-col items-start justify-center space-y-2">

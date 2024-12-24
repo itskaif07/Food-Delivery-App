@@ -21,7 +21,7 @@ body, html {
   }
   
   .custom-orange-hover:hover {
-    background-color: #EA7926; /* For hover effect */
+    background-color: #CC6922; /* For hover effect */
     color: white; /* For text color on hover */
   }
   

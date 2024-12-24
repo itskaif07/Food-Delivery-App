@@ -20,4 +20,6 @@ export class RestaurantslistComponent implements OnInit {
       })
   }
 
+  
+
 }

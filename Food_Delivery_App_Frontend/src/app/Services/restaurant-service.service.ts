@@ -18,6 +18,18 @@ export class RestaurantServiceService {
    return this.http.post(this.apiUrl, obj)
   }
 
+  uploadImage(imageFile: any) {
+    const formData = new FormData();
+    formData.append('file', imageFile, imageFile.name);
+  
+    console.log('Uploading file:', imageFile); 
+    return this.http.post(`${this.apiUrl}/UploadImage`, formData);
+  }
+  
+  restaurantDetails(id:number){
+    return this.http.get(`${this.apiUrl}/${id}`)
+  }
+
   editRestaurant(id:number, obj:any){
     return this.http.put(`${this.apiUrl}/${id}`, obj)
   }
