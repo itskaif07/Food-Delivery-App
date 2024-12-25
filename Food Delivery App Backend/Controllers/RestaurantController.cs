@@ -94,9 +94,17 @@ namespace Food_Delivery_App_Backend.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteRestaurant(int id)
         {
-            await _repository.DeleteRestaurant(id);
-            return Ok();
+            try
+            {
+                await _repository.DeleteRestaurant(id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while deleting the restaurant", error = ex.Message });
+            }
         }
+
     }
 }
 

@@ -1,5 +1,23 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\035e8d3c-2d49-4752-9084-6a76664a1934.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/035e8d3c-2d49-4752-9084-6a76664a1934.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\035e8d3c-2d49-4752-9084-6a76664a1934.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0a396ca4-1c68-4d44-b3e8-27f02c254faf.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Food Delivery App Backend</SourceId>
@@ -72,6 +90,60 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0e86d7a6-76f9-4c5b-b613-46bb8044edd1.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\11a7da6b-7d43-4e24-9293-46a6d02fe925.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/11a7da6b-7d43-4e24-9293-46a6d02fe925.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\11a7da6b-7d43-4e24-9293-46a6d02fe925.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\13228ce4-91bf-4ad2-b1b3-a3e052b9e8eb.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/13228ce4-91bf-4ad2-b1b3-a3e052b9e8eb.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\13228ce4-91bf-4ad2-b1b3-a3e052b9e8eb.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\18106ebc-c104-4f78-98d6-34ecd2f0da0a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/18106ebc-c104-4f78-98d6-34ecd2f0da0a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\18106ebc-c104-4f78-98d6-34ecd2f0da0a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1c593793-efd5-460f-8617-51917ba32f58.jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>Food Delivery App Backend</SourceId>
@@ -89,6 +161,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1c593793-efd5-460f-8617-51917ba32f58.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1cea86e2-d103-46cc-84e0-aa6eb57c506c.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/1cea86e2-d103-46cc-84e0-aa6eb57c506c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1cea86e2-d103-46cc-84e0-aa6eb57c506c.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1fbf76f1-5b09-41cb-a47d-fcc93aef8998.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/1fbf76f1-5b09-41cb-a47d-fcc93aef8998.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1fbf76f1-5b09-41cb-a47d-fcc93aef8998.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\20128b3f-1421-4d39-b125-009083ebe0b4.jpg'))">
       <SourceType>Package</SourceType>
@@ -108,6 +216,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\20128b3f-1421-4d39-b125-009083ebe0b4.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\21f2e8ca-23db-4aba-9806-c0727d68e048.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/21f2e8ca-23db-4aba-9806-c0727d68e048.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rnfg8ox2lc</Fingerprint>
+      <Integrity>uVTVste+1gv0hqwkpg9vDbEKHhNFVRQtrUhox92L2PM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\21f2e8ca-23db-4aba-9806-c0727d68e048.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\25f1bd02-803a-4e71-937b-e44e8ed69afc.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Food Delivery App Backend</SourceId>
@@ -125,6 +251,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\25f1bd02-803a-4e71-937b-e44e8ed69afc.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2d16bc10-07fc-4783-8361-c6147f66939f.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/2d16bc10-07fc-4783-8361-c6147f66939f.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2d16bc10-07fc-4783-8361-c6147f66939f.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2d76cd73-394f-4d8d-8f00-2d7d5d1bd100.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/2d76cd73-394f-4d8d-8f00-2d7d5d1bd100.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2d76cd73-394f-4d8d-8f00-2d7d5d1bd100.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2e5356a7-9aa1-44f8-bc7d-5e4d58ef108a.jpeg'))">
       <SourceType>Package</SourceType>
@@ -144,6 +306,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2e5356a7-9aa1-44f8-bc7d-5e4d58ef108a.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\34c39fcc-7b17-41cc-8b23-fb56a6b3a34f.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/34c39fcc-7b17-41cc-8b23-fb56a6b3a34f.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1cbvjfqs1r</Fingerprint>
+      <Integrity>IXrAYjGywflghORx1twNV9ar8CLl3Svf2dUWbhLRX8I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\34c39fcc-7b17-41cc-8b23-fb56a6b3a34f.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3764ad7e-fae0-4f71-a647-892002f86326.jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>Food Delivery App Backend</SourceId>
@@ -161,6 +341,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3764ad7e-fae0-4f71-a647-892002f86326.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3817349d-e305-4958-ac1f-ad5a37fbd2fd.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/3817349d-e305-4958-ac1f-ad5a37fbd2fd.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7v7s6yjpn0</Fingerprint>
+      <Integrity>0xQBT0c78YwiJRogzwV/D1OSb3RS1BwB5tNQG9A2HgI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3817349d-e305-4958-ac1f-ad5a37fbd2fd.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3c81ddd3-cc4c-43e2-994f-5ebc1be3bc2f.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/3c81ddd3-cc4c-43e2-994f-5ebc1be3bc2f.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>h6x40b7yz3</Fingerprint>
+      <Integrity>+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3c81ddd3-cc4c-43e2-994f-5ebc1be3bc2f.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3cbc490c-45c4-43d8-8fff-79740da00b8f.jpg'))">
       <SourceType>Package</SourceType>
@@ -198,6 +414,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4094f032-9a81-46c1-90e0-45b286573761.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\48c5716a-3f76-42a9-8673-04900a19fb41.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/48c5716a-3f76-42a9-8673-04900a19fb41.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dbr0n5m282</Fingerprint>
+      <Integrity>SRULWjqWY+dCjatkHWvx9x1YML0j8ZU9+z5a1Jbjd1I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\48c5716a-3f76-42a9-8673-04900a19fb41.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4a51194c-0ba1-4f10-a3f1-a508532ecdbb.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Food Delivery App Backend</SourceId>
@@ -233,6 +467,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4d01df28-7cd1-403f-a31e-2edd3f1bfe3c.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4f2940c2-c00b-44fc-8544-aedba7c19067.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/4f2940c2-c00b-44fc-8544-aedba7c19067.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4f2940c2-c00b-44fc-8544-aedba7c19067.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4ffb7796-4c71-4f7a-869c-8528f93a5c58.jpg'))">
       <SourceType>Package</SourceType>
@@ -324,6 +576,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\58799300-1018-4f71-87e0-1bd318b5d9d7.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5c809167-60d8-4081-83d4-7eb73cbd50c4.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/5c809167-60d8-4081-83d4-7eb73cbd50c4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5c809167-60d8-4081-83d4-7eb73cbd50c4.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\6a80a5d7-4408-4336-8699-ac1c38647515.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Food Delivery App Backend</SourceId>
@@ -360,6 +630,186 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\6e89fd26-3805-42e6-9a89-db37f4d05df4.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\75436d89-188b-4973-b371-1baf0dbdecfe.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/75436d89-188b-4973-b371-1baf0dbdecfe.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>y7i60kc27d</Fingerprint>
+      <Integrity>vrGlogz/beZ76Yux6DCTHme+H7zdnF7iiCY4JiIxNWo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\75436d89-188b-4973-b371-1baf0dbdecfe.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\75c1468e-9003-49f8-8d24-7d07c23d9019.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/75c1468e-9003-49f8-8d24-7d07c23d9019.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\75c1468e-9003-49f8-8d24-7d07c23d9019.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\75f273d0-e11f-40ed-be30-a25a64286ac2.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/75f273d0-e11f-40ed-be30-a25a64286ac2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\75f273d0-e11f-40ed-be30-a25a64286ac2.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\785f62a8-3200-4382-86a7-31c80c648014.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/785f62a8-3200-4382-86a7-31c80c648014.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\785f62a8-3200-4382-86a7-31c80c648014.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\78faaae4-bedd-481e-b7e5-f78fbc821ad5.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/78faaae4-bedd-481e-b7e5-f78fbc821ad5.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\78faaae4-bedd-481e-b7e5-f78fbc821ad5.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7969aff3-83bf-4829-91ae-fcd9ea193f82.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/7969aff3-83bf-4829-91ae-fcd9ea193f82.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7969aff3-83bf-4829-91ae-fcd9ea193f82.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7fa07aab-800a-4a13-9e52-60f0d95ddb0d.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/7fa07aab-800a-4a13-9e52-60f0d95ddb0d.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\7fa07aab-800a-4a13-9e52-60f0d95ddb0d.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\83b22298-5013-47f7-93a7-915be3507515.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/83b22298-5013-47f7-93a7-915be3507515.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>24unoy9dbr</Fingerprint>
+      <Integrity>zlcGkVbhQciGwBnBMG2vQlkiUDFRK0pvt2o3z5mjAoQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\83b22298-5013-47f7-93a7-915be3507515.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\84da6a12-d284-4d61-a9e2-6b22d323bc36.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/84da6a12-d284-4d61-a9e2-6b22d323bc36.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>18godxwvu7</Fingerprint>
+      <Integrity>IXmjTyjiWFF2icE3zfJiuqhqS7nYjzZRtsglm95kUxQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\84da6a12-d284-4d61-a9e2-6b22d323bc36.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\869d3fbc-12d8-407b-b8d8-17c46d50dd4b.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/869d3fbc-12d8-407b-b8d8-17c46d50dd4b.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>h6x40b7yz3</Fingerprint>
+      <Integrity>+XwVTzvr4q9wSLD3OZ1TPwLB95fMgModNtz7RDe8sUs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\869d3fbc-12d8-407b-b8d8-17c46d50dd4b.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8894ff48-5a00-4e99-a8ee-55aeabcc0ce0.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Food Delivery App Backend</SourceId>
@@ -377,6 +827,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8894ff48-5a00-4e99-a8ee-55aeabcc0ce0.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8a223531-2e77-4a96-b144-eb1e32164b60.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/8a223531-2e77-4a96-b144-eb1e32164b60.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8a223531-2e77-4a96-b144-eb1e32164b60.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8a6912d7-1c91-4a63-a666-7a105a6ccd09.jpg'))">
       <SourceType>Package</SourceType>
@@ -414,6 +882,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\8fafbc7b-f68f-4f91-8d20-a33db6d16a51.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\90eb1873-443c-4780-aa22-044e6de290f7.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/90eb1873-443c-4780-aa22-044e6de290f7.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\90eb1873-443c-4780-aa22-044e6de290f7.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\92d6153f-518f-4c47-84b6-5a536ce29fa1.jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>Food Delivery App Backend</SourceId>
@@ -431,6 +917,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\92d6153f-518f-4c47-84b6-5a536ce29fa1.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\96ca72f9-b4eb-4dee-8807-3e22a128c182.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/96ca72f9-b4eb-4dee-8807-3e22a128c182.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1cbvjfqs1r</Fingerprint>
+      <Integrity>IXrAYjGywflghORx1twNV9ar8CLl3Svf2dUWbhLRX8I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\96ca72f9-b4eb-4dee-8807-3e22a128c182.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a22dc0f6-00ca-49cb-9e03-1f3ea633f966.jpg'))">
       <SourceType>Package</SourceType>
@@ -450,6 +954,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a22dc0f6-00ca-49cb-9e03-1f3ea633f966.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a468a560-69a3-42d0-8d00-0def3e5b7e1b.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/a468a560-69a3-42d0-8d00-0def3e5b7e1b.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>y7i60kc27d</Fingerprint>
+      <Integrity>vrGlogz/beZ76Yux6DCTHme+H7zdnF7iiCY4JiIxNWo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a468a560-69a3-42d0-8d00-0def3e5b7e1b.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a52615e7-9109-48c3-8520-c23cc29145e6.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/a52615e7-9109-48c3-8520-c23cc29145e6.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a52615e7-9109-48c3-8520-c23cc29145e6.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b067d167-7df0-4d8a-95dd-9c1c0f572391.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Food Delivery App Backend</SourceId>
@@ -467,6 +1007,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b067d167-7df0-4d8a-95dd-9c1c0f572391.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b370aabc-e60a-48fe-881f-b0c4e807e37c.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/b370aabc-e60a-48fe-881f-b0c4e807e37c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7v7s6yjpn0</Fingerprint>
+      <Integrity>0xQBT0c78YwiJRogzwV/D1OSb3RS1BwB5tNQG9A2HgI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b370aabc-e60a-48fe-881f-b0c4e807e37c.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\bbd949a8-959b-4118-92f2-8078807ff43d.jpg'))">
       <SourceType>Package</SourceType>
@@ -558,6 +1116,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c28df58b-0bb4-497a-916f-00120f7fc4c1.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c67480fc-628f-447c-9359-8cb02af4420f.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/c67480fc-628f-447c-9359-8cb02af4420f.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c67480fc-628f-447c-9359-8cb02af4420f.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\c713f888-fd86-485e-bf4e-395e53504d77.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Food Delivery App Backend</SourceId>
@@ -611,6 +1187,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dcdaf8cc-2477-4ab9-b735-2ddf7b56eae4.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dffdcc4e-4e7b-4ffd-819f-53051912f15d.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/dffdcc4e-4e7b-4ffd-819f-53051912f15d.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7t9bay77af</Fingerprint>
+      <Integrity>lbfKS6/OD56L11vJ+onysmVRDB6Snqq9Cm/YqB1VYlo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dffdcc4e-4e7b-4ffd-819f-53051912f15d.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e2f0d9af-f1ff-41fb-abfe-80dd7cb8697f.jpg'))">
       <SourceType>Package</SourceType>
@@ -683,6 +1277,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f312ca35-6008-40af-a6cc-2a60a3ce5d30.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f6fe3c5a-c72f-429f-81f6-68636097c674.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Food Delivery App Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Food Delivery App Backend</BasePath>
+      <RelativePath>images/f6fe3c5a-c72f-429f-81f6-68636097c674.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aptff1c4su</Fingerprint>
+      <Integrity>4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f6fe3c5a-c72f-429f-81f6-68636097c674.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\f8d7ea70-53f6-4f34-822c-2af3e5526bec.jpg'))">
       <SourceType>Package</SourceType>

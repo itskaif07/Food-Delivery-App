@@ -8,9 +8,8 @@
   <div class="flex items-center justify-between space-x-8 w-1/2">
 
     <div class="space-x-8">
-      <a [routerLink]="'home'" [ngClass]="{'font-semibold drop-shadow-md': isActiveRoute('/home')}">Home</a>
-      <a [routerLink]="'menu'" [ngClass]="{'font-semibold drop-shadow-md': isActiveRoute('/menu')}">Menu</a>
-      <a [routerLink]="'Restaurants-list'" [ngClass]="{'font-semibold drop-shadow-md': isActiveRoute('/Restaurants-list')}">Restaurant</a>
+      <a [routerLink]="'home'" [ngClass]="{'font-semibold': isActiveRoute('/home')}">Home</a>
+      <a [routerLink]="'restaurants-list'" [ngClass]="{'font-semibold': isActiveRoute('/restaurants-list')}">Restaurant</a>
     </div>
     
     <div class="flex items-center justify-center w-full h-full space-x-10">

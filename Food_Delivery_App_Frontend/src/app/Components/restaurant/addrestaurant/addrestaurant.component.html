@@ -4,7 +4,7 @@
     <div class="flex items-center justify-between">
 
         <div class="flex items-center justify-center space-x-5">
-            <a [routerLink]="['/Restaurants-list']"
+            <a [routerLink]="['/restaurants-list']"
                 class="flex items-center justify-center w-14 h-14 rounded-lg border">
                 <img src="assets/back.png" alt="back" class="w-10">
             </a>
@@ -32,32 +32,94 @@
                     <label for="" class="text-sm text-gray-500">Restaurant Name</label>
                     <input type="text" formControlName="name"
                         class="w-[98%] h-7 placeholder:text-sm outline-none border rounded text-sm pl-2">
+                    @if(restaurantForm.get('name')?.invalid && restaurantForm.get('name')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Restaurant name is required.
+                    </div>
+                    }
+
+                    @if(restaurantForm.get('name')?.hasError('maxlength') && restaurantForm.get('name')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Name cannot exceed 50 characters.
+                    </div>
+                    }
                 </div>
 
                 <div id="desc" class="w-full space-y-1">
                     <label for="" class="text-sm text-gray-500">Restaurant Description</label>
                     <textarea rows="4" formControlName="description"
                         class="w-[98%] placeholder:text-sm outline-none border rounded text-sm pl-2"></textarea>
+
+                    @if(restaurantForm.get('desc')?.invalid && restaurantForm.get('desc')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Description is required.
+                    </div>
+                    }
+
+                    @if(restaurantForm.get('description')?.hasError('maxlength') &&
+                    restaurantForm.get('description')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Description cannot exceed 200 characters.
+                    </div>
+                    }
                 </div>
             </div>
 
             <div class="w-full h-full space-y-4 pl-4 py-2 border rounded">
                 <div id="phone" class="w-full space-y-1">
                     <label for="phone" class="text-sm text-gray-500">Restaurant Phone Number</label>
-                    <input type="text" minlength="10" formControlName="phoneNumber"
+                    <input type="text" minlength="10" maxlength="10" formControlName="phoneNumber"
                         class="w-[98%] h-7 placeholder:text-sm outline-none border rounded text-sm pl-2">
+
+                    <div
+                        *ngIf="restaurantForm.get('phoneNumber')?.invalid && restaurantForm.get('phoneNumber')?.touched">
+                        <div *ngIf="restaurantForm.get('phoneNumber')?.hasError('required')">
+                            <div class="text-red-500 text-xs">
+                                Phone number is required.
+                            </div>
+                        </div>
+                        <div *ngIf="restaurantForm.get('phoneNumber')?.hasError('minlength')">
+                            <div class="text-red-500 text-xs">
+                                Phone number must be 10 characters long.
+                            </div>
+                        </div>
+                        <div *ngIf="restaurantForm.get('phoneNumber')?.hasError('maxlength')">
+                            <div class="text-red-500 text-xs">
+                                Phone number cannot exceed 10 characters.
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
 
                 <div id="phone" class="w-full space-y-1">
                     <label for="email" class="text-sm text-gray-500">Restaurant Email</label>
                     <input type="text" formControlName="email"
                         class="w-[98%] h-7 placeholder:text-sm outline-none border rounded text-sm pl-2">
+
+                    @if(restaurantForm.get('email')?.invalid && restaurantForm.get('email')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Email is required.
+                    </div>
+                    }
+
+                    @if(restaurantForm.get('email')?.hasError('email') && restaurantForm.get('email')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Enter a valid Email
+                    </div>
+                    }
                 </div>
 
                 <div id="address" class="w-full space-y-1">
                     <label for="address" class="text-sm text-gray-500">Restaurant Address</label>
                     <textarea rows="4" formControlName="address"
                         class="w-[98%] placeholder:text-sm outline-none border rounded text-sm pl-2"></textarea>
+
+                    @if(restaurantForm.get('address')?.invalid && restaurantForm.get('address')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Address is required.
+                    </div>
+                    }
                 </div>
             </div>
 
@@ -84,6 +146,12 @@
                     <!-- Hidden File Input -->
                     <input type="file" accept="image/*" class="w-[98%] hidden" (change)="onFileChange($event)"
                         #fileInput>
+
+                    @if(restaurantForm.get('imageUrl')?.invalid && restaurantForm.get('imageUrl')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Image is required.
+                    </div>
+                    }
                 </div>
             </div>
 
@@ -107,6 +175,12 @@
                         <option value="dine-in">Dine-In</option>
                     </select>
                 </div>
+
+                @if(restaurantForm.get('category')?.invalid && restaurantForm.get('category')?.touched){
+                <div class="text-red-500 text-xs">
+                    Category is required.
+                </div>
+                }
             </div>
 
             <div id="timing"
@@ -115,11 +189,23 @@
                     <label for="opentime" class="text-sm text-gray-500">Opening Time</label>
                     <input type="time" id="openTime" name="openTime" formControlName="openTime"
                         class="placeholder:text-sm outline-none border rounded text-sm pl-2 py-2 w-full">
+
+                    @if(restaurantForm.get('openTime')?.invalid && restaurantForm.get('openTime')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Time is required.
+                    </div>
+                    }
                 </div>
                 <div class="w-full h-full flex flex-col items-start justify-center space-y-2">
                     <label for="closetime" class="text-sm text-gray-500">Closing Time</label>
                     <input type="time" id="closeTime" name="closeTime" formControlName="closeTime"
                         class="placeholder:text-sm outline-none border rounded text-sm pl-2 py-2 w-full">
+
+                    @if(restaurantForm.get('closeTime')?.invalid && restaurantForm.get('closeTime')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Time is required.
+                    </div>
+                    }
                 </div>
             </div>
 

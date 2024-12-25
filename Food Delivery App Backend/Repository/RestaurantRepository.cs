@@ -98,6 +98,7 @@ namespace Food_Delivery_App_Backend.Repository
             restaurant.Category = obj.Category;
             restaurant.OpenTime = obj.OpenTime;
             restaurant.CloseTime = obj.CloseTime;
+            restaurant.ImageUrl = obj.ImageUrl;
             restaurant.MenuItems = obj.MenuItems;
 
             await _context.SaveChangesAsync();
@@ -106,15 +107,22 @@ namespace Food_Delivery_App_Backend.Repository
 
         public async Task DeleteRestaurant(int id)
         {
-            var restaurant = await _context.restaurants.FindAsync(id);
-
-            if (restaurant == null)
+            try
             {
-                throw new Exception("Restaurant not found");
+                var restaurant = await _context.restaurants.FindAsync(id);
+                if (restaurant == null)
+                {
+                    throw new Exception("Restaurant not found");
+                }
+                _context.restaurants.Remove(restaurant);
+                await _context.SaveChangesAsync();
             }
-
-            _context.restaurants.Remove(restaurant);
-            await _context.SaveChangesAsync();
+            catch (Exception ex)
+            {
+                // Log the exception for further debugging
+                throw new Exception("An error occurred while deleting the restaurant", ex);
+            }
         }
+
     }
 }

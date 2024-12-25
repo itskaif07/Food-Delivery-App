@@ -23,7 +23,7 @@ export const routes: Routes =
             component: HomeComponent
         },
         {
-            path: "Restaurants-list",
+            path: "restaurants-list",
             component: RestaurantslistComponent
         },
         {
@@ -35,11 +35,11 @@ export const routes: Routes =
             component: AddrestaurantComponent
         },
         {
-            path: "edit-Restaurant",
+            path: "edit-Restaurant/:restaurentId",
             component: EditrestaurantComponent
         },
         {
-            path: "delete-Restaurant",
+            path: "delete-Restaurant/:restaurentId",
             component: DeleterestaurantComponent
         },
 

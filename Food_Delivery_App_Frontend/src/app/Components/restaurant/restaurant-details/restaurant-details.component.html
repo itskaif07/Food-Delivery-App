@@ -1,15 +1,25 @@
-<div class="w-full h-[50vh] bg-[url('{{RestaurantDetails.imageUrl}}')] bg-cover bg-center opacity-100 relative">
+<div class="w-full h-[50vh] bg-cover bg-center opacity-100 relative"
+    [style.backgroundImage]="'url(' + RestaurantDetails.imageUrl + ')'">
     <div class="bg-black opacity-40 absolute w-full h-full z-10"></div>
 
-    <div
-        class= "absolute right-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -bottom-14 text-xl bg-gray-100 w-max px-10 max-w-full h-14 rounded-full flex items-center justify-center z-30" >
-        <h1 class= "font-bold" >{{ RestaurantDetails.name}}</h1>
+    <div class="absolute z-30 flex items-center justify-center space-x-2 top-2 right-5">
+        <a [routerLink]="['/delete-Restaurant', RestaurantDetails.restaurentId]" class="w-12 h-12 rounded-full bg-red-500 hover:bg-red-600 transition-all duration-200 ease-in center">
+            <img src="assets/delete.png" alt="" class="w-8">
+        </a>
+        <a [routerLink]="['/edit-Restaurant', RestaurantDetails.restaurentId]" class="w-12 h-12 rounded-full bg-blue-500 hover:bg-blue-600 transition-all duration-200 ease-in center">
+            <img  src="assets/edit.png" alt="" class="w-7">
+        </a>
+    </div>
+
+    <div class="absolute right-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -bottom-14 text-xl bg-gray-100 w-max px-10 max-w-full h-14 rounded-full flex items-center justify-center z-30">
+        <h1 class="font-bold">{{ RestaurantDetails.name }}</h1>
     </div>
 </div>
 
+
 <div class="w-full h-[35vh] mt-2 flex flex-wrap items-start justify-between px-5 sm:px-10">
     <!-- Contact Details -->
-    <div class="w-full sm:w-1/3 h-full flex flex-col space-y-4 items-start justify-center">
+    <div class="w-full sm:w-1/5 h-full flex flex-col space-y-4 items-start justify-center">
         <h1 class="font-medium">Contact Details</h1>
         <div class="space-y-2">
             <h3 class="text-left">Phone: <span class="font-semibold">{{RestaurantDetails.phoneNumber}}</span></h3>
@@ -19,14 +29,14 @@
     </div>
 
     <!-- Description and Category -->
-    <div class="w-full sm:w-1/3 h-full flex flex-col items-center justify-center text-center space-y-4">
-        <h1 class="w-full sm:w-3/5 font-mono text-left sm:text-center">{{RestaurantDetails.description}}</h1>
+    <div class="w-full sm:w-3/5 h-full flex flex-col items-center justify-center text-center space-y-4">
+        <h1 class="w-full font-mono tracking-tighter leading-snug text-left sm:text-center">{{RestaurantDetails.description}}</h1>
         <h3>Category: <span class="font-semibold">{{RestaurantDetails.category}}</span></h3>
         <button class="custom-orange-bg text-white w-44 h-12 rounded custom-orange-hover transition-all duration-100 ease-in">See Menu</button>
     </div>
 
     <!-- Timing -->
-    <div class="w-full sm:w-1/3 h-full flex flex-col space-y-2 items-end justify-center">
+    <div class="w-full sm:w-1/5 h-full flex flex-col space-y-2 items-end justify-center">
         <h1 class="font-medium">Timing</h1>
         <div class="space-y-2">
             <h3 class="text-left">Opens At: <span class="font-semibold">{{RestaurantDetails.openTime}}</span></h3>

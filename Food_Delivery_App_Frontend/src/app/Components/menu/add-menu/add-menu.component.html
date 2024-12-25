@@ -15,9 +15,13 @@
 
         </div>
 
-        <button type="submit" [disabled]="menuForm.invalid" [ngClass]="{'bg-[#CC6922]': menuForm.invalid}"
+        <div class="space-x-6 flex items-center justify-center ">
+            <a routerLink="/restaurants-list" class="text-[#EA7926] font-medium">Skip Now</a>
+            
+            <button type="submit" [disabled]="menuForm.invalid" [ngClass]="{'bg-[#CC6922]': menuForm.invalid}"
             class="bg-[#EA7926] w-28 h-12 rounded-md text-sm text-white  font-medium">Submit</button>
-
+        </div>
+            
     </div>
 
 

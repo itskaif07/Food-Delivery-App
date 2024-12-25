@@ -1,10 +1,10 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { RestaurantServiceService } from '../../../Services/restaurant-service.service';
 
 @Component({
   selector: 'app-restaurant-details',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './restaurant-details.component.html',
   styleUrl: './restaurant-details.component.css'
 })

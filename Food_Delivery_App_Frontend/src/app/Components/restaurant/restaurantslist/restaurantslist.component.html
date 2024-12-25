@@ -10,24 +10,20 @@
         <h1>+</h1>
     </a>
 
-    <div id="maindiv" class="w-full h-[60vh] flex items-center justify-between flex-wrap px-3 gap-4">
+    <div id="maindiv" class="w-full h-full flex items-center justify-center lg:justify-between flex-wrap px-3 gap-10 pb-10">
 
         @for (restaurant of restaurantsList; track $index) {
 
-        <div [routerLink]="['/restaurant-details', restaurant.restaurentId]" id="box" class="border w-11/12 sm:w-[48%] lg:w-[24%] h-full rounded">
+        <div [routerLink]="['/restaurant-details', restaurant.restaurentId]" id="box" class="cursor-pointer transition-all duration-200 ease-in-out hover:shadow-md border w-11/12 lg:w-[48%]  h-[60vh] flex items-center lg:items-start justify-center flex-col rounded space-y-4">
             <div class="w-full h-3/4">
                 <img [src]="restaurant.imageUrl ? restaurant.imageUrl : 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg'" 
                 alt="{{restaurant.name}}" 
                 class="object-cover object-center w-full h-full">
-           
-
-
             </div>
-            <div>
-                <h1>{{restaurant.name}}</h1>
-                <h1>{{restaurant.phoneNumber}}</h1>
-                <h1>{{restaurant.category}}</h1>
-                <h1>{{restaurant.imageUrl}}</h1>
+            <div class="font-medium pl-4 pb-4">
+                <h1>Name: <span class="font-semibold">{{restaurant.name}}</span></h1>
+                <h1>Type: <span class="font-semibold text-[#EA7926]">{{restaurant.category}}</span></h1>
+                <h1>Contact: <span class="font-semibold">{{restaurant.phoneNumber}}</span></h1>
             </div>
         </div>
         }
