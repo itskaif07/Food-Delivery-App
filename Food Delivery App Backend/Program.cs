@@ -38,10 +38,16 @@ builder.Services.AddCors(options =>
 builder.Services.AddScoped<RestaurantRepository>();
 builder.Services.AddScoped<MenuItemsRepository>();
 
+var host = WebApplication.CreateBuilder(args);
+
+// Bind server to listen on all network interfaces (0.0.0.0)
+host.WebHost.UseUrls("http://0.0.0.0:7205");
+
 var app = builder.Build();
 
 app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 app.UseCors("AllowSpecificOrigin");
+app.UseCors();
 
 
 using (var scope = app.Services.CreateScope())

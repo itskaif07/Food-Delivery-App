@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { RestaurantServiceService } from '../../../Services/restaurant-service.service';
 import { CommonModule } from '@angular/common';
+import { LoaderService } from '../../../Shared/service/loader.service';
 
 @Component({
   selector: 'app-addrestaurant',
@@ -17,6 +18,8 @@ export class AddrestaurantComponent implements OnInit {
   ngOnInit(): void {
     this.setFormState()
   }
+
+loader = inject(LoaderService)
 
   imageUpload: string = '';
 
@@ -45,6 +48,7 @@ export class AddrestaurantComponent implements OnInit {
 
 
   onSubmit(obj: any) {
+    
     if (this.restaurantForm.valid) {
       // Ensure the image has been uploaded
       if (!this.imageUpload) {

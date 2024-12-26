@@ -1,6 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { RestaurantServiceService } from '../../../Services/restaurant-service.service';
+import { LoaderService } from '../../../Shared/service/loader.service';
 
 @Component({
   selector: 'app-restaurant-details',
@@ -12,6 +13,7 @@ export class RestaurantDetailsComponent implements OnInit {
 
   activeRoute = inject(ActivatedRoute)
   restService = inject(RestaurantServiceService)
+  loader = inject(LoaderService)
 
   RestaurantDetails:any = []
 
@@ -22,6 +24,7 @@ export class RestaurantDetailsComponent implements OnInit {
   }
 
   getDetails(){
+    this.loader.showLoader()
     this.activeRoute.paramMap.subscribe(params=>{
       this.restaurantId = +params.get('restaurentId')!
     })
@@ -29,9 +32,11 @@ export class RestaurantDetailsComponent implements OnInit {
     this.restService.restaurantDetails(this.restaurantId).subscribe((res:any)=>{
       if(res){
         this.RestaurantDetails = res
+        this.loader.hideLoader()
       }
     }, err =>{
       console.log("Error", err)
+      this.loader.hideLoader()
     })
   }
 }

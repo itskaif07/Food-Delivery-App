@@ -12,14 +12,14 @@
     </div>
 
     <div class="absolute right-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -bottom-14 text-xl bg-gray-100 w-max px-10 max-w-full h-14 rounded-full flex items-center justify-center z-30">
-        <h1 class="font-bold">{{ RestaurantDetails.name }}</h1>
+        <h1 class="font-bold text-center">{{ RestaurantDetails.name }}</h1>
     </div>
 </div>
 
 
-<div class="w-full h-[35vh] mt-2 flex flex-wrap items-start justify-between px-5 sm:px-10">
+<div class="w-full h-[35vh] max-[350px]:mt-10 mt-2 flex flex-wrap items-start justify-between px-5 lg:px-10 max-[400px]:space-y-6">
     <!-- Contact Details -->
-    <div class="w-full sm:w-1/5 h-full flex flex-col space-y-4 items-start justify-center">
+    <div class="w-full lg:w-1/5 h-full flex flex-col space-y-4 items-start justify-center">
         <h1 class="font-medium">Contact Details</h1>
         <div class="space-y-2">
             <h3 class="text-left">Phone: <span class="font-semibold">{{RestaurantDetails.phoneNumber}}</span></h3>
@@ -29,14 +29,14 @@
     </div>
 
     <!-- Description and Category -->
-    <div class="w-full sm:w-3/5 h-full flex flex-col items-center justify-center text-center space-y-4">
-        <h1 class="w-full font-mono tracking-tighter leading-snug text-left sm:text-center">{{RestaurantDetails.description}}</h1>
+    <div class="w-full lg:w-3/5 h-full flex flex-col items-start lg:items-center justify-center text-center space-y-4">
+        <h1 class="w-full sm:w-3/4 font-mono tracking-tighter leading-snug text-left lg:text-center">{{RestaurantDetails.description}}</h1>
         <h3>Category: <span class="font-semibold">{{RestaurantDetails.category}}</span></h3>
         <button class="custom-orange-bg text-white w-44 h-12 rounded custom-orange-hover transition-all duration-100 ease-in">See Menu</button>
     </div>
 
     <!-- Timing -->
-    <div class="w-full sm:w-1/5 h-full flex flex-col space-y-2 items-end justify-center">
+    <div class="w-full lg:w-1/5 h-full flex flex-col space-y-2 items-start lg:items-end justify-center">
         <h1 class="font-medium">Timing</h1>
         <div class="space-y-2">
             <h3 class="text-left">Opens At: <span class="font-semibold">{{RestaurantDetails.openTime}}</span></h3>
