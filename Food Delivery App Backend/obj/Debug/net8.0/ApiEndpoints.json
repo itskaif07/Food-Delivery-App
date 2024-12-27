@@ -1,16 +1,6 @@
 [
   {
     "ContainingType": "Food_Delivery_App_Backend.Controllers.MenuController",
-    "Method": "GetmenuList",
-    "RelativePath": "api/Menu",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Food_Delivery_App_Backend.Controllers.MenuController",
     "Method": "AddMenu",
     "RelativePath": "api/Menu",
     "HttpMethod": "POST",
@@ -58,6 +48,38 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.MenuController",
+    "Method": "GetmenuList",
+    "RelativePath": "api/Menu/{restaurentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "restaurentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.MenuController",
+    "Method": "UploadImage",
+    "RelativePath": "api/Menu/UploadImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

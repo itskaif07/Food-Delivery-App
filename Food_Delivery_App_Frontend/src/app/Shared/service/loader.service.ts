@@ -11,12 +11,10 @@ export class LoaderService {
   loader$ = this.loaderSubject.asObservable();
 
   showLoader() {
-    console.log('Loader shown');
     this.loaderSubject.next(true);
   }
   
   hideLoader() {
-    console.log('Loader hidden');
     this.loaderSubject.next(false);
   }
   

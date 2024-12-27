@@ -11,13 +11,22 @@ export class MenuServiceService {
 
   apiUrl:string = 'https://localhost:7205/api/Menu'
 
-  getAllMenu():Observable<any>{
-    return this.http.get(this.apiUrl)
+  getAllMenu(id:number):Observable<any>{
+    return this.http.get(`${this.apiUrl}/${id}`)
   }
 
   addMenu(obj:any):Observable<any>{
     return this.http.post(this.apiUrl, obj);
   }
+
+  uploadImage(file: any): Observable<any> {
+    const formData = new FormData();
+
+    formData.append('file', file, file.name);
+  
+    return this.http.post(`${this.apiUrl}/UploadImage`, formData);
+  }
+  
 
   editMenu(id:number, obj:any):Observable<any>{
     return this.http.put(`${this.apiUrl}/${id}`, obj)

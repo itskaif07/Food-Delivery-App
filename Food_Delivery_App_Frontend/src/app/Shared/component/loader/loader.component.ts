@@ -20,7 +20,6 @@ export class LoaderComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.loaderService.loader$.subscribe((state) => {
-      console.log('Loader state in component:', state);
     });
   
     this.loadData();
@@ -28,17 +27,14 @@ export class LoaderComponent implements OnInit, OnDestroy {
   
 
   loadData() {
-    console.log('API call initiated');
     this.loaderService.showLoader();
   
     this.http.get(this.baseUrl)
       .pipe(finalize(() => {
-        console.log('Finalizing loader');
         this.loaderService.hideLoader();
       }))
       .subscribe(
         (res: any) => {
-          console.log('API Response:', res);
         },
         (err) => {
           console.log('API Error:', err);

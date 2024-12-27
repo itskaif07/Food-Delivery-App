@@ -19,7 +19,7 @@ namespace Food_Delivery_App_Backend.Model
         public bool isAvailable { get; set; } = false;
 
         [ForeignKey("RestaurantId")]
-        public int RestaurantId { get; set; }
+        public int RestaurentId { get; set; }
 
         [ValidateNever]
         [JsonIgnore]

@@ -16,19 +16,50 @@ namespace Food_Delivery_App_Backend.Controllers
             _menuItemsRepository = menuItemsRepository;
         }
 
-        [HttpGet]
-        public async Task<ActionResult> GetmenuList()
+        [HttpGet("{restaurentId}")]
+        public async Task<ActionResult> GetmenuList(int restaurentId)
         {
-            var menuList = await _menuItemsRepository.GetMenuList();
+            var menuList = await _menuItemsRepository.GetMenuList(restaurentId);
             return Ok(menuList);
         }
 
         [HttpPost]
         public async Task<ActionResult> AddMenu(MenuItem menuItem)
         {
-            await _menuItemsRepository.AddMenu(menuItem);
-            return Ok(menuItem);
+            try
+            {
+                await _menuItemsRepository.AddMenu(menuItem);
+                return Ok(menuItem);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
+
+        [HttpPost("UploadImage")]
+        [Consumes("multipart/form-data")]
+        public async Task<ActionResult> UploadImage(IFormFile file)
+        {
+            try
+            {
+                if (file == null || file.Length == 0)
+                {
+                    return BadRequest(new { Message = "No file uploaded." });
+                }
+
+                var imagePath = await _menuItemsRepository.UploadImage(file);
+
+                var baseUrl = $"{Request.Scheme}://{Request.Host}";
+                var imageUrl = $"{baseUrl}/{imagePath}";
+                return Ok(new { imageUrl });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = ex.Message, StackTrace = ex.StackTrace });
+            }
+        }
+
 
         [HttpPut("{id}")]
 

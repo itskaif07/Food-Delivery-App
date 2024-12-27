@@ -47,7 +47,10 @@ namespace Food_Delivery_App_Backend.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("RestaurantId")
+                    b.Property<int>("RestaurantRestaurentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RestaurentId")
                         .HasColumnType("int");
 
                     b.Property<bool>("isAvailable")
@@ -55,7 +58,7 @@ namespace Food_Delivery_App_Backend.Migrations
 
                     b.HasKey("MenuId");
 
-                    b.HasIndex("RestaurantId");
+                    b.HasIndex("RestaurantRestaurentId");
 
                     b.ToTable("menuItems");
                 });
@@ -305,7 +308,7 @@ namespace Food_Delivery_App_Backend.Migrations
                 {
                     b.HasOne("Food_Delivery_App_Backend.Model.Restaurant", "Restaurant")
                         .WithMany("MenuItems")
-                        .HasForeignKey("RestaurantId")
+                        .HasForeignKey("RestaurantRestaurentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

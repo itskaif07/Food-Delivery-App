@@ -21,8 +21,7 @@ export class RestaurantServiceService {
   uploadImage(imageFile: any) {
     const formData = new FormData();
     formData.append('file', imageFile, imageFile.name);
-  
-    console.log('Uploading file:', imageFile); 
+
     return this.http.post(`${this.apiUrl}/UploadImage`, formData);
   }
   

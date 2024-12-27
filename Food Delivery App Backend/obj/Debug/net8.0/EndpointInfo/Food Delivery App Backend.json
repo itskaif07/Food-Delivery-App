@@ -5,17 +5,30 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Menu": {
+    "/api/Menu/{restaurentId}": {
       "get": {
         "tags": [
           "Menu"
+        ],
+        "parameters": [
+          {
+            "name": "restaurentId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Menu": {
       "post": {
         "tags": [
           "Menu"
@@ -35,6 +48,38 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/MenuItem"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Menu/UploadImage": {
+      "post": {
+        "tags": [
+          "Menu"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -299,7 +344,7 @@
           "isAvailable": {
             "type": "boolean"
           },
-          "restaurantId": {
+          "restaurentId": {
             "type": "integer",
             "format": "int32"
           }

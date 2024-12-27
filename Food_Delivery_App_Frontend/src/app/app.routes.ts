@@ -46,11 +46,11 @@ export const routes: Routes =
 
 
         {
-            path: "menu-list",
+            path: "menu-list/:restaurentId",
             component: MenulistComponent
         },
         {
-            path: "add-menu",
+            path: "add-menu/:restaurentId",
             component: AddMenuComponent
         },
         {

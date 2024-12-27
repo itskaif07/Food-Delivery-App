@@ -32,7 +32,7 @@
     <div class="w-full lg:w-3/5 h-full flex flex-col items-start lg:items-center justify-center text-center space-y-4">
         <h1 class="w-full sm:w-3/4 font-mono tracking-tighter leading-snug text-left lg:text-center">{{RestaurantDetails.description}}</h1>
         <h3>Category: <span class="font-semibold">{{RestaurantDetails.category}}</span></h3>
-        <button class="custom-orange-bg text-white w-44 h-12 rounded custom-orange-hover transition-all duration-100 ease-in">See Menu</button>
+        <button class="custom-orange-bg text-white w-44 h-12 rounded custom-orange-hover transition-all duration-100 ease-in" [routerLink]="['/menu-list', RestaurantDetails.restaurentId]">See Menu</button>
     </div>
 
     <!-- Timing -->
