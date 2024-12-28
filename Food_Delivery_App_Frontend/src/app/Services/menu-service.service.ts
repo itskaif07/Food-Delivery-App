@@ -27,6 +27,10 @@ export class MenuServiceService {
     return this.http.post(`${this.apiUrl}/UploadImage`, formData);
   }
   
+  menuDetails(id:number){
+    return this.http.get(`${this.apiUrl}/menu/${id}`)
+  }
+  
 
   editMenu(id:number, obj:any):Observable<any>{
     return this.http.put(`${this.apiUrl}/${id}`, obj)

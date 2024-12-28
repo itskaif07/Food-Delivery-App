@@ -1,22 +1,33 @@
 <div class="flex items-center justify-center flex-col mt-10 sm:mt-5 w-full h-full relative space-y-12">
 
-    <!-- Heading -->
-    <h1 class="text-3xl font-bold text-[#222222] tracking-wide text-center">Your Next <span
-            class="text-[#EA7926]">Meal</span> Starts Here</h1>
+
+    <div class="flex items-center justify-between space-x-5 w-full px-12">
+        <a [routerLink]="['/restaurant-details', restaurentId]"
+            class="flex items-center justify-center w-14 h-14 rounded-lg border">
+            <img src="assets/back.png" alt="back" class="w-10">
+        </a>
 
 
-    <a [routerLink]="['/add-menu', restaurentId]"
-        class="absolute top-[-7rem] sm:top-[-6rem] lg:top-[-4rem] right-4 md:right-10 flex items-center justify-center w-12 h-12 rounded-full shadow-xl text-2xl hover:bg-gray-300">
-        <h1>+</h1>
-    </a>
+        <div>
+            <h1 class="text-3xl font-bold text-[#222222] tracking-wide text-center">Food <span
+                    class="text-[#EA7926]">Menu</span></h1>
+        </div>
+
+        <a [routerLink]="['/add-menu', restaurentId]"
+            class=" flex items-center justify-center w-12 h-12 rounded-full shadow-xl text-2xl hover:bg-gray-300">
+            <h1>+</h1>
+        </a>
+
+    </div>
+
 
     <div id="maindiv"
         class="w-full h-full flex items-center justify-center lg:justify-center flex-wrap px-3 gap-10 xl:gap-4 pb-10">
         @if(menuList.length > 0){
         @for (menu of menuList; track $index) {
 
-        <div [routerLink]="['/restaurant-details', menu.restaurentId]" id="box"
-            class="cursor-pointer transition-all duration-200 ease-in-out hover:shadow-md border w-11/12 sm:w-4/5 md:w-3/5 lg:w-[30%] xl:w-[24%]  h-[40vh] flex items-center lg:items-start justify-center flex-col rounded space-y-4">
+        <div [routerLink]="['/menu-details', restaurentId, menu.menuId]"  id="box"
+            class="cursor-pointer transition-all duration-200 ease-in-out hover:shadow-md border w-11/12 sm:w-4/5 md:w-3/5 lg:w-[30%] xl:w-[24%]  h-[50vh] flex items-center lg:items-start justify-center flex-col rounded space-y-4">
             <div class="w-full h-3/4">
                 <img [src]="menu.imageUrl ? menu.imageUrl : 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg'"
                     alt="{{menu.name}}" class="object-cover object-center w-full h-full">
@@ -24,15 +35,15 @@
             <div class="font-medium pl-4 pb-4">
                 <h1>Name: <span class="font-semibold">{{menu.name}}</span></h1>
                 <h1>Type: <span class="font-semibold text-[#EA7926]">{{menu.category}}</span></h1>
-                <h1>Price: <span class="font-semibold">₹ {{menu.price}}</span></h1>
+                <h1>Price: <span class="font-semibold"> <span class="text-green-600">₹ {{menu.price}}</span></span></h1>
             </div>
         </div>
         }
         }
         @else {
-            <div class="flex items-center justify-center w-full h-full mt-10 lg:mt-28">
-                <p class="font-semibold text-xl font-mono text-center">No items available in the menu yet!</p>
-            </div>
+        <div class="flex items-center justify-center w-full h-full mt-10 lg:mt-28">
+            <p class="font-semibold text-xl font-mono text-center">No items available in the menu yet!</p>
+        </div>
         }
     </div>
 </div>

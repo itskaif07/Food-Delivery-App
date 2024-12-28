@@ -60,9 +60,21 @@ namespace Food_Delivery_App_Backend.Controllers
             }
         }
 
+        [HttpGet("menu/{id}")]
+        public async Task<ActionResult> MenuDetails(int id)
+        {
+            var menu = await _menuItemsRepository.MenuDetails(id);
+
+            if(menu == null)
+            {
+                return BadRequest("Menu Not Found");
+            }
+
+            return Ok(menu);
+        }
+
 
         [HttpPut("{id}")]
-
         public async Task<ActionResult> EditMenuItem(int id, [FromBody] MenuItem menuItem)
         {
             await _menuItemsRepository.EditMenu(id, menuItem);

@@ -1,1 +1,24 @@
-<p>delete-menu works!</p>
+
+
+<div class="flex items-center justify-start space-x-5 px-12">
+    <a [routerLink]="['/menu-list', restaurentId]"
+        class="flex items-center justify-center w-14 h-14 rounded-lg border">
+        <img src="assets/back.png" alt="back" class="w-10">
+    </a>
+
+    <div>
+        <h1 class="text-sm text-gray-500">Back to Menu List</h1>
+        <h1 class="font-bold text-lg">Delete Restaurant</h1>
+    </div>
+
+</div>
+
+<div class="w-full h-full flex items-center justify-center flex-col space-y-10 mt-24 lg:mt-32">
+
+    <h1 class="font-bold text-center text-xl text-red-600">Are you sure you want to delete <span class="text-[#222222]">{{menuItem.name}}</span>  from <span class="text-[#EA7926]">{{restaurent.name}}</span>  ?</h1>
+
+    <div class="w-full h-full flex flex-col space-y-6 sm:space-y-0 sm:flex-row items-center justify-center sm:space-x-10">
+        <button class="custom-orange-bg text-white w-44 h-12 rounded bg-red-500 hover:bg-red-600 transition-all duration-100 ease-in" (click)="delete()">Yes, Do It</button>
+        <button class="custom-orange-bg text-black w-44 h-12 rounded bg-gray-300 hover:bg-gray-400  transition-all duration-100 ease-in" routerLink="/home" >Cancel</button>
+    </div>
+</div>

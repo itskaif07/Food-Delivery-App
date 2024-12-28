@@ -1,1 +1,126 @@
-<p>edit-menu works!</p>
+<form [formGroup]="menuForm" (ngSubmit)="onSubmit()"
+    class="w-full h-full px-12 my-4 flex flex-col items-start justify-center">
+
+    <div class="flex items-center justify-between w-full">
+
+        <div class="flex items-center justify-center space-x-5">
+            <a [routerLink]="['/menu-list', restaurentId]" class="flex items-center justify-center w-14 h-14 rounded-lg border">
+                <img src="assets/back.png" alt="back" class="w-10">
+            </a>
+
+            <div>
+                <h1 class="text-sm text-gray-500">To Menu List</h1>
+                <h1 class="font-bold text-lg">Build Your <span class="custom-orange-text">Menu </span></h1>
+            </div>
+
+        </div>
+
+        <div class="hidden space-x-6 md:flex items-center justify-center ">
+            <a routerLink="/restaurants-list" class="text-[#EA7926] font-medium">Skip Now</a>
+            
+            <button type="submit" [disabled]="menuForm.invalid"  [ngClass]="{'bg-[#CC6922]': menuForm.invalid}"
+            class="bg-[#EA7926] w-28 h-12 rounded-md text-sm text-white  font-medium">Submit</button>
+        </div>
+            
+    </div>
+
+
+    <div class="w-full h-full space-y-6 flex flex-col items-center justify-center">
+
+        <div id="name" class="w-full sm:w-4/5 md:3/5 lg:w-3/5 flex flex-col items-start justify-center space-y-1">
+            <label for="" class="text-sm text-gray-500">Item name</label>
+            <input type="text" formControlName="name"
+                class="w-[98%] h-8 placeholder:text-sm outline-none border rounded text-sm pl-2">
+
+            @if(menuForm.get('name')?.invalid && menuForm.get('name')?.touched){
+            <div class="text-red-500 text-xs">
+                Item name is required.
+            </div>
+            }
+        </div>
+
+
+        <div id="desc" class="w-full sm:w-4/5 md:3/5 lg:w-3/5 flex flex-col items-start justify-center space-y-1">
+            <label for="" class="text-sm text-gray-500">Item Description</label>
+            <textarea rows="3" formControlName="description"
+                class="w-[98%] placeholder:text-sm outline-none border rounded text-sm pl-2"></textarea>
+        </div>
+
+        <div id="" class="w-full sm:w-4/5 md:3/5 lg:w-3/5 h-full py-5 flex max-md:flex-col max-md:space-x-0 max-md:space-y-4 items-center justify-center space-x-2 border rounded-md px-3">
+
+            <div class="w-full h-full flex items-start flex-col justify-center space-y-4">
+
+                <div class="w-full h-full flex items-center justify-start space-x-2">
+                    <input type="checkbox" id="isAvailable" name="isAvailable" formControlName="isAvailable"
+                        class="w-4">
+                    <label for="opentime" class="text-sm text-gray-500">Is Item Available</label>
+                </div>
+
+                <div class="w-full h-full flex items-start justify-center flex-col space-y-2">
+                    <label for="price" class="text-sm text-gray-500 ">Price</label>
+                    <input type="number" formControlName="price"
+                        class="lg:w-11/12 w-full h-8 placeholder:text-sm outline-none border rounded text-sm pl-2">
+                    @if(menuForm.get('price')?.invalid && menuForm.get('price')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Price is required and must be a valid number.
+                    </div>
+                    }
+                </div>
+
+            </div>
+
+            <div class="w-full h-full space-y-4 pl-4 py-3 border rounded">
+                <div class="w-full h-full space-y-2">
+                    <label for="category" class="text-sm text-gray-500">Select Category</label>
+                    <select id="category" name="category" formControlName="category"
+                        class="w-[98%] h-full py-1 placeholder:text-sm outline-none border rounded">
+                        <option value="Appetizers">Appetizers / Starters</option>
+                        <option value="Main Course">Main Course</option>
+                        <option value="Desserts">Desserts</option>
+                        <option value="Drinks">Drinks / Beverages</option>
+                        <option value="Salads">Salads</option>
+                        <option value="Sides">Sides</option>
+                        <option value="Combos">Combos / Meal Deals</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Non Vegetarian">Non-Vegetarian</option>
+                        <option value="Specials">Specials / Chef's Special</option>
+                    </select>
+                    @if(menuForm.get('category')?.invalid && menuForm.get('category')?.touched){
+                    <div class="text-red-500 text-xs">
+                        Category is required.
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full sm:w-4/5 md:3/5 lg:w-3/5 space-y-4 rounded" [ngClass]="uploadedImage === '' ? 'h-52' : 'h-full'">
+            <div id="image"
+                 class="w-full h-full border-dotted border-2 bg-gray-100 flex items-center justify-center flex-col"
+                 (click)="triggerInput()">
+                 
+              @if(uploadedImage === '') {
+                <div class="flex items-center flex-col justify-center">
+                  <img src="assets/upload.png" alt="Upload Icon" class="w-20">
+                  <h3 class="text-xs tracking-wider">Upload your item image here</h3>
+                </div>
+              }
+              @else if (uploadedImage !== '') {
+                <img [src]="uploadedImage" alt="Uploaded Image" class="w-full h-full object-cover object-center">
+              }
+          
+              <!-- Hidden file input -->
+              <input type="file" accept="image/*" class="w-[98%] hidden" #fileInput (change)="onFileChange($event)">
+            </div>
+          </div>
+          
+          <div class="space-x-6 md:hidden flex items-center justify-center w-full">
+            <button class="bg-white w-28 h-12 rounded-md text-sm shadow-md  font-medium">
+                <a routerLink="/restaurants-list" class="text-[#EA7926] font-medium">Skip Now</a>
+            </button>
+            
+            <button type="submit" [disabled]="menuForm.invalid"  [ngClass]="{'bg-[#CC6922]': menuForm.invalid}"
+            class="bg-[#EA7926] w-28 h-12 rounded-md text-sm text-white  font-medium">Submit</button>
+        </div>
+    </div>
+</form>

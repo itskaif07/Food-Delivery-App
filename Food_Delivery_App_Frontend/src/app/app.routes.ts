@@ -9,6 +9,7 @@ import { AddMenuComponent } from './Components/menu/add-menu/add-menu.component'
 import { EditMenuComponent } from './Components/menu/edit-menu/edit-menu.component';
 import { DeleteMenuComponent } from './Components/menu/delete-menu/delete-menu.component';
 import { RestaurantDetailsComponent } from './Components/restaurant/restaurant-details/restaurant-details.component';
+import { MenuDetailsComponent } from './Components/menu/menu-details/menu-details.component';
 
 
 export const routes: Routes =
@@ -54,11 +55,15 @@ export const routes: Routes =
             component: AddMenuComponent
         },
         {
-            path: "edit-menu",
+            path: "menu-details/:restaurentId/:menuId",
+            component: MenuDetailsComponent
+        },
+        {
+            path: "edit-menu/:restaurentId/:menuId",
             component: EditMenuComponent
         },
         {
-            path: "delete-menu",
+            path: "delete-menu/:restaurentId/:menuId",
             component: DeleteMenuComponent
         },
 

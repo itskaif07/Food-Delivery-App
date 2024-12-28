@@ -72,7 +72,7 @@ using (var scope = app.Services.CreateScope())
             UserName = "itskaif07",
             Email = "kaifk8402@gmail.com"
         };
-        await userManager.CreateAsync(adminUser, "AdminPassword123!"); 
+        await userManager.CreateAsync(adminUser, "ErenJaeger@123!"); 
     }
 
     // Assign admin role to the user

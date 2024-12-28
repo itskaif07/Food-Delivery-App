@@ -1,6 +1,7 @@
 ﻿using Food_Delivery_App_Backend.Data;
 using Food_Delivery_App_Backend.Model;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
@@ -78,7 +79,14 @@ namespace Food_Delivery_App_Backend.Repository
 
         public async Task<Restaurant> RestaurantDetails(int id)
         {
-            return await _context.restaurants.FindAsync(id);
+            var restaurent = await _context.restaurants.FindAsync(id);
+
+            if(restaurent == null)
+            {
+                throw new Exception("Restaurent Not Found");
+            }
+
+            return restaurent;
         }
 
         public async Task EditRestaurant(int id, Restaurant obj)
