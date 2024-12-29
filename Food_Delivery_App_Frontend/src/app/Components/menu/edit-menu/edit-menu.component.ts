@@ -109,6 +109,8 @@ export class EditMenuComponent {
       category: this.menuData.category || '',
       isAvailable: this.menuData.isAvailable || false,
     })
+
+    this.uploadedImage = this.menuData.imageUrl || ''
   }
 
 

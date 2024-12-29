@@ -79,8 +79,7 @@
               "RelativeToolTip": "Repository\\RestaurantRepository.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAcwE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T15:37:12.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-28T15:37:12.093Z"
             },
             {
               "$type": "Document",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "Controllers\\RestaurantController.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAwwGQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T16:34:42.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T16:34:42.841Z"
             },
             {
               "$type": "Document",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "Controllers\\MenuController.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAIwFEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T18:08:58.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T18:08:58.76Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "Repository\\MenuItemsRepository.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAcwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T18:08:05.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T18:08:05.873Z"
             }
           ]
         }
