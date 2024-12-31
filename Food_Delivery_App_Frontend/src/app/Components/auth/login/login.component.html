@@ -1,0 +1,146 @@
+<div class="w-full h-[90vh] flex flex-row-reverse items-start justify-center lg:space-x-10 overflow-y-hidden">
+
+
+    <div class="hidden lg:block w-1/2 h-[97%] rounded pr-2">
+        <img src="assets/login-img.jpeg" alt="" class="object-cover object-center w-full h-full rounded">
+    </div>
+
+    @if(!authService.isLoggedIn()){
+
+    <div class="max-[400px]:w-full max-[400px]:px-2 w-11/12 sm:w-4/5 lg:w-1/2 h-[97%] space-y-12">
+
+        <div class="w-full space-y-2">
+            <h1 class="text-2xl font-bold tracking-wide">Welcome Back, Foodie!</h1>
+
+            <div class="w-full flex items-center justify-start space-x-2">
+                <p class="tracking-wide text-sm">Don't have an account ?</p>
+                <a class="text-[#EA7926] text-sm cursor-pointer transform hover:scale-105 transition-all duration-200 ease-in-out"
+                    routerLink="/sign-up">Create one</a>
+            </div>
+        </div>
+
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="w-full h-full">
+
+            <div class="w-full h-full items-start justify-center flex-col space-y-8">
+
+                @if(errorMessage && errorMessage != ''){
+                <p class="text-sm text-red-500">Invalid email or password</p>
+                }
+
+                <div class="w-full lg:w-11/12 flex flex-col items-start justify-center">
+                    <input type="text" id="email" formControlName="email"
+                        class="outline-none border-2 w-full rounded  py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]"
+                        placeholder="Email">
+
+                    @if (loginForm.get('email')?.invalid && loginForm.get('email')?.touched) {
+                    <div class="text-red-500">
+                        @if (loginForm.get('email')?.errors?.['required']) {
+                        <small>Email is required</small>
+                        }
+                        @if (loginForm.get('email')?.errors?.['email']) {
+                        <small>Enter a valid email</small>
+                        }
+                    </div>
+                    }
+
+                </div>
+
+
+
+
+                <div class="w-full lg:w-11/12 flex flex-col items-start justify-center">
+                    <input type="text" id="password" formControlName="password"
+                        class="outline-none border-2 w-full rounded  py-2 pl-2 border-gray-200 focus:ring-[1px] focus:ring-[#232C3A] focus:border-[#232C3A]"
+                        placeholder="password">
+
+                    @if (loginForm.get('password')?.invalid && loginForm.get('password')?.touched) {
+                    <div class="text-red-500">
+                        @if (loginForm.get('password')?.errors?.['required']) {
+                        <small>Password is required</small>
+                        }
+                        @if (loginForm.get('password')?.errors?.['minlength']) {
+                        <small>Minimum 6 characters required</small>
+                        }
+                    </div>
+                    }
+
+                </div>
+
+                <button type="submit" class="text-sm border bg-[#232C3A] w-full lg:w-11/12 py-3 text-white">
+                    Log in
+                </button>
+
+
+            </div>
+
+
+        </form>
+    </div>
+    }
+    @else {
+
+    <div class="max-[400px]:w-full max-[400px]:px-2 w-11/12 sm:w-4/5 lg:w-1/2 h-[97%] space-y-12">
+
+        <div class="flex items-center justify-between pr-4">
+
+            <div class="w-full space-y-2">
+                <h1 class="text-2xl font-bold tracking-wide">Let’s Get to Know You Better!</h1>
+
+                <div class="w-full flex items-center justify-start space-x-2">
+                    <p class="tracking-wide text-sm">Want to switch account ?</p>
+                    <a class="text-[#EA7926] text-sm transform hover:scale-105 cursor-pointer transition-all duration-200 ease-in-out"
+                        routerLink="/log-in">Switch</a>
+                </div>
+            </div>
+
+            <div (click)="logOut()"
+                class="w-28 cursor-pointer text-sm h-10 bg-[#232C3A] text-white rounded flex items-center justify-center">
+                <h1>Log out</h1>
+            </div>
+        </div>
+
+        <div class="w-full space-y-3 mt-6 flex flex-col items-start justify-center">
+
+            @if(authService.userSubject.value?.displayName) {
+            <div class="w-full flex items-center justify-start space-x-5">
+                <h1 class="font-semibold">Username :</h1>
+                <h1>{{ authService.userSubject.value.displayName }}</h1>
+            </div>
+            }
+
+
+            @if(authService.userSubject.value?.email) {
+            <div class="w-full flex items-center justify-start space-x-5">
+                <h1 class="font-semibold">Email :</h1>
+                <h1>{{ authService.userSubject.value.email }}</h1>
+            </div>
+            }
+
+            @if(authService.userSubject.value?.phone) {
+            <div class="w-full flex items-center justify-start space-x-5">
+                <h1 class="font-semibold">Phone number :</h1>
+                <h1>{{ authService.userSubject.value.phone }}</h1>
+            </div>
+            }
+
+
+            @if(authService.userSubject.value?.address) {
+            <div class="w-full flex items-center justify-start space-x-5">
+                <h1 class="font-semibold">Address:</h1>
+                <h1>{{ authService.userSubject.value.address }}</h1>
+            </div>
+            }
+
+            @if(user?.pincode) {
+            <div class="w-full flex items-center justify-start space-x-5">
+                <h1 class="font-semibold">Pincode :</h1>
+                <h1>{{ user?.pincode }}</h1>
+            </div>
+            }
+
+
+        </div>
+    </div>
+    }
+</div>

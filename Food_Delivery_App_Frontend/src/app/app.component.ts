@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { Component, inject, Inject } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink, RouterOutlet } from '@angular/router';
 import gsap from 'gsap';
 import { LoaderComponent } from "./Shared/component/loader/loader.component";
+import { AuthService } from './Services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,8 @@ export class AppComponent {
   title = 'Food_Delivery_App_Frontend';
 
   constructor(private router: Router) {}
+
+  authService = inject(AuthService)
 
   isActiveRoute(route: string): boolean {
     return this.router.url === route;

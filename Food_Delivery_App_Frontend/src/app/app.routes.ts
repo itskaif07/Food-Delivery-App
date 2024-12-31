@@ -10,6 +10,8 @@ import { EditMenuComponent } from './Components/menu/edit-menu/edit-menu.compone
 import { DeleteMenuComponent } from './Components/menu/delete-menu/delete-menu.component';
 import { RestaurantDetailsComponent } from './Components/restaurant/restaurant-details/restaurant-details.component';
 import { MenuDetailsComponent } from './Components/menu/menu-details/menu-details.component';
+import { SignupComponent } from './Components/auth/signup/signup.component';
+import { LoginComponent } from './Components/auth/login/login.component';
 
 
 export const routes: Routes =
@@ -23,6 +25,9 @@ export const routes: Routes =
             path: "home",
             component: HomeComponent
         },
+
+// Restaurent
+        
         {
             path: "restaurants-list",
             component: RestaurantslistComponent
@@ -44,7 +49,7 @@ export const routes: Routes =
             component: DeleterestaurantComponent
         },
 
-
+// Menu
 
         {
             path: "menu-list/:restaurentId",
@@ -66,5 +71,17 @@ export const routes: Routes =
             path: "delete-menu/:restaurentId/:menuId",
             component: DeleteMenuComponent
         },
+
+
+//Authentication
+
+        {
+            path:"sign-up",
+            component:SignupComponent,
+        },
+        {
+            path:"log-in",
+            component:LoginComponent
+        }
 
     ];
