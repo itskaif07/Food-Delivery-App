@@ -28,10 +28,12 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.setFormState();
+    
     this.userSubscription = this.authService.user$.subscribe((user) => {
       console.log('User from authService:', user);
       if (user) {
         this.user = user;
+        this.authService.fetchUserData(user)
       } else {
         this.user = null;
       }

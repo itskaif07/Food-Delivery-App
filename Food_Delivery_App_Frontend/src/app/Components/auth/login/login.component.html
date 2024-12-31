@@ -102,33 +102,33 @@
 
         <div class="w-full space-y-3 mt-6 flex flex-col items-start justify-center">
 
-            @if(authService.userSubject.value?.displayName) {
+            @if(user?.displayName) {
             <div class="w-full flex items-center justify-start space-x-5">
                 <h1 class="font-semibold">Username :</h1>
-                <h1>{{ authService.userSubject.value.displayName }}</h1>
+                <h1>{{ user?.displayName }}</h1>
             </div>
             }
 
 
-            @if(authService.userSubject.value?.email) {
+            @if(user?.email) {
             <div class="w-full flex items-center justify-start space-x-5">
                 <h1 class="font-semibold">Email :</h1>
-                <h1>{{ authService.userSubject.value.email }}</h1>
+                <h1>{{ user?.email }}</h1>
             </div>
             }
 
-            @if(authService.userSubject.value?.phone) {
+            @if(user?.phone) {
             <div class="w-full flex items-center justify-start space-x-5">
                 <h1 class="font-semibold">Phone number :</h1>
-                <h1>{{ authService.userSubject.value.phone }}</h1>
+                <h1>{{ user.phone }}</h1>
             </div>
             }
 
 
-            @if(authService.userSubject.value?.address) {
+            @if(user?.address) {
             <div class="w-full flex items-center justify-start space-x-5">
                 <h1 class="font-semibold">Address:</h1>
-                <h1>{{ authService.userSubject.value.address }}</h1>
+                <h1>{{ user?.address }}</h1>
             </div>
             }
 

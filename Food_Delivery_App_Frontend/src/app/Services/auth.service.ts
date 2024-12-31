@@ -76,23 +76,7 @@ export class AuthService implements OnDestroy {
     );
   }
 
-  getUserDetails(uid: string): Observable<any> {
-    const userRef = doc(this.fireStore, 'users', uid)
 
-    return from(getDoc(userRef)).pipe(
-      map((docSnap) => {
-        if (docSnap.exists()) {
-          return docSnap.data();
-        }
-        else {
-          throw new Error('No user data found');
-        }
-      }),
-      catchError((error) => {
-        return throwError(() => new Error(error.message))
-      })
-    )
-  }
 
   logOut(): Observable<void> {
     const promise = signOut(this.auth)
@@ -121,16 +105,6 @@ export class AuthService implements OnDestroy {
     return this.userSubject.asObservable();
   }
 
-  getCurrentUser() {
-    return new Promise<any>((resolve, reject) => {
-      const user = this.auth.currentUser;
-      if (user) {
-        resolve(user);
-      } else {
-        reject('No user logged in');
-      }
-    });
-  }
 
 
   isLoggedIn(): boolean {
