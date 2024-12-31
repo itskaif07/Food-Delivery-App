@@ -88,9 +88,7 @@
                 <h1 class="text-2xl font-bold tracking-wide">Let’s Get to Know You Better!</h1>
 
                 <div class="w-full flex items-center justify-start space-x-2">
-                    <p class="tracking-wide text-sm">Want to switch account ?</p>
-                    <a class="text-[#EA7926] text-sm transform hover:scale-105 cursor-pointer transition-all duration-200 ease-in-out"
-                        routerLink="/log-in">Switch</a>
+                    <p class="tracking-wide text-sm ">Explore Your Profile - Here's Everything About Your <span class="text-[#EA7926]">Account!</span> </p>
                 </div>
             </div>
 
@@ -102,40 +100,62 @@
 
         <div class="w-full space-y-3 mt-6 flex flex-col items-start justify-center">
 
+
             @if(user?.displayName) {
-            <div class="w-full flex items-center justify-start space-x-5">
-                <h1 class="font-semibold">Username :</h1>
-                <h1>{{ user?.displayName }}</h1>
+            <div class="w-11/12 flex items-center justify-start space-x-2">
+                <div class="w-1/4 bg-slate-100 rounded-md py-3 px-4">
+                    <h1 class="font-semibold">Username :</h1>
+                </div>
+                <div class="w-3/4 bg-slate-100 rounded-md py-3 px-4">
+                    <h1>{{ user?.displayName }}</h1>
+                </div>
             </div>
             }
 
 
             @if(user?.email) {
-            <div class="w-full flex items-center justify-start space-x-5">
-                <h1 class="font-semibold">Email :</h1>
-                <h1>{{ user?.email }}</h1>
+            <div class="w-11/12 flex items-center justify-start space-x-2">
+                <div class="w-1/4 bg-slate-100 rounded-md py-3 px-4">
+                    <h1 class="font-semibold">Email :</h1>
+                </div>
+                <div class="w-3/4 bg-slate-100 rounded-md py-3 px-4">
+                    <h1>{{ user?.email }}</h1>
+                </div>
             </div>
+
             }
 
             @if(user?.phone) {
-            <div class="w-full flex items-center justify-start space-x-5">
-                <h1 class="font-semibold">Phone number :</h1>
-                <h1>{{ user.phone }}</h1>
+            <div class="w-11/12 flex items-center justify-start space-x-2">
+                <div class="w-1/4 bg-slate-100 rounded-md py-3 px-4">
+                    <h1 class="font-semibold">Phone Number :</h1>
+                </div>
+                <div class="w-3/4 bg-slate-100 rounded-md py-3 px-4">
+                    <h1>{{ user.phone }}</h1>
+                </div>
             </div>
             }
 
 
             @if(user?.address) {
-            <div class="w-full flex items-center justify-start space-x-5">
-                <h1 class="font-semibold">Address:</h1>
-                <h1>{{ user?.address }}</h1>
+            <div class="w-11/12 flex items-center justify-start space-x-2">
+                <div class="w-1/4 bg-slate-100 rounded-md py-3 px-4">
+                    <h1 class="font-semibold">Address :</h1>
+                </div>
+                <div class="w-3/4 bg-slate-100 rounded-md py-3 px-4">
+                    <h1>{{ user.address }}</h1>
+                </div>
             </div>
             }
 
             @if(user?.pincode) {
-            <div class="w-full flex items-center justify-start space-x-5">
-                <h1 class="font-semibold">Pincode :</h1>
-                <h1>{{ user?.pincode }}</h1>
+            <div class="w-11/12 flex items-center justify-start space-x-2">
+                <div class="w-1/4 bg-slate-100 rounded-md py-3 px-4">
+                    <h1 class="font-semibold">Pincode :</h1>
+                </div>
+                <div class="w-3/4 bg-slate-100 rounded-md py-3 px-4">
+                    <h1>{{ user.pincode }}</h1>
+                </div>
             </div>
             }
 

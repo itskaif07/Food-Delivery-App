@@ -26,7 +26,7 @@
             <img src="assets/trolley.png" alt="" class="w-5">
           </div>
 
-          <a [routerLink]="'sign-up'"
+          <a [routerLink]="'log-in'"
             class="w-14 h-14 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
             <img src="assets/login.png" alt="" class="w-6">
           </a>
@@ -77,7 +77,7 @@
       </div>
 
       @if(!authService.isLoggedIn()){
-      <div [routerLink]="'sign-up'"
+      <div [routerLink]="'log-in'"
         class="w-14 h-14 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
         <img src="assets/login.png" alt="" class="w-6">
       </div>
@@ -85,7 +85,7 @@
       @else {
       <div [routerLink]="'log-in'"
         class=" flex items-center justify-center cursor-pointer transition-all duration-150 ease-in">
-        <h1>{{authService.userSubject.value.displayName}}</h1>
+        <h1 class="font-semibold">{{authService.userSubject.value.displayName}}</h1>
       </div>
       }
     </div>
