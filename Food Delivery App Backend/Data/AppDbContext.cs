@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Food_Delivery_App_Backend.Data
 {
-    public class AppDbContext : IdentityDbContext<IdentityUser>
+    public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
@@ -22,6 +22,5 @@ namespace Food_Delivery_App_Backend.Data
                 .Property(m => m.Price)
                 .HasColumnType("decimal(18,2)");
         }
-
     }
 }

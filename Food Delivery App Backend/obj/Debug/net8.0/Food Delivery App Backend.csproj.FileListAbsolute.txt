@@ -181,3 +181,13 @@ D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\ref\Food Delivery App Backend.dll
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\Food Delivery App Backend.sourcelink.json
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\Food Delivery App Backend.staticwebassets.runtime.json
+D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\FirebaseAdmin.dll
+D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\Google.Api.Gax.dll
+D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\Google.Api.Gax.Rest.dll
+D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\Google.Apis.dll
+D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\Google.Apis.Auth.dll
+D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\Google.Apis.Core.dll
+D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\System.Management.dll
+D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\bin\Debug\net8.0\key\sample-firebase-ai-app-7b76d-firebase-adminsdk-ovvts-fd9e1ab117.json

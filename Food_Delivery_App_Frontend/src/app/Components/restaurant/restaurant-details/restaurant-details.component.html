@@ -2,22 +2,28 @@
     [style.backgroundImage]="'url(' + RestaurantDetails.imageUrl + ')'">
     <div class="bg-black opacity-40 absolute w-full h-full z-10"></div>
 
+    @if (isAdmin) {
     <div class="absolute z-30 flex items-center justify-center space-x-2 top-2 right-5">
-        <a [routerLink]="['/delete-Restaurant', RestaurantDetails.restaurentId]" class="w-12 h-12 rounded-full bg-red-500 hover:bg-red-600 transition-all duration-200 ease-in center">
+        <a [routerLink]="['/delete-Restaurant', RestaurantDetails.restaurentId]"
+            class="w-12 h-12 rounded-full bg-red-500 hover:bg-red-600 transition-all duration-200 ease-in center">
             <img src="assets/delete.png" alt="" class="w-8">
         </a>
-        <a [routerLink]="['/edit-Restaurant', RestaurantDetails.restaurentId]" class="w-12 h-12 rounded-full bg-blue-500 hover:bg-blue-600 transition-all duration-200 ease-in center">
-            <img  src="assets/edit.png" alt="" class="w-7">
+        <a [routerLink]="['/edit-Restaurant', RestaurantDetails.restaurentId]"
+            class="w-12 h-12 rounded-full bg-blue-500 hover:bg-blue-600 transition-all duration-200 ease-in center">
+            <img src="assets/edit.png" alt="" class="w-7">
         </a>
     </div>
+    }
 
-    <div class="absolute right-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -bottom-14 text-xl bg-gray-100 w-max px-10 max-w-full h-14 rounded-full flex items-center justify-center z-30">
+    <div
+        class="absolute right-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -bottom-14 text-xl bg-gray-100 w-max px-10 max-w-full h-14 rounded-full flex items-center justify-center z-30">
         <h1 class="font-bold text-center">{{ RestaurantDetails.name }}</h1>
     </div>
 </div>
 
 
-<div class="w-full h-[35vh] max-[350px]:mt-10 mt-2 flex flex-wrap items-start justify-between px-5 lg:px-10 max-[400px]:space-y-6">
+<div
+    class="w-full h-[35vh] max-[350px]:mt-10 mt-2 flex flex-wrap items-start justify-between px-5 lg:px-10 max-[400px]:space-y-6">
     <!-- Contact Details -->
     <div class="w-full lg:w-1/5 h-full flex flex-col space-y-4 items-start justify-center">
         <h1 class="font-medium">Contact Details</h1>
@@ -30,9 +36,12 @@
 
     <!-- Description and Category -->
     <div class="w-full lg:w-3/5 h-full flex flex-col items-start lg:items-center justify-center text-center space-y-4">
-        <h1 class="w-full sm:w-3/4 font-mono tracking-tighter leading-snug text-left lg:text-center">{{RestaurantDetails.description}}</h1>
+        <h1 class="w-full sm:w-3/4 font-mono tracking-tighter leading-snug text-left lg:text-center">
+            {{RestaurantDetails.description}}</h1>
         <h3>Category: <span class="font-semibold">{{RestaurantDetails.category}}</span></h3>
-        <button class="custom-orange-bg text-white w-44 h-12 rounded custom-orange-hover transition-all duration-100 ease-in" [routerLink]="['/menu-list', RestaurantDetails.restaurentId]">See Menu</button>
+        <button
+            class="custom-orange-bg text-white w-44 h-12 rounded custom-orange-hover transition-all duration-100 ease-in"
+            [routerLink]="['/menu-list', RestaurantDetails.restaurentId]">See Menu</button>
     </div>
 
     <!-- Timing -->

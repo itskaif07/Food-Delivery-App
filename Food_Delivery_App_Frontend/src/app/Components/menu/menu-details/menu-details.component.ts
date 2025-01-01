@@ -1,6 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { MenuServiceService } from '../../../Services/menu-service.service';
+import { getAuth } from 'firebase/auth';
 
 @Component({
   selector: 'app-menu-details',
@@ -12,6 +13,7 @@ export class MenuDetailsComponent implements OnInit {
 
   menuId: number = 0
   restaurentId: number = 0
+  isAdmin:boolean = false
   activeRoute = inject(ActivatedRoute)
   menuService = inject(MenuServiceService)
   router = inject(Router)
@@ -19,8 +21,8 @@ export class MenuDetailsComponent implements OnInit {
   menu: any = []
 
   ngOnInit(): void {
-
     this.getMenu();
+    this.checkAdminRole()
   }
 
   getMenu() {
@@ -43,6 +45,15 @@ export class MenuDetailsComponent implements OnInit {
         }
       );
     });
+  }
+
+ async checkAdminRole(){
+    const user = getAuth().currentUser
+    if(user){
+      const idToken = await user.getIdTokenResult()
+      const claims = idToken.claims as any;
+      this.isAdmin = claims['admin'] ? true : false
+    }
   }
 
   RedirectToDelete() {

@@ -3,6 +3,7 @@ import { MenuServiceService } from '../../../Services/menu-service.service';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { LoaderService } from '../../../Shared/service/loader.service';
 import { RestaurantServiceService } from '../../../Services/restaurant-service.service';
+import { getAuth } from 'firebase/auth';
 
 @Component({
   selector: 'app-menulist',
@@ -19,6 +20,7 @@ export class MenulistComponent implements OnInit {
 
   menuList: any[] = []
   restaurentId: number = 0;
+  isAdmin:boolean = false
 
   restaurent: any = []
 
@@ -28,10 +30,27 @@ export class MenulistComponent implements OnInit {
       this.restaurentId = +params.get('restaurentId')!
     })
 
+    this.checkAdminRole()
     this.getList()
+  }
 
-    // this.getRestaurentDetails()
+async checkAdminRole(){
+    const user = getAuth().currentUser
+    if(user){
+      const idToken = await user.getIdTokenResult();
+      const claims = idToken.claims as any
+      this.isAdmin = claims['admin'] ? true : false
+    }
+  }
 
+  getList() {
+    this.loader.showLoader()
+    this.menuService.getAllMenu(this.restaurentId).subscribe((res: any) => {
+      this.menuList = res
+      this.loader.hideLoader()
+    }, err => {
+      console.log("error", err)
+    })
   }
 
   // getRestaurentDetails() {
@@ -51,17 +70,9 @@ export class MenulistComponent implements OnInit {
 
   // }
 
-  getList() {
 
 
-    this.loader.showLoader()
-    this.menuService.getAllMenu(this.restaurentId).subscribe((res: any) => {
-      this.menuList = res
-      this.loader.hideLoader()
-    }, err => {
-      console.log("error", err)
-    })
-  }
+
 
 
 

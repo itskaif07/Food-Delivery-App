@@ -4,6 +4,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { RestaurantServiceService } from '../../../Services/restaurant-service.service';
 import { CommonModule } from '@angular/common';
 import { LoaderService } from '../../../Shared/service/loader.service';
+import { getAuth } from 'firebase/auth';
 
 @Component({
   selector: 'app-addrestaurant',
@@ -17,11 +18,13 @@ export class AddrestaurantComponent implements OnInit {
 
   ngOnInit(): void {
     this.setFormState()
+    this.checkAdminRole()
   }
 
 loader = inject(LoaderService)
 
   imageUpload: string = '';
+  isAdmin:boolean = false;
 
   route = inject(ActivatedRoute);
   router = inject(Router)
@@ -44,6 +47,16 @@ loader = inject(LoaderService)
       category: [''],
       imageUrl: ['']
     });
+  }
+
+ async checkAdminRole(){
+    const user = getAuth().currentUser
+
+    if(user){
+      const idToken = await user.getIdTokenResult()
+      const claims = idToken.claims as any;
+      this.isAdmin = claims['admin'] ? true : false
+    }
   }
 
 

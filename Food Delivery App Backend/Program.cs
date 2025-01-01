@@ -3,6 +3,9 @@ using Food_Delivery_App_Backend.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using FirebaseAdmin;
+using Google.Apis.Auth.OAuth2;
+using Food_Delivery_App_Backend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,10 +19,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Add Identity for authentication and authorization
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-    .AddEntityFrameworkStores<AppDbContext>()
-    .AddDefaultTokenProviders();
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -30,58 +29,39 @@ builder.Services.ConfigureApplicationCookie(options =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
-        policy => policy.WithOrigins("http://localhost:4200")  // Your frontend's URL
+        policy => policy.WithOrigins("http://localhost:4200")  
             .AllowAnyHeader()
             .AllowAnyMethod());
 });
 
 builder.Services.AddScoped<RestaurantRepository>();
 builder.Services.AddScoped<MenuItemsRepository>();
+builder.Services.AddScoped<FirebaseService>();
 
 var host = WebApplication.CreateBuilder(args);
 
 // Bind server to listen on all network interfaces (0.0.0.0)
 host.WebHost.UseUrls("http://0.0.0.0:7205");
 
+
+// Admin Role
+FirebaseApp.Create(new AppOptions()
+{
+    Credential = GoogleCredential.FromFile(@"D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\key\sample-firebase-ai-app-7b76d-firebase-adminsdk-ovvts-fd9e1ab117.json")
+});
+
+
 var app = builder.Build();
 
 app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 app.UseCors("AllowSpecificOrigin");
-app.UseCors();
 
 
 using (var scope = app.Services.CreateScope())
 {
-    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
-
-    // Check if admin role exists
-    if (!await roleManager.RoleExistsAsync("Admin"))
-    {
-        // Create Admin role
-        var role = new IdentityRole("Admin");
-        await roleManager.CreateAsync(role);
-    }
-
-    // Check if a default admin user exists, if not, create one
-    var adminUser = await userManager.FindByEmailAsync("kaifk8402@gmail.com");
-    if (adminUser == null)
-    {
-        adminUser = new IdentityUser
-        {
-            UserName = "itskaif07",
-            Email = "kaifk8402@gmail.com"
-        };
-        await userManager.CreateAsync(adminUser, "ErenJaeger@123!"); 
-    }
-
-    // Assign admin role to the user
-    if (!await userManager.IsInRoleAsync(adminUser, "Admin"))
-    {
-        await userManager.AddToRoleAsync(adminUser, "Admin");
-    }
+    var firebaseService = scope.ServiceProvider.GetRequiredService<FirebaseService>();
+    await firebaseService.AssignAdminRole("kaifk8402@gmail.com");
 }
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

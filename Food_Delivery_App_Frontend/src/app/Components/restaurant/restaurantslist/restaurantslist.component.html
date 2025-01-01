@@ -4,21 +4,22 @@
     <h1 class="text-3xl font-bold text-[#222222] tracking-wide text-center">Order from your <span
             class="text-[#EA7926]">favourite</span> restaurant</h1>
 
-  
+    @if(isAdmin){
     <a [routerLink]="['/add-Restaurant']"
         class="absolute top-[-7rem] sm:top-[-6rem] lg:top-[-4rem] right-4 md:right-10 flex items-center justify-center w-12 h-12 rounded-full shadow-xl text-2xl hover:bg-gray-300">
         <h1>+</h1>
     </a>
-
-    <div id="maindiv" class="w-full h-full flex items-center justify-center lg:justify-between flex-wrap px-3 gap-10 pb-10">
+    }
+    <div id="maindiv"
+        class="w-full h-full flex items-center justify-center lg:justify-between flex-wrap px-3 gap-10 pb-10">
 
         @for (restaurant of restaurantsList; track $index) {
 
-        <div [routerLink]="['/restaurant-details', restaurant.restaurentId]" id="box" class="cursor-pointer transition-all duration-200 ease-in-out hover:shadow-md border w-11/12 lg:w-[48%]  h-[60vh] flex items-center lg:items-start justify-center flex-col rounded space-y-4">
+        <div [routerLink]="['/restaurant-details', restaurant.restaurentId]" id="box"
+            class="cursor-pointer transition-all duration-200 ease-in-out hover:shadow-md border w-11/12 lg:w-[48%]  h-[60vh] flex items-center lg:items-start justify-center flex-col rounded space-y-4">
             <div class="w-full h-3/4">
-                <img [src]="restaurant.imageUrl ? restaurant.imageUrl : 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg'" 
-                alt="{{restaurant.name}}" 
-                class="object-cover object-center w-full h-full">
+                <img [src]="restaurant.imageUrl ? restaurant.imageUrl : 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg'"
+                    alt="{{restaurant.name}}" class="object-cover object-center w-full h-full">
             </div>
             <div class="font-medium pl-4 pb-4">
                 <h1>Name: <span class="font-semibold">{{restaurant.name}}</span></h1>

@@ -2,10 +2,12 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { RestaurantServiceService } from '../../../Services/restaurant-service.service';
 import { LoaderService } from '../../../Shared/service/loader.service';
+import { getAuth } from 'firebase/auth';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-restaurant-details',
-  imports: [RouterLink],
+  imports: [RouterLink, CommonModule],
   templateUrl: './restaurant-details.component.html',
   styleUrl: './restaurant-details.component.css'
 })
@@ -16,11 +18,21 @@ export class RestaurantDetailsComponent implements OnInit {
   loader = inject(LoaderService)
 
   RestaurantDetails:any = []
-
+  isAdmin:boolean = false;
   restaurantId:number = 0
 
   ngOnInit(): void {
     this.getDetails()
+    this.checkAdminRole()
+  }
+
+ async checkAdminRole(){
+    const user = getAuth().currentUser;
+    if(user){
+      const idToken = await user.getIdTokenResult();
+      const claims = idToken.claims as any;
+      this.isAdmin = claims['admin'] ? true : false;
+    }
   }
 
   getDetails(){
