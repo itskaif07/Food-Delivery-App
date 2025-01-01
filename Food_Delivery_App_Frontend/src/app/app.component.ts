@@ -40,4 +40,14 @@ export class AppComponent {
     }
     )
   }
+
+  onRouteClick(){
+    gsap.to('#overlay',
+      {
+        duration:0.5,
+        x:'100%',
+        ease:'sine'
+      }
+    )
+  }
 }

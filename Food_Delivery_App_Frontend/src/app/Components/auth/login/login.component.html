@@ -50,7 +50,7 @@
 
 
                 <div class="w-full lg:w-11/12 flex flex-col items-start justify-center">
-                    <input type="text" id="password" formControlName="password"
+                    <input type="password" id="password" formControlName="password"
                         class="outline-none border-2 w-full rounded  py-2 pl-2 border-gray-200 focus:ring-[1px] focus:ring-[#232C3A] focus:border-[#232C3A]"
                         placeholder="password">
 
@@ -80,9 +80,9 @@
     }
     @else {
 
-    <div class="max-[400px]:w-full max-[400px]:px-2 w-11/12 sm:w-4/5 lg:w-1/2 h-[97%] space-y-12">
+    <div class="w-full px-2 sm:w-4/5 lg:w-1/2 h-full lg:h-[97%] space-y-12 overflow-auto lg:overflow-hidden py-4 lg:py-0">
 
-        <div class="flex items-center justify-between pr-4">
+        <div class="flex items-center justify-between lg:pr-4">
 
             <div class="w-full space-y-2">
                 <h1 class="text-2xl font-bold tracking-wide">Let’s Get to Know You Better!</h1>
@@ -98,15 +98,15 @@
             </div>
         </div>
 
-        <div class="w-full space-y-3 mt-6 flex flex-col items-start justify-center">
+        <div class="w-full space-y-3 lg:mt-6 flex flex-col items-start justify-center">
 
 
             @if(user?.displayName) {
-            <div class="w-11/12 flex items-center justify-start space-x-2">
-                <div class="w-1/4 bg-slate-100 rounded-md py-3 px-4">
+            <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+                <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1 class="font-semibold">Username :</h1>
                 </div>
-                <div class="w-3/4 bg-slate-100 rounded-md py-3 px-4">
+                <div class="w-full lg:w-3/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1>{{ user?.displayName }}</h1>
                 </div>
             </div>
@@ -114,11 +114,11 @@
 
 
             @if(user?.email) {
-            <div class="w-11/12 flex items-center justify-start space-x-2">
-                <div class="w-1/4 bg-slate-100 rounded-md py-3 px-4">
+            <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+                <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1 class="font-semibold">Email :</h1>
                 </div>
-                <div class="w-3/4 bg-slate-100 rounded-md py-3 px-4">
+                <div class="w-full lg:w-3/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1>{{ user?.email }}</h1>
                 </div>
             </div>
@@ -126,11 +126,11 @@
             }
 
             @if(user?.phone) {
-            <div class="w-11/12 flex items-center justify-start space-x-2">
-                <div class="w-1/4 bg-slate-100 rounded-md py-3 px-4">
+            <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+                <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1 class="font-semibold">Phone Number :</h1>
                 </div>
-                <div class="w-3/4 bg-slate-100 rounded-md py-3 px-4">
+                <div class="w-full lg:w-3/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1>{{ user.phone }}</h1>
                 </div>
             </div>
@@ -138,22 +138,22 @@
 
 
             @if(user?.address) {
-            <div class="w-11/12 flex items-center justify-start space-x-2">
-                <div class="w-1/4 bg-slate-100 rounded-md py-3 px-4">
+            <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+                <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1 class="font-semibold">Address :</h1>
                 </div>
-                <div class="w-3/4 bg-slate-100 rounded-md py-3 px-4">
+                <div class="w-full lg:w-3/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1>{{ user.address }}</h1>
                 </div>
             </div>
             }
 
             @if(user?.pincode) {
-            <div class="w-11/12 flex items-center justify-start space-x-2">
-                <div class="w-1/4 bg-slate-100 rounded-md py-3 px-4">
+            <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+                <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1 class="font-semibold">Pincode :</h1>
                 </div>
-                <div class="w-3/4 bg-slate-100 rounded-md py-3 px-4">
+                <div class="w-full lg:w-3/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1>{{ user.pincode }}</h1>
                 </div>
             </div>

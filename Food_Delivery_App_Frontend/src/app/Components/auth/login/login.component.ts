@@ -4,6 +4,7 @@ import { AuthService } from '../../../Services/auth.service';
 import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
+import { LoaderService } from '../../../Shared/service/loader.service';
 
 @Component({
   selector: 'app-login',
@@ -16,6 +17,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   fb = inject(FormBuilder)
   authService = inject(AuthService)
   router = inject(Router)
+  loader = inject(LoaderService)
 
   errorMessage: string | null = ''
   uid: string = ''
@@ -52,21 +54,24 @@ export class LoginComponent implements OnInit, OnDestroy {
 
 
   logOut() {
+    this.loader.showLoader()
     this.authService.logOut().subscribe((next) => {
       this.router.navigateByUrl('/')
+      this.loader.hideLoader()
     }, err => {
-      console.log('logout failed', err)
       this.errorMessage = err
+      this.loader.hideLoader()
     })
   }
 
   onSubmit() {
     const rawForm = this.loginForm.getRawValue();
+    this.loader.showLoader()
     this.authService.logIn(rawForm.email, rawForm.password).subscribe((next) => {
-      this.router.navigateByUrl('/')
+      this.loader.hideLoader()
     }, error => {
-      console.log("error loggin in", error)
       this.errorMessage = error
+      this.loader.hideLoader()
     })
   }
 

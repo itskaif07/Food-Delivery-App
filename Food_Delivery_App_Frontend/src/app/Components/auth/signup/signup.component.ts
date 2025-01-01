@@ -3,6 +3,7 @@ import { AuthService } from '../../../Services/auth.service';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { LoaderService } from '../../../Shared/service/loader.service';
 
 @Component({
   selector: 'app-signup',
@@ -15,6 +16,7 @@ export class SignupComponent implements OnInit {
   authService = inject(AuthService)
   formBuilder = inject(FormBuilder)
   router = inject(Router)
+  loader = inject(LoaderService)
   signUpForm: FormGroup = new FormGroup({})
 
   ngOnInit(): void {
@@ -35,12 +37,13 @@ export class SignupComponent implements OnInit {
   onSubmit() {
     const rawForm = this.signUpForm.getRawValue();
 
+    this.loader.showLoader()
     this.authService.signUp(rawForm.email, rawForm.password, rawForm.username, rawForm.phone, rawForm.address, rawForm.pincode).subscribe((next) => {
       this.router.navigateByUrl('/')
-      console.log('signup successfull')
+      this.loader.hideLoader()
     }, err => {
       console.log('Some error occurred during signup', err);
-      alert('Signup failed. Please check your details.');
+      this.loader.hideLoader()
     })
   }
 
