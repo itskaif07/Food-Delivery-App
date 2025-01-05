@@ -24,6 +24,14 @@ body, html {
     background-color: #CC6922; /* For hover effect */
     color: white; /* For text color on hover */
   }
+
+  .custom-blue-bg {
+    background-color: #232C3A;
+  }
+  
+  .custom-blue-text {
+    color: #232C3A;
+  }
   
   .center{
     display: flex;

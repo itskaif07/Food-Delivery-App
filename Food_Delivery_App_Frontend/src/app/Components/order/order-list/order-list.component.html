@@ -1,0 +1,9 @@
+@if (orderList.length > 0) {
+
+}
+@else {
+    <div class="w-full h-[80vh] flex items-center justify-center space-y-10 flex-col">
+        <p class="font-semibold text-xl">No Items in order yet</p>
+        <div routerLink="/restaurants-list" class="custom-blue-bg text-white w-60 h-10 rounded-full flex items-center justify-center">Browse</div>
+    </div>
+}

@@ -1,5 +1,100 @@
 [
   {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.CartsController",
+    "Method": "AddCart",
+    "RelativePath": "api/Carts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "restaurentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "menuItemId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.CartsController",
+    "Method": "RemoveCart",
+    "RelativePath": "api/Carts/{cartId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.CartsController",
+    "Method": "CartList",
+    "RelativePath": "api/Carts/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.CartsController",
+    "Method": "DecreaseQuantity",
+    "RelativePath": "api/Carts/decrease/{cartId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.CartsController",
+    "Method": "IncreaseQuantity",
+    "RelativePath": "api/Carts/increase/{cartId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Food_Delivery_App_Backend.Controllers.MenuController",
     "Method": "AddMenu",
     "RelativePath": "api/Menu",
@@ -86,6 +181,22 @@
   },
   {
     "ContainingType": "Food_Delivery_App_Backend.Controllers.MenuController",
+    "Method": "MenuListDetails",
+    "RelativePath": "api/Menu/MenuListDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "menuId",
+        "Type": "System.Int32[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.MenuController",
     "Method": "UploadImage",
     "RelativePath": "api/Menu/UploadImage",
     "HttpMethod": "POST",
@@ -96,6 +207,38 @@
         "Name": "file",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.OrdersController",
+    "Method": "GetOrderList",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.OrdersController",
+    "Method": "AddOrder",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "order",
+        "Type": "Food_Delivery_App_Backend.DTO.OrderDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

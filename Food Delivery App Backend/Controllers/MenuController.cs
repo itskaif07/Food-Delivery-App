@@ -65,13 +65,34 @@ namespace Food_Delivery_App_Backend.Controllers
         {
             var menu = await _menuItemsRepository.MenuDetails(id);
 
-            if(menu == null)
+            if (menu == null)
             {
                 return BadRequest("Menu Not Found");
             }
 
             return Ok(menu);
         }
+
+        [HttpGet("MenuListDetails")]
+        public async Task<ActionResult> MenuListDetails([FromQuery] int[] menuId)
+        {
+            try
+            {
+                var menuList = await _menuItemsRepository.MenuListDetails(menuId);
+
+                if (menuList == null || !menuList.Any())
+                {
+                    return NotFound("Menu list is empty.");
+                }
+
+                return Ok(menuList);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = ex.Message });
+            }
+        }
+
 
 
         [HttpPut("{id}")]

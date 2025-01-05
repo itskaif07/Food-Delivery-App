@@ -30,7 +30,7 @@
 
                 <div class="w-full lg:w-11/12 flex flex-col items-start justify-center">
                     <input type="text" id="email" formControlName="email"
-                        class="outline-none border-2 w-full rounded  py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]"
+                        class="outline-none border-2 w-full rounded  py-2 pl-2 border-gray-200 focus:ring-[1px] focus:ring-[#232C3A] focus:border-[#232C3A]"
                         placeholder="Email">
 
                     @if (loginForm.get('email')?.invalid && loginForm.get('email')?.touched) {
@@ -99,6 +99,17 @@
         </div>
 
         <div class="w-full space-y-3 lg:mt-6 flex flex-col items-start justify-center">
+
+            @if(user?.fullName) {
+                <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+                    <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
+                        <h1 class="font-semibold">Name :</h1>
+                    </div>
+                    <div class="w-full lg:w-3/4 bg-slate-100 rounded-md py-3 px-4">
+                        <h1>{{ user?.fullName }}</h1>
+                    </div>
+                </div>
+                }
 
 
             @if(user?.displayName) {

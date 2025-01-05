@@ -68,6 +68,19 @@ namespace Food_Delivery_App_Backend.Repository
             return menu;
         }
 
+        public async Task<List<MenuItem>> MenuListDetails(int[] menuId)
+        {
+            var menuList = await _context.menuItems.Where(m => menuId.Contains(m.MenuId)).ToListAsync();
+
+            if (!menuList.Any())
+            {
+                throw new Exception("No menu items found for the given menu IDs.");
+            }
+
+            return menuList;
+        }
+
+
 
         public async Task EditMenu(int id, MenuItem obj)
         {

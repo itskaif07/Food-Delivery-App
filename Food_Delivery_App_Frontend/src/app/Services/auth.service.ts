@@ -22,12 +22,12 @@ export class AuthService implements OnDestroy {
     })
   }
 
-  signUp(email: string, password: string, username: string, phone: string = '', address: string = '', pincode: string): Observable<void> {
+  signUp(fullName:string, email: string, password: string, username: string, phone: string = '', address: string = '', pincode: string): Observable<void> {
     const promise = createUserWithEmailAndPassword(this.auth, email, password)
       .then(response => {
         updateProfile(response.user, { displayName: username })
           .then(() => {
-            return this.saveUserDetails(response.user.uid, address, phone, pincode)
+            return this.saveUserDetails(response.user.uid, fullName, address, phone, pincode)
           })
       })
       .catch(error => {
@@ -44,10 +44,11 @@ export class AuthService implements OnDestroy {
 
   }
 
-  saveUserDetails(uid: string, address: string, phone: string, pincode: string): Promise<void> {
+  saveUserDetails(uid: string, fullName:string, address: string, phone: string, pincode: string): Promise<void> {
     const userRef = doc(this.fireStore, 'users', uid)
 
     return setDoc(userRef, {
+      fullName: fullName,
       address: address,
       phone: phone,
       pincode: pincode

@@ -24,6 +24,23 @@
 
         <div class="w-full lg:w-11/12 space-x-4 flex items-start justify-start">
 
+          <div class="w-full flex flex-col items-start justify-center">
+            <input type="text" id="name" formControlName="name"
+              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]" placeholder="Full name">
+
+              @if (signUpForm.get('name')?.invalid && signUpForm.get('name')?.touched) {
+                <div class="text-red-500">
+                  @if (signUpForm.get('name')?.errors?.['required']) {
+                    <small>name is required</small>
+                  }
+                </div>
+              }
+          </div>
+
+        </div>
+
+        <div class="w-full lg:w-11/12 space-x-4 flex items-start justify-start">
+
           <div class="lg:w-1/2 flex flex-col items-start justify-center">
             <input type="text" id="username" formControlName="username"
               class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]" placeholder="Username">
@@ -35,6 +52,9 @@
               }
               @if(signUpForm.get('username')?.errors?.['minlength']){
               <small>Minimum 6 characters required</small>
+              }
+              @if(signUpForm.get('username')?.errors?.['maxlength']){
+              <small>Maximum 10 characters allowed</small>
               }
             </div>
             }

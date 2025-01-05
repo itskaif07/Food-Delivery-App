@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S+dE5dy5TgIPKb5En80YbWhpeN0DBg2oKZkIQR4ysaQ=",
+  "Hash": "+zYGTakaoCnInn2mqRvPyeytAAxgdLuQ7GrZpAQzutg=",
   "Source": "Food Delivery App Backend",
   "BasePath": "_content/Food Delivery App Backend",
   "Mode": "Default",
@@ -246,6 +246,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\11a7da6b-7d43-4e24-9293-46a6d02fe925.jpg"
+    },
+    {
+      "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\1206ce52-af20-4e0d-8210-2149afa39acc.webp",
+      "SourceId": "Food Delivery App Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\",
+      "BasePath": "_content/Food Delivery App Backend",
+      "RelativePath": "images/1206ce52-af20-4e0d-8210-2149afa39acc#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2w58a0errs",
+      "Integrity": "0rmURJte8bIx1fkK9fRPXiHESe++Jo83RucCmA/N3Ko=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1206ce52-af20-4e0d-8210-2149afa39acc.webp"
     },
     {
       "Identity": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\13228ce4-91bf-4ad2-b1b3-a3e052b9e8eb.jpg",
@@ -3542,6 +3563,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-4ugHaFo69Beua6FUafZU+vga0oQ43Hik4hEzC1UPCk8="
+        }
+      ]
+    },
+    {
+      "Route": "images/1206ce52-af20-4e0d-8210-2149afa39acc.2w58a0errs.webp",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\1206ce52-af20-4e0d-8210-2149afa39acc.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "69124"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0rmURJte8bIx1fkK9fRPXiHESe++Jo83RucCmA/N3Ko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Jan 2025 18:38:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2w58a0errs"
+        },
+        {
+          "Name": "label",
+          "Value": "images/1206ce52-af20-4e0d-8210-2149afa39acc.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0rmURJte8bIx1fkK9fRPXiHESe++Jo83RucCmA/N3Ko="
+        }
+      ]
+    },
+    {
+      "Route": "images/1206ce52-af20-4e0d-8210-2149afa39acc.webp",
+      "AssetFile": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\wwwroot\\images\\1206ce52-af20-4e0d-8210-2149afa39acc.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "69124"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0rmURJte8bIx1fkK9fRPXiHESe++Jo83RucCmA/N3Ko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 04 Jan 2025 18:38:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0rmURJte8bIx1fkK9fRPXiHESe++Jo83RucCmA/N3Ko="
         }
       ]
     },

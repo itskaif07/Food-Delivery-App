@@ -9,6 +9,7 @@ wwwroot\images\0e86d7a6-76f9-4c5b-b613-46bb8044edd1.jpg
 wwwroot\images\0f9167a5-3c4b-47b7-8567-409ee27cc9fb.webp
 wwwroot\images\0fa9c7b8-56ff-41c6-adfb-5838da74c355.webp
 wwwroot\images\11a7da6b-7d43-4e24-9293-46a6d02fe925.jpg
+wwwroot\images\1206ce52-af20-4e0d-8210-2149afa39acc.webp
 wwwroot\images\13228ce4-91bf-4ad2-b1b3-a3e052b9e8eb.jpg
 wwwroot\images\18106ebc-c104-4f78-98d6-34ecd2f0da0a.jpg
 wwwroot\images\1c593793-efd5-460f-8617-51917ba32f58.jpeg

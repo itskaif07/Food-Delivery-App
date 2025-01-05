@@ -19,7 +19,7 @@
     <div class="space-y-16 flex flex-col items-center justify-center w-full">
 
       <div
-        class="w-full h-full flex items-start pl-3 justify-center sm:flex-row sm:space-x-8 sm:space-y-0 flex-col space-x-0 space-y-8 ">
+        class="w-full h-full flex items-start pl-3 justify-center sm:space-x-8 sm:space-y-0 flex-col space-x-0 space-y-8 ">
 
         <a [routerLink]="'home'" (click)="onRouteClick()"
           class="w-4/5 py-3 px-3 text-left shadow-xl flex items-center justify-start hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
@@ -32,9 +32,14 @@
           <h1 [ngClass]="{'font-semibold': isActiveRoute('/restaurants-list')}">Restaurants</h1>
         </a>
 
-        <div [routerLink]="'cart'" (click)="onRouteClick()"
+        <div [routerLink]="'cart-list'" (click)="onRouteClick()"
           class="w-4/5 py-3 px-3 text-left shadow-xl flex items-center justify-start hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
-          <a [ngClass]="{'font-semibold': isActiveRoute('/cart')}">Cart</a>
+          <a [ngClass]="{'font-semibold': isActiveRoute('/cart-list')}">Cart</a>
+        </div>
+
+        <div [routerLink]="'order-list'" (click)="onRouteClick()"
+          class="w-4/5 py-3 px-3 text-left shadow-xl flex items-center justify-start hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
+          <a [ngClass]="{'font-semibold': isActiveRoute('/order-list')}">Order</a>
         </div>
 
         <a [routerLink]="'log-in'" (click)="onRouteClick()"
@@ -50,13 +55,13 @@
 
 </div>
 
-<nav class="h-24 w-full flex items-center justify-between sm:px-12 px-2">
+<nav class="h-24 w-full flex items-center justify-between  px-2">
   <div class="flex items-center justify-start space-x-4 w-full sm:w-1/2 lg:w-1/4 cursor-pointer">
     <h1 class="text-xl">🍔🍕</h1>
     <h1 class="font-bold text-lg" [routerLink]="'home'">FoodieFusion</h1>
   </div>
 
-  <div class="flex items-center justify-end lg:justify-between space-x-8 w-full sm:w-3/4 lg:w-2/3 xl:w-1/2">
+  <div class="flex items-center justify-end lg:justify-between space-x-8 w-full sm:w-3/4 lg:w-[80%] 2xl:w-3/5">
 
     <img src="assets/menu.png" alt="" class="w-8 sm:hidden" (click)="onMenuClick()">
 
@@ -69,30 +74,40 @@
     </div>
 
 
-    <div class="hidden lg:flex items-center justify-center w-full h-full space-x-10">
+    <div class="hidden lg:flex items-center justify-end w-full h-full ">
 
-      <div class="flex items-center justify-center py-2 h-full shadow-xl pl-2 rounded-md space-x-3 w-3/5 border-t-2">
-        <img src="assets/search.png" alt="not available" class="w-6">
-        <input type="text" class="w-full h-full outline-none text-sm">
-      </div>
-
-      <div
-        class="w-14 h-14 rounded-full shadow-xl flex items-center justify-center  hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
-        <img src="assets/trolley.png" alt="" class="w-5">
+      <div class="w-3/5">
+        <div class="flex items-center justify-center py-2 h-full shadow-xl pl-2 rounded-md space-x-3 w-11/12 border-t-2">
+          <img src="assets/search.png" alt="not available" class="w-6">
+          <input type="text" class="w-full h-full outline-none text-sm">
+        </div>
       </div>
 
-      @if(!authService.isLoggedIn()){
-      <div [routerLink]="'log-in'"
-        class="w-14 h-14 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
-        <img src="assets/login.png" alt="" class="w-6">
+      <div class="flex items-center justify-between w-2/5">
+
+        <div [routerLink]="'cart-list'"
+          class="w-12 h-12 rounded-full shadow-xl flex items-center justify-center  hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
+          <img src="assets/cart.png" alt="" class="w-6">
+        </div>
+
+        <div [routerLink]="'order-list'"
+          class="w-12 h-12 rounded-full shadow-xl flex items-center justify-center  hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
+          <img src="assets/trolley.png" alt="" class="w-5">
+        </div>
+
+        @if(!authService.isLoggedIn()){
+        <div [routerLink]="'log-in'"
+          class="w-12 h-12 rounded-full shadow-xl flex items-center justify-center hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
+          <img src="assets/login.png" alt="" class="w-6">
+        </div>
+        }
+        @else {
+        <div [routerLink]="'log-in'"
+          class=" flex items-center justify-center cursor-pointer transition-all duration-150 ease-in">
+          <h1 class="font-semibold">{{authService.userSubject.value.displayName}}</h1>
+        </div>
+        }
       </div>
-      }
-      @else {
-      <div [routerLink]="'log-in'"
-        class=" flex items-center justify-center cursor-pointer transition-all duration-150 ease-in">
-        <h1 class="font-semibold">{{authService.userSubject.value.displayName}}</h1>
-      </div>
-      }
     </div>
 
   </div>

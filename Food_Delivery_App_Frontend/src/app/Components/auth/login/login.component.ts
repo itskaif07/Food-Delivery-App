@@ -26,23 +26,21 @@ export class LoginComponent implements OnInit, OnDestroy {
   user: any = null;
   loginForm: FormGroup = new FormGroup({})
 
-  userSubscription: Subscription | null = null; 
+  userSubscription: Subscription | null = null;
 
   ngOnInit(): void {
     this.setFormState();
-    
+
     this.userSubscription = this.authService.user$.subscribe((user) => {
-      console.log('User from authService:', user);
       if (user) {
         this.user = user;
         this.authService.fetchUserData(user)
       } else {
         this.user = null;
       }
-      console.log('Updated user:', this.user);
     });
-  }  
-  
+  }
+
 
   setFormState() {
     this.loginForm = this.fb.group({

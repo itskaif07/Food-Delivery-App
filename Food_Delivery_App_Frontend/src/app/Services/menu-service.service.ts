@@ -30,6 +30,10 @@ export class MenuServiceService {
   menuDetails(id:number){
     return this.http.get(`${this.apiUrl}/menu/${id}`)
   }
+
+  menuItemList(url:string): Observable<any> {
+    return this.http.get(url);
+  }
   
 
   editMenu(id:number, obj:any):Observable<any>{

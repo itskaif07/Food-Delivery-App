@@ -25,6 +25,10 @@ namespace Food_Delivery_App_Backend.Model
 
         public ICollection<MenuItem> MenuItems { get; set; } = new List<MenuItem>();
 
+        public ICollection<Cart>? Cart { get; set; }
+
+        public ICollection<Order>? Order { get; set; }
+
     }
 
 

@@ -68,29 +68,43 @@
                 </div>
 
             </div>
-
             <div class="w-full h-full space-y-4 pl-4 py-3 border rounded">
-                <div class="w-full h-full space-y-2">
-                    <label for="category" class="text-sm text-gray-500">Select Category</label>
-                    <select id="category" name="category" formControlName="category"
-                        class="w-[98%] h-full py-1 placeholder:text-sm outline-none border rounded">
-                        <option value="Appetizers">Appetizers / Starters</option>
-                        <option value="Main Course">Main Course</option>
-                        <option value="Desserts">Desserts</option>
-                        <option value="Drinks">Drinks / Beverages</option>
-                        <option value="Salads">Salads</option>
-                        <option value="Sides">Sides</option>
-                        <option value="Combos">Combos / Meal Deals</option>
-                        <option value="Vegetarian">Vegetarian</option>
-                        <option value="Non Vegetarian">Non-Vegetarian</option>
-                        <option value="Specials">Specials / Chef's Special</option>
-                    </select>
-                    @if(menuForm.get('category')?.invalid && menuForm.get('category')?.touched){
-                    <div class="text-red-500 text-xs">
-                        Category is required.
-                    </div>
-                    }
+
+            <div class="w-full h-full flex items-start justify-center flex-col space-y-2">
+                <label for="discount" class="text-sm text-gray-500 ">Discount </label>
+                <input type="number" formControlName="discount"
+                    class="lg:w-11/12 w-full h-8 placeholder:text-sm outline-none border rounded text-sm pl-2">
+                @if(menuForm.get('discount')?.invalid && menuForm.get('discount')?.touched){
+                <div class="text-red-500 text-xs">
+                    Discount must be a valid number.
                 </div>
+                }
+            </div>
+</div>
+
+        </div>
+
+        <div class="w-full sm:w-4/5 md:3/5 lg:w-3/5 h-full space-y-4 pl-4 py-3 border rounded">
+            <div class="w-full h-full space-y-2">
+                <label for="category" class="text-sm text-gray-500">Select Category</label>
+                <select id="category" name="category" formControlName="category"
+                    class="w-[98%] h-full py-1 placeholder:text-sm outline-none border rounded">
+                    <option value="Appetizers">Appetizers / Starters</option>
+                    <option value="Main Course">Main Course</option>
+                    <option value="Desserts">Desserts</option>
+                    <option value="Drinks">Drinks / Beverages</option>
+                    <option value="Salads">Salads</option>
+                    <option value="Sides">Sides</option>
+                    <option value="Combos">Combos / Meal Deals</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Non Vegetarian">Non-Vegetarian</option>
+                    <option value="Specials">Specials / Chef's Special</option>
+                </select>
+                @if(menuForm.get('category')?.invalid && menuForm.get('category')?.touched){
+                <div class="text-red-500 text-xs">
+                    Category is required.
+                </div>
+                }
             </div>
         </div>
 

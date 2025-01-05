@@ -37,6 +37,8 @@ builder.Services.AddCors(options =>
 builder.Services.AddScoped<RestaurantRepository>();
 builder.Services.AddScoped<MenuItemsRepository>();
 builder.Services.AddScoped<FirebaseService>();
+builder.Services.AddScoped<CartRepository>();
+builder.Services.AddScoped<OrderRepository>();
 
 var host = WebApplication.CreateBuilder(args);
 

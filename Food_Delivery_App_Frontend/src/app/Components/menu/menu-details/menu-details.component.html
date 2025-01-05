@@ -1,6 +1,5 @@
-<div class="flex items-center justify-between w-full px-12 max-[400px]:px-2">
-    <a [routerLink]="['/menu-list', restaurentId]"
-        class="flex items-center justify-center w-14 h-14 rounded-lg border">
+<div class="flex items-center justify-between w-full px-2 ">
+    <a [routerLink]="['/menu-list', restaurentId]" class="flex items-center justify-center w-14 h-14 rounded-lg border">
         <img src="assets/back.png" alt="back" class="w-10">
     </a>
 
@@ -8,47 +7,79 @@
         <h1 class="text-2xl font-bold text-[#222222] tracking-wide text-center sm:block hidden">{{menu.name}}</h1>
     </div>
 
-
+    @if(isAdmin){
     <!-- Responsive buttons container -->
-    <div class="z-30 flex items-center justify-center space-x-2 sm:space-x-4 min-[350px]:flex-row flex-col">
+    <div class="z-30 flex items-center justify-center space-x-2 sm:space-x-4 min-[250px]:flex-row flex-col">
         <!-- Delete Button -->
-        <div (click)="RedirectToDelete()" class="cursor-pointer w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-red-500 hover:bg-red-600 transition-all duration-200 ease-in center mb-2 sm:mb-0">
+        <div (click)="RedirectToDelete()"
+            class="cursor-pointer w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-red-500 hover:bg-red-600 transition-all duration-200 ease-in center mb-2 sm:mb-0">
             <img src="assets/delete.png" alt="Delete" class="w-8 sm:w-9">
         </div>
 
         <!-- Edit Button -->
-        <div (click)="RedirectToEdit()" class="cursor-pointer w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-blue-500 hover:bg-blue-600 transition-all duration-200 ease-in center">
+        <div (click)="RedirectToEdit()"
+            class="cursor-pointer w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-blue-500 hover:bg-blue-600 transition-all duration-200 ease-in center">
             <img src="assets/edit.png" alt="Edit" class="w-7 sm:w-8">
         </div>
     </div>
+    }
+    @else {
+    <div></div>
+    }
+
+
 </div>
 
-<div class="w-full h-screen px-4 flex flex-col md:flex-row justify-center items-center md:items-start mt-10 md:mt-20 space-y-6 md:space-x-10">
+<div
+    class="w-full h-screen max-[400px]:px-1 px-4 flex flex-col md:flex-row justify-between items-center md:items-start  md:mt-20 space-y-6 md:space-x-10">
     <!-- Image Section -->
-    <div class="max-[400px]:w-full w-11/12 lg:w-2/5 h-80 bg-gray-100 shadow-md rounded overflow-hidden">
-        <img 
-            src="{{menu.imageUrl ? menu.imageUrl : 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg'}}" 
-            alt="Menu Image" 
-            class="w-full h-full object-cover">
+    <div class="w-full md:w-[45%] h-1/2 space-y-6 flex flex-col items-start justify-center">
+        <div class="w-full h-[70%] rounded-md">
+            <div class="h-full w-full rounded-md">
+                <img src="{{menu.imageUrl ? menu.imageUrl : 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg'}}"
+                    alt="Menu Image" class="w-full h-full object-contain rounded-md">
+            </div>
+        </div>
+
+        <div
+            class="max-[400px]:w-[99%] max-[400px]:flex-col w-full h-[13%] flex items-center justify-center max-[400px]:space-x-0 max-[400px]:space-y-2 space-x-5">
+            @if (menu.isAvailable) {
+            <div (click)="redirectOrder()"
+                class="flex items-center justify-center cursor-pointer w-full lg:w-1/2 h-full custom-orange-bg text-white max-[400px]:py-2">
+                <h1 class="font-bold max-sm:text-sm text-center">Order Now</h1>
+            </div>
+
+            <div (click)="AddCart()"
+                class="flex items-center cursor-pointer justify-center w-full lg:w-1/2 h-full custom-blue-bg text-white max-[400px]:py-2">
+                <h1 class="font-bold max-sm:text-sm text-center">Add to Cart</h1>
+            </div>
+            }
+        </div>
     </div>
 
     <!-- Details Section -->
-    <div class="max-[400px]:w-full w-11/12 lg:w-2/5 flex flex-col space-y-4">
+    <div class="w-full md:w-1/2 flex flex-col space-y-4 items-start text-left">
         <div class="block sm:hidden">
             <h1 class="font-semibold text-gray-700">Name:</h1>
             <p class="text-gray-600">{{ menu.name }}</p>
         </div>
 
-        @if(menu.description){   
-            <div>
-                <h1 class="font-semibold text-gray-700">Description:</h1>
-                <p class="text-gray-600">{{ menu.description }}</p>
-            </div>
+        @if(menu.description) {
+        <div>
+            <h1 class="font-semibold text-gray-700">Description:</h1>
+            <p class="text-gray-600">{{ menu.description }}</p>
+        </div>
         }
 
         <div class="flex items-center space-x-2">
             <h1 class="font-semibold text-gray-700">Price:</h1>
-            <p class="text-green-600 font-medium">₹ {{ menu.price }}</p>
+            @if(menu.discount > 0){
+                <p class="font-medium">₹ {{menu.discountedPrice | number:'1.0-0'}} <span class="text-red-500 line-through">{{menu.price}} </span> <span class="text-green-600 ">{{menu.discount}}% off</span></p>
+
+            }
+            @else {
+                <p class="text-green-600 font-medium">₹ {{menu.price}}</p>
+            }
         </div>
 
         <div class="flex items-center space-x-2">
@@ -57,10 +88,16 @@
         </div>
 
         <div class="flex items-center space-x-2">
-            <h1 class="font-semibold text-gray-700">Is Available:</h1>
+            <h1 class="font-semibold text-gray-700">Stock:</h1>
             <p class="{{ menu.isAvailable ? 'text-green-500' : 'text-red-500' }}">
-                {{ menu.isAvailable ? 'Available' : 'Unavailable' }}
+                {{ menu.isAvailable ? 'In Stock' : 'Out of Stock' }}
             </p>
         </div>
+
+        <div class="flex items-center space-x-2">
+            <h1 class="font-semibold text-gray-700">Will be Delivered at:</h1>
+            <p class="text-green-600 font-medium"> {{ deliveryTime }}</p>
+        </div>
+
     </div>
 </div>

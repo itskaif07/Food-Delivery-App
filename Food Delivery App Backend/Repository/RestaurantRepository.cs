@@ -23,10 +23,6 @@ namespace Food_Delivery_App_Backend.Repository
 
         public async Task AddRestaurant(Restaurant restaurant)
         {
-            if (restaurant == null)
-            {
-                throw new ArgumentNullException(nameof(restaurant), "Restaurant object cannot be null");
-            }
 
             if (string.IsNullOrEmpty(restaurant.ImageUrl))
             {

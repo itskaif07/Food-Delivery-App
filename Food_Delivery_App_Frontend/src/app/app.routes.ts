@@ -12,6 +12,9 @@ import { RestaurantDetailsComponent } from './Components/restaurant/restaurant-d
 import { MenuDetailsComponent } from './Components/menu/menu-details/menu-details.component';
 import { SignupComponent } from './Components/auth/signup/signup.component';
 import { LoginComponent } from './Components/auth/login/login.component';
+import { CartListComponent } from './Components/cart/cart-list/cart-list.component';
+import { OrderListComponent } from './Components/order/order-list/order-list.component';
+import { AddOrderComponent } from './Components/order/add-order/add-order.component';
 
 
 export const routes: Routes =
@@ -82,6 +85,24 @@ export const routes: Routes =
         {
             path:"log-in",
             component:LoginComponent
+        },
+
+// Cart
+
+        {
+            path:"cart-list",
+            component:CartListComponent
+        },
+
+// Order
+
+        {
+            path:"order-list",
+            component:OrderListComponent
+        },
+        {
+            path:"add-order/:menuId",
+            component:AddOrderComponent
         }
 
     ];

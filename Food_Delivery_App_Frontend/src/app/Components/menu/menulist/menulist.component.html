@@ -13,10 +13,15 @@
                     class="text-[#EA7926]">Menu</span></h1>
         </div>
 
+        @if(isAdmin){
         <a [routerLink]="['/add-menu', restaurentId]"
             class=" flex items-center justify-center w-12 h-12 rounded-full shadow-xl text-2xl hover:bg-gray-300">
             <h1>+</h1>
         </a>
+        }
+        @else {
+        <div></div>
+        }
 
     </div>
 
@@ -26,7 +31,7 @@
         @if(menuList.length > 0){
         @for (menu of menuList; track $index) {
 
-        <div [routerLink]="['/menu-details', restaurentId, menu.menuId]"  id="box"
+        <div [routerLink]="['/menu-details', restaurentId, menu.menuId]" id="box"
             class="cursor-pointer transition-all duration-200 ease-in-out hover:shadow-md border w-11/12 sm:w-4/5 md:w-3/5 lg:w-[30%] xl:w-[24%]  h-[50vh] flex items-center lg:items-start justify-center flex-col rounded space-y-4">
             <div class="w-full h-3/4">
                 <img [src]="menu.imageUrl ? menu.imageUrl : 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg'"
