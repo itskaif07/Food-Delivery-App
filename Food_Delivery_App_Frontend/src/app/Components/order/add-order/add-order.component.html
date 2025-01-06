@@ -1,4 +1,5 @@
-<form [formGroup]="orderForm" (ngSubmit)="onSubmit()"class="flex items-center justify-between w-full h-[87vh] overflow-y-hidden px-2">
+<form [formGroup]="orderForm" (ngSubmit)="onSubmit()"
+    class="flex items-center justify-between w-full h-[87vh] overflow-y-hidden px-2">
 
     <div class="w-1/2 h-full flex flex-col items-start justify-start pl-16 space-y-10">
 
@@ -10,7 +11,7 @@
         <div class="flex items-start justify-start flex-col w-full space-y-8">
 
             <div class="flex items-start justify-start flex-col w-4/5 h-16 space-y-2">
-                <label for="" class="">Full name <span class="text-red-500">*</span></label>
+                <label for="" class="">Full name</label>
                 <input type="text" class="w-full h-full border border-gray-200 outline-none text-sm pl-1 rounded-md"
                     formControlName="name">
             </div>
@@ -18,13 +19,32 @@
             <div class="flex items-start justify-start flex-col w-4/5 h-16 space-y-2">
                 <label for="" class="">Phone number <span class="text-red-500">*</span></label>
                 <input type="text" class="w-full h-full border border-gray-200 outline-none text-sm pl-1 rounded-md"
-                formControlName="phone">
+                    formControlName="phone">
+
+                @if (orderForm.get('phone')?.invalid && orderForm.get('phone')?.touched) {
+                <div class="text-red-500">
+                    @if (orderForm.get('phone')?.errors?.['pattern']) {
+                    <small>Enter a valid 10-digit phone number</small>
+                    }
+                    @if (orderForm.get('phone')?.errors?.['required']) {
+                    <small>Phone number is required</small>
+                    }
+                </div>
+                }
             </div>
 
             <div class="flex items-start justify-start flex-col w-4/5 h-16 space-y-2">
                 <label for="" class="">Email</label>
                 <input type="email" class="w-full h-full border border-gray-200 outline-none text-sm pl-1 rounded-md"
-                formControlName="email">
+                    formControlName="email">
+
+                @if (orderForm.get('email')?.invalid && orderForm.get('email')?.touched) {
+                <div class="text-red-500">
+                    @if (orderForm.get('email')?.errors?.['email']) {
+                    <small>Enter a valid email</small>
+                    }
+                </div>
+                }
             </div>
 
             <div class="flex items-start justify-start flex-col w-4/5 space-y-2">
@@ -32,6 +52,13 @@
                 <textarea rows="3"
                     class="w-full h-full border border-gray-200 outline-none text-sm pl-1 resize-none rounded-md"
                     formControlName="address"></textarea>
+                @if (orderForm.get('address')?.invalid && orderForm.get('address')?.touched) {
+                <div class="text-red-500">
+                    @if (orderForm.get('address')?.errors?.['required']) {
+                    <small>Address is required</small>
+                    }
+                </div>
+                }
             </div>
 
 
@@ -39,6 +66,17 @@
                 <label for="" class="">Pincode <span class="text-red-500">*</span></label>
                 <input type="text" class="w-full h-full border border-gray-200 outline-none text-sm pl-1 rounded-md"
                     formControlName="pincode">
+                @if (orderForm.get('pincode')?.invalid && orderForm.get('pincode')?.touched) {
+                <div class="text-red-500">
+                    @if (orderForm.get('pincode')?.errors?.['required']) {
+                    <small>Pincode is required</small>
+                    }
+                    @if (orderForm.get('pincode')?.errors?.['pattern']) {
+                    <small>Enter a valid 6-digit pincode</small>
+                    }
+                </div>
+                }
+
             </div>
 
             <button type="submit"
@@ -55,8 +93,8 @@
         <div class="w-full h-1/3 flex items-center justify-between space-x-10">
 
             <div class="w-1/2 h-full">
-                <img src="{{menuDetails.imageUrl || 'assets/noImage.jpg'}}"
-                    alt="image" class="w-full h-full object-cover origin-center">
+                <img src="{{menuDetails.imageUrl || 'assets/noImage.jpg'}}" alt="image"
+                    class="w-full h-full object-cover origin-center">
             </div>
 
             <div class="w-1/2 h-full flex items-center flex-col justify-between space-y-4">

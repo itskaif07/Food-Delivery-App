@@ -41,6 +41,7 @@ export class AddOrderComponent implements OnInit {
   subTotal: number = 0
   Total: number = 0
   deliveryTime: any = ''
+  paramQuantity: number = 0
 
   //form
 
@@ -63,7 +64,9 @@ export class AddOrderComponent implements OnInit {
   ngOnInit(): void {
     this.getuser()
     this.getParams()
+    this.getQuantity()
     this.setFormState()
+    console.log('Route params:', this.activeRoute.snapshot.params);
     this.getMenuDetails()
     this.getDeliveryTime()
   }
@@ -71,7 +74,6 @@ export class AddOrderComponent implements OnInit {
   getuser() {
     const currentUser = this.authService.userSubject.value;
     if (currentUser) {
-      console.log(currentUser)
       this.uid = currentUser.uid
       this.name = currentUser.fullName || ''
       this.username = currentUser.displayName
@@ -90,34 +92,41 @@ export class AddOrderComponent implements OnInit {
       name: [this.name],
       username: [this.username, Validators.required],
       address: [this.address, Validators.required],
-      phone: [this.phone, Validators.required],
+      phone: [this.phone, [Validators.required, Validators.pattern('^[0-9]{6}$')]],
       email: [this.email, Validators.email],
-      pincode: [this.pincode, [Validators.minLength(6), Validators.maxLength(6)]],
+      pincode: [this.pincode, Validators.pattern('^[0-9]{6}$')],
       quantity: [this.currentQuantity, [Validators.required, Validators.minLength(1)]]
     })
   }
 
   getParams() {
     this.activeRoute.paramMap.subscribe(params => {
-      this.menuItemId = +params.get('menuId')!
+      console.log("Full route params (paramMap):", params);  // Logs all route params
+      this.menuItemId = +params.get('menuId')!;
       this.restaurentId = +params.get('restaurentId')!
-    })
+    });
   }
 
-  getDeliveryTime(){
+  getQuantity() {
+    this.activeRoute.paramMap.subscribe(params => {
+      const quantity = params.get('quantity?'); 
+      this.paramQuantity = quantity ? +quantity : 1;
+      this.currentQuantity = this.paramQuantity
+      console.log(this.paramQuantity)
+    });
+  }
+
+
+  getDeliveryTime() {
     const now = new Date();
     now.setMinutes(now.getMinutes() + 30)
-    console.log(now)
     this.deliveryTime = now.toISOString();
-    console.log(this.deliveryTime)
   }
 
   getMenuDetails() {
-
     this.menuService.menuDetails(this.menuItemId).subscribe((res: any) => {
       if (res) {
         this.menuDetails = res
-        console.log(this.menuDetails.name)
         this.subTotal = this.menuDetails.price - (this.menuDetails.price * this.menuDetails.discount / 100)
         this.Total = this.subTotal * this.currentQuantity
       }
@@ -161,7 +170,6 @@ export class AddOrderComponent implements OnInit {
     }
 
     this.orderService.addOrder(orderObj).subscribe((res: any) => {
-      console.log("order added")
       this.router.navigateByUrl('/order-list')
     }, error => {
       console.log(error)

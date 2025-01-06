@@ -2,13 +2,14 @@ import { Component, inject, OnInit } from '@angular/core';
 import { CartService } from '../../../Services/cart.service';
 import { AuthService } from '../../../Services/auth.service';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { MenuServiceService } from '../../../Services/menu-service.service';
 import { LoaderService } from '../../../Shared/service/loader.service';
+import { OrderService } from '../../../Services/order.service';
 
 @Component({
   selector: 'app-cart-list',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './cart-list.component.html',
   styleUrl: './cart-list.component.css'
 })
@@ -16,14 +17,22 @@ export class CartListComponent implements OnInit {
 
   cartService = inject(CartService)
   authService = inject(AuthService)
+  orderService = inject(OrderService)
   loader = inject(LoaderService)
+  router = inject(Router)
   menuService = inject(MenuServiceService)
-  userId: string = ''
   menuIds: number[] = []
   cartList: any = []
   menuItemList: any = []
   cartItemsWithMenu: any[] = [];
-  router = inject(Router)
+
+  userId: string = ''
+  name: string = ''
+  username: string = ''
+  phone: string = ''
+  email: string = ''
+  address: string = ''
+  pincode: string = ''
 
   ngOnInit(): void {
     this.getuser()
@@ -34,6 +43,12 @@ export class CartListComponent implements OnInit {
     const currentUser = this.authService.userSubject.value;
     if (currentUser) {
       this.userId = currentUser.uid
+      this.name = currentUser.fullName || ''
+      this.username = currentUser.displayName
+      this.address = currentUser.address || ''
+      this.phone = currentUser.phone || ''
+      this.email = currentUser.email
+      this.pincode = currentUser.pincode
       console.log(currentUser)
       this.CartList()
     }
@@ -43,6 +58,7 @@ export class CartListComponent implements OnInit {
   }
 
   CartList() {
+    this.loader.showLoader()
     this.cartService.getCartList(this.userId).subscribe((res: any) => {
       this.cartList = res;
       this.menuIds = this.cartList.map((item: { menuItemId: any; }) => item.menuItemId);
@@ -53,12 +69,15 @@ export class CartListComponent implements OnInit {
       else {
         console.log("No menuIds found.");
       }
+      this.loader.hideLoader()
     }, error => {
       console.log("error", error)
+      this.loader.hideLoader()
     })
   }
 
   getMenuItem() {
+    this.loader.showLoader()
     const url = `https://localhost:7205/api/Menu/MenuListDetails?${this.menuIds.map(id => `menuId=${id}`).join('&')}`;
 
     this.menuService.menuItemList(url).subscribe((res: any) => {
@@ -67,8 +86,10 @@ export class CartListComponent implements OnInit {
         const menuItem = this.menuItemList.find((item: any) => item.menuId === cartItem.menuItemId);
         return { ...cartItem, menuItem }
       })
+      this.loader.hideLoader()
     }, error => {
       console.log("error", error)
+      this.loader.hideLoader()
     })
   }
 
@@ -120,4 +141,5 @@ export class CartListComponent implements OnInit {
       this.loader.hideLoader()
     })
   }
+
 }

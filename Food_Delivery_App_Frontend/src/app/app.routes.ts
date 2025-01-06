@@ -29,8 +29,8 @@ export const routes: Routes =
             component: HomeComponent
         },
 
-// Restaurent
-        
+        // Restaurent
+
         {
             path: "restaurants-list",
             component: RestaurantslistComponent
@@ -52,7 +52,7 @@ export const routes: Routes =
             component: DeleterestaurantComponent
         },
 
-// Menu
+        // Menu
 
         {
             path: "menu-list/:restaurentId",
@@ -76,33 +76,32 @@ export const routes: Routes =
         },
 
 
-//Authentication
+        //Authentication
 
         {
-            path:"sign-up",
-            component:SignupComponent,
+            path: "sign-up",
+            component: SignupComponent,
         },
         {
-            path:"log-in",
-            component:LoginComponent
+            path: "log-in",
+            component: LoginComponent
         },
 
-// Cart
+        // Cart
 
         {
-            path:"cart-list",
-            component:CartListComponent
+            path: "cart-list",
+            component: CartListComponent
         },
 
-// Order
+        // Order
 
         {
-            path:"order-list",
-            component:OrderListComponent
+            path: "order-list",
+            component: OrderListComponent
         },
-        {
-            path:"add-order/:menuId/:restaurentId",
-            component:AddOrderComponent
-        }
+        { path: 'add-order/:menuId/:restaurentId/:quantity?', component: AddOrderComponent },
+        { path: 'add-order/:menuId/:restaurentId', component: AddOrderComponent },
+
 
     ];
