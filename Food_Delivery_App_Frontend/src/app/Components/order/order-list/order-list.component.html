@@ -1,9 +1,45 @@
-@if (orderList.length > 0) {
+@if (orderList.length > 0)
+{
+<div class="w-full h-full flex items-start justify-between px-4 ">
+
+    <div class="w-[98%] md:w-11/12 lg:w-3/4 h-full flex items-center justify-start flex-wrap space-y-4 py-10">
+        @for (item of orderList; track $index) {
+        <div
+            class="w-full max-[400px]:h-full h-60 border-2 rounded shadow-lg flex max-[400px]:flex-col items-start justify-start max-[400px]:space-x-2 space-x-8">
+            <div class="w-full lg:w-1/2 h-full">
+                <img src="{{item.itemImage || 'assets/noImage.jpg'}}" alt=""
+                    class="w-full h-full object-cover object-center">
+            </div>
+            <div
+                class="py-2 w-full lg:w-1/2  h-full flex items-start justify-between flex-col max-[400px]:space-y-2 text-sm max-[400px]:py-6">
+                <p class="font-medium">{{item.itemName}}</p>
+                <p class="font-medium">Quantity: {{item.quantity}}</p>
+                <p class="font-medium ">Total Price: <span class="text-green-600">₹ {{item.price *
+                        item.quantity}}</span></p>
+                <p class="font-medium">Delivery at: {{ DeliveryTime(item.deliveryTime) }}</p>
+                <p class="font-medium overflow-clip">Delivery address: {{ item.address + ', ' + item.pincode }}</p>
+                <p class="font-medium">Order Status: <span class="custom-orange-text">{{item.orderStatus}}</span> </p>
+            </div>
+        </div>
+        }
+    </div>
+
+    <div class="hidden lg:flex w-[22%] h-full py-10 flex-col items-start justify-start">
+        <div class="w-full h-3 custom-blue-bg"></div>
+        <div class="w-full h-full border border-black py-4 px-3 space-y-2">
+           <p class="font-medium text-sm">Total Items: <span>{{TotalItems}}</span></p>
+           <p class="font-medium text-sm">Total Amount: <span class="text-green-600">₹ {{totalAmount}}</span></p>
+        </div>
+    </div>
+</div>
+
 
 }
 @else {
-    <div class="w-full h-[80vh] flex items-center justify-center space-y-10 flex-col">
-        <p class="font-semibold text-xl">No Items in order yet</p>
-        <div routerLink="/restaurants-list" class="custom-blue-bg text-white w-60 h-10 rounded-full flex items-center justify-center">Browse</div>
+<div class="w-full h-[80vh] flex items-center justify-center space-y-10 flex-col">
+    <p class="font-semibold text-xl">No Items in order yet</p>
+    <div routerLink="/restaurants-list"
+        class="custom-blue-bg text-white w-60 h-10 rounded-full flex items-center justify-center cursor-pointer">Browse
     </div>
+</div>
 }

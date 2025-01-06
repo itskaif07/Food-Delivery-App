@@ -19,7 +19,7 @@
     <div class="space-y-16 flex flex-col items-center justify-center w-full">
 
       <div
-        class="w-full h-full flex items-start pl-3 justify-center sm:space-x-8 sm:space-y-0 flex-col space-x-0 space-y-8 ">
+        class="w-full h-full flex items-start pl-3 justify-center  flex-col space-y-8 ">
 
         <a [routerLink]="'home'" (click)="onRouteClick()"
           class="w-4/5 py-3 px-3 text-left shadow-xl flex items-center justify-start hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
@@ -86,12 +86,18 @@
       <div class="flex items-center justify-between w-2/5">
 
         <div [routerLink]="'cart-list'"
-          class="w-12 h-12 rounded-full shadow-xl flex items-center justify-center  hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
+        class="w-12 h-12 relative rounded-full shadow-xl flex items-center justify-center  hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
+        @if(!authService.isLoggedIn && cartList.length > 0){
+          <div class="custom-blue-bg w-8 h-8 rounded-full flex items-center justify-center absolute top-0 right-0">{{cartItems}}</div>
+        }
           <img src="assets/cart.png" alt="" class="w-6">
         </div>
 
         <div [routerLink]="'order-list'"
-          class="w-12 h-12 rounded-full shadow-xl flex items-center justify-center  hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
+          class="w-12 h-12 rounded-full shadow-xl flex items-center justify-center  hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in relative">
+          @if(!authService.isLoggedIn && orderList.length > 0){
+            <div class="custom-blue-bg w-8 h-8 rounded-full flex items-center justify-center absolute top-0 right-0">{{orderItems}}</div>
+          }
           <img src="assets/trolley.png" alt="" class="w-5">
         </div>
 

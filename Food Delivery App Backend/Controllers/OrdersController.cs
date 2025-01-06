@@ -47,5 +47,19 @@ namespace Food_Delivery_App_Backend.Controllers
                 return BadRequest(new { message = $"Something went wrong: {ex.Message}" });
             }
         }
+
+        [HttpDelete]
+        public async Task<ActionResult> DeleteOrder(int orderId)
+        {
+            try
+            {
+                await _orderRepository.DeleteOrder(orderId);
+                return Ok(new { message = "Order deleted successfully" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = $"Something went wrong: {ex.Message}" });
+            }
+        }
     }
 }

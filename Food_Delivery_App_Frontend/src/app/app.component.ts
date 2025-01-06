@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, Inject } from '@angular/core';
+import { Component, inject, Inject, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink, RouterOutlet } from '@angular/router';
 import gsap from 'gsap';
 import { LoaderComponent } from "./Shared/component/loader/loader.component";
 import { AuthService } from './Services/auth.service';
+import { OrderService } from './Services/order.service';
+import { CartService } from './Services/cart.service';
 
 @Component({
   selector: 'app-root',
@@ -17,11 +19,18 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   authService = inject(AuthService)
+  orderService = inject(OrderService)
+  cartService = inject(CartService)
+
+  userId:string = ''
+  orderItems:number = 0
+  cartItems:number = 0
+  orderList:any = []
+  cartList:any = []
 
   isActiveRoute(route: string): boolean {
     return this.router.url === route;
   }
-
 
   onMenuClick(){
     gsap.to('#overlay',{
@@ -50,4 +59,5 @@ export class AppComponent {
       }
     )
   }
+
 }

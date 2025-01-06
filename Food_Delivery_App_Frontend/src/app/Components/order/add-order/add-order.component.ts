@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { AuthService } from '../../../Services/auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MenuServiceService } from '../../../Services/menu-service.service';
+import { OrderService } from '../../../Services/order.service';
 
 @Component({
   selector: 'app-add-order',
@@ -19,9 +20,11 @@ export class AddOrderComponent implements OnInit {
   //Services
   authService = inject(AuthService)
   menuService = inject(MenuServiceService)
+  orderService = inject(OrderService)
 
   //User properties
 
+  uid: string = ''
   name: string = ''
   username: string = ''
   phone: string = ''
@@ -32,10 +35,12 @@ export class AddOrderComponent implements OnInit {
   // other properties
 
   menuItemId: any = ''
+  restaurentId: any = ''
   menuDetails: any = []
-  currentQuantity:number = 1
-  subTotal:number = 0
-  Total:number = 0
+  currentQuantity: number = 1
+  subTotal: number = 0
+  Total: number = 0
+  deliveryTime: any = ''
 
   //form
 
@@ -57,14 +62,17 @@ export class AddOrderComponent implements OnInit {
 
   ngOnInit(): void {
     this.getuser()
+    this.getParams()
     this.setFormState()
     this.getMenuDetails()
+    this.getDeliveryTime()
   }
 
   getuser() {
     const currentUser = this.authService.userSubject.value;
     if (currentUser) {
       console.log(currentUser)
+      this.uid = currentUser.uid
       this.name = currentUser.fullName || ''
       this.username = currentUser.displayName
       this.address = currentUser.address || ''
@@ -85,18 +93,32 @@ export class AddOrderComponent implements OnInit {
       phone: [this.phone, Validators.required],
       email: [this.email, Validators.email],
       pincode: [this.pincode, [Validators.minLength(6), Validators.maxLength(6)]],
-      quantity: [1, [Validators.required, Validators.minLength(1)]]
+      quantity: [this.currentQuantity, [Validators.required, Validators.minLength(1)]]
     })
   }
 
-  getMenuDetails() {
+  getParams() {
     this.activeRoute.paramMap.subscribe(params => {
       this.menuItemId = +params.get('menuId')!
+      this.restaurentId = +params.get('restaurentId')!
     })
+  }
+
+  getDeliveryTime(){
+    const now = new Date();
+    now.setMinutes(now.getMinutes() + 30)
+    console.log(now)
+    this.deliveryTime = now.toISOString();
+    console.log(this.deliveryTime)
+  }
+
+  getMenuDetails() {
+
     this.menuService.menuDetails(this.menuItemId).subscribe((res: any) => {
       if (res) {
         this.menuDetails = res
-        this.subTotal = this.menuDetails.price - (this.menuDetails.price * this.menuDetails.discount / 100 )
+        console.log(this.menuDetails.name)
+        this.subTotal = this.menuDetails.price - (this.menuDetails.price * this.menuDetails.discount / 100)
         this.Total = this.subTotal * this.currentQuantity
       }
     }, error => {
@@ -104,21 +126,46 @@ export class AddOrderComponent implements OnInit {
     })
   }
 
-  incrementQuantity(){
+  incrementQuantity() {
     this.currentQuantity = this.orderForm.value.quantity
-    this.currentQuantity ++
+    this.currentQuantity++
     this.Total = this.subTotal * this.currentQuantity
-    this.orderForm.patchValue({quantity: this.currentQuantity})
+    this.orderForm.patchValue({ quantity: this.currentQuantity })
   }
 
-  decrementQuantity(){
+  decrementQuantity() {
     this.currentQuantity = this.orderForm.value.quantity;
-    if(this.currentQuantity > 1){
-      this.currentQuantity --
+    if (this.currentQuantity > 1) {
+      this.currentQuantity--
       this.Total = this.subTotal * this.currentQuantity
-      this.orderForm.patchValue({quantity: this.currentQuantity})
+      this.orderForm.patchValue({ quantity: this.currentQuantity })
     }
   }
 
+  onSubmit() {
+    const orderObj = {
+      userId: this.uid,
+      menuItemId: this.menuItemId,
+      restaurentId: this.restaurentId,
+      price: this.menuDetails.price,
+      itemImage: this.menuDetails.imageUrl,
+      itemName: this.menuDetails.name,
+      deliveryTime: this.deliveryTime,
+      quantity: this.orderForm.value.quantity,
+      username: this.orderForm.value.username,
+      fullName: this.orderForm.value.name,
+      email: this.orderForm.value.email,
+      phoneNumber: this.orderForm.value.phone,
+      Address: this.orderForm.value.address,
+      Pincode: this.orderForm.value.pincode,
+    }
+
+    this.orderService.addOrder(orderObj).subscribe((res: any) => {
+      console.log("order added")
+      this.router.navigateByUrl('/order-list')
+    }, error => {
+      console.log(error)
+    })
+  }
 
 }

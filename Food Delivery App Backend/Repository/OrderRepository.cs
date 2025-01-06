@@ -43,6 +43,7 @@ namespace Food_Delivery_App_Backend.Repository
                 PhoneNumber = orderDto.PhoneNumber,
                 Pincode = orderDto.Pincode,
                 ItemImage = orderDto.ItemImage,
+                ItemName = orderDto.ItemName,
                 PaymentStatus = "Pending",
                 OrderStatus = "Pending",
                 TimeAdded = DateTime.Now,
@@ -50,6 +51,19 @@ namespace Food_Delivery_App_Backend.Repository
             };
 
             await _context.orders.AddAsync(order);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteOrder(int orderId)
+        {
+            var order = await _context.orders.FindAsync(orderId);
+
+            if(order == null)
+            {
+                throw new Exception("Order not found");
+            }
+
+            _context.orders.Remove(order);
             await _context.SaveChangesAsync();
         }
 

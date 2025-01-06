@@ -386,6 +386,26 @@
             "description": "OK"
           }
         }
+      },
+      "delete": {
+        "tags": [
+          "Orders"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/Restaurant": {
@@ -720,6 +740,14 @@
             "type": "string",
             "nullable": true
           },
+          "itemImage": {
+            "type": "string",
+            "nullable": true
+          },
+          "itemName": {
+            "type": "string",
+            "nullable": true
+          },
           "deliveryTime": {
             "type": "string",
             "format": "date-time"
@@ -756,6 +784,14 @@
           "quantity": {
             "type": "integer",
             "format": "int32"
+          },
+          "itemImage": {
+            "type": "string",
+            "nullable": true
+          },
+          "itemName": {
+            "type": "string",
+            "nullable": true
           },
           "fullName": {
             "type": "string",

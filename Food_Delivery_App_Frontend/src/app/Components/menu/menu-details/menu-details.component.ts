@@ -145,7 +145,7 @@ getDeliveryTime(){
   }
 
   redirectOrder(){
-    this.router.navigate(['add-order', this.menuId])
+    this.router.navigate(['add-order', this.menuId, this.restaurentId])
   }
   
 }

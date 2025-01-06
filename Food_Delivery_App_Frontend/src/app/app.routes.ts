@@ -101,7 +101,7 @@ export const routes: Routes =
             component:OrderListComponent
         },
         {
-            path:"add-order/:menuId",
+            path:"add-order/:menuId/:restaurentId",
             component:AddOrderComponent
         }
 

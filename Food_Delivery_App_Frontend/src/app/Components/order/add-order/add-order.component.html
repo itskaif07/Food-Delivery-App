@@ -1,4 +1,4 @@
-<form [formGroup]="orderForm" class="flex items-center justify-between w-full h-[87vh] overflow-y-hidden px-2">
+<form [formGroup]="orderForm" (ngSubmit)="onSubmit()"class="flex items-center justify-between w-full h-[87vh] overflow-y-hidden px-2">
 
     <div class="w-1/2 h-full flex flex-col items-start justify-start pl-16 space-y-10">
 

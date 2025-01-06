@@ -3,7 +3,7 @@
     @for (item of cartItemsWithMenu; track $index) {
     <div class="w-[99%] lg:w-[45%] max-[350px]:h-80 h-60 lg:h-48 border-2 rounded shadow-lg flex items-start justify-start max-[350px]:space-x-2 space-x-8">
         <div class="w-1/2 h-full">
-            <img src="{{item.menuItem.imageUrl}}" alt="" class="w-full h-full object-cover object-center">
+            <img src="{{item.menuItem.imageUrl  || 'assets/noImage.jpg'}}" alt="" class="w-full h-full object-cover object-center">
         </div>
         <div class="py-4  w-1/2 h-full flex items-start justify-between flex-col">
             <div class="w-full space-y-2">

@@ -16,7 +16,6 @@ namespace Food_Delivery_App_Backend.Model
         public decimal TotalPrice => Quantity * Price;
         public DateTime TimeAdded { get; set; } = DateTime.UtcNow;
 
-
         public string OrderStatus { get; set; } = "Pending";
 
         public string PaymentStatus { get; set; } = "Pending";
@@ -27,10 +26,10 @@ namespace Food_Delivery_App_Backend.Model
         public string Pincode { get; set; }
         public string? Email { get; set; }
         public string PhoneNumber { get; set; }
-
         public string? ItemImage { get; set; }
+        public string? ItemName { get; set; }
 
-        public DateTime DeliveryTime { get; set; } = DateTime.UtcNow;
+        public DateTime DeliveryTime { get; set; }
         public ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
         [ValidateNever]
