@@ -1,0 +1,18 @@
+<div class="flex justify-center items-center h-[60vh]">
+  <div class="text-center">
+    <h2 class="text-2xl font-bold">Email Verification</h2>
+    <p>Please wait while we verify your email...</p>
+  </div>
+
+  @if(errorMessage && errorMessage !== ''){
+  <p class="text-red-500 text-lg">{{errorMessage}}</p>
+
+  <button (click)="resendVerificationEmail()" class="custom-blue-bg w-52 h-10 rounded-full font-semibold">Send another
+    link</button>
+  }
+
+  @if(infoMessage && infoMessage !== ''){
+  <p class="text-green-500 text-lg">{{infoMessage}}</p>
+  }
+
+</div>

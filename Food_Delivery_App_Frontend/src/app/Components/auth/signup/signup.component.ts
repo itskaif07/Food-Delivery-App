@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { LoaderService } from '../../../Shared/service/loader.service';
+import { finalize } from 'rxjs';
 
 @Component({
   selector: 'app-signup',
@@ -18,6 +19,8 @@ export class SignupComponent implements OnInit {
   router = inject(Router)
   loader = inject(LoaderService)
   signUpForm: FormGroup = new FormGroup({})
+  errorMessage: string = ''
+
 
   ngOnInit(): void {
     this.setFormState()
@@ -28,7 +31,7 @@ export class SignupComponent implements OnInit {
       name: [''],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
-      username: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(8)]],
+      username: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(10)]],
       address: [''],
       phone: ['', [Validators.pattern('^[0-9]{10}$')]],
       pincode: ['', [Validators.required, Validators.pattern('^[0-9]{6}$'),]],
@@ -39,13 +42,15 @@ export class SignupComponent implements OnInit {
     const rawForm = this.signUpForm.getRawValue();
 
     this.loader.showLoader()
-    this.authService.signUp(rawForm.name,rawForm.email, rawForm.password, rawForm.username, rawForm.phone, rawForm.address, rawForm.pincode).subscribe((next) => {
-      this.router.navigateByUrl('/')
-      this.loader.hideLoader()
-    }, err => {
-      console.log('Some error occurred during signup', err);
-      this.loader.hideLoader()
-    })
+    this.authService.signUp(rawForm.name, rawForm.email, rawForm.password, rawForm.username, rawForm.phone, rawForm.address, rawForm.pincode)
+      .pipe(finalize(() => this.loader.hideLoader()))
+      .subscribe({
+        next: () => this.router.navigateByUrl('/email-ver'),
+        error: err => {
+            this.errorMessage = err
+        }
+      });
+
   }
 
 

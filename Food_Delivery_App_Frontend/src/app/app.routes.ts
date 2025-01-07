@@ -15,6 +15,7 @@ import { LoginComponent } from './Components/auth/login/login.component';
 import { CartListComponent } from './Components/cart/cart-list/cart-list.component';
 import { OrderListComponent } from './Components/order/order-list/order-list.component';
 import { AddOrderComponent } from './Components/order/add-order/add-order.component';
+import { EmailVerificationComponent } from './Components/auth/email-verification/email-verification.component';
 
 
 export const routes: Routes =
@@ -85,6 +86,10 @@ export const routes: Routes =
         {
             path: "log-in",
             component: LoginComponent
+        },
+        {
+            path: "email-ver",
+            component:EmailVerificationComponent
         },
 
         // Cart

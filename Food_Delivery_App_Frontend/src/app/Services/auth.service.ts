@@ -1,8 +1,9 @@
-import { inject, Injectable, OnDestroy } from '@angular/core';
+import { inject, Injectable, NgZone, OnDestroy } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile } from '@angular/fire/auth';
 import { Firestore } from '@angular/fire/firestore';
+import { sendEmailVerification } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { BehaviorSubject, from, Observable, catchError, map, throwError } from 'rxjs';
+import { BehaviorSubject, from, Observable, catchError, map, throwError, switchMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -11,6 +12,8 @@ export class AuthService implements OnDestroy {
 
   auth: Auth = inject(Auth)
   fireStore: Firestore = inject(Firestore)
+  ngZone = inject(NgZone)
+
 
   userSubject: BehaviorSubject<any> = new BehaviorSubject<any>(null)
 
@@ -22,29 +25,27 @@ export class AuthService implements OnDestroy {
     })
   }
 
-  signUp(fullName:string, email: string, password: string, username: string, phone: string = '', address: string = '', pincode: string): Observable<void> {
-    const promise = createUserWithEmailAndPassword(this.auth, email, password)
-      .then(response => {
-        updateProfile(response.user, { displayName: username })
-          .then(() => {
-            return this.saveUserDetails(response.user.uid, fullName, address, phone, pincode)
-          })
-      })
-      .catch(error => {
-        console.error("Error during signup:", error);
-      });
-
-    return from(promise).pipe(
-      map(() => { }),
-      catchError(error => {
-        console.error("Error in signup:", error);
-        return throwError(() => new Error(error.message));
+  signUp(fullName: string, email: string, password: string, username: string, phone = '', address = '', pincode: string): Observable<void> {
+    return from(createUserWithEmailAndPassword(this.auth, email, password)).pipe(
+      switchMap(userCredentials => {
+        if (userCredentials) {
+          return from(updateProfile(userCredentials.user, { displayName: username })).pipe(
+            switchMap(() => from(sendEmailVerification(userCredentials.user))),
+            switchMap(() => from(this.saveUserDetails(userCredentials.user.uid, fullName, address, phone, pincode))),
+          );
+        }
+        return throwError(() => new Error('User credentials not found'));
+      }),
+      catchError(err => {
+        console.error("Error in signup:", err);
+        return throwError(() => new Error(err.message));
       })
     );
-
   }
 
-  saveUserDetails(uid: string, fullName:string, address: string, phone: string, pincode: string): Promise<void> {
+
+
+  saveUserDetails(uid: string, fullName: string, address: string, phone: string, pincode: string): Promise<void> {
     const userRef = doc(this.fireStore, 'users', uid)
 
     return setDoc(userRef, {
@@ -68,7 +69,7 @@ export class AuthService implements OnDestroy {
     return from(promise).pipe(
       map((userCredential) => {
         const user = userCredential.user;
-        this.fetchUserData(user);  // Fetch user data after login
+        this.fetchUserData(user);
       }),
       catchError((error) => {
         console.log('Error in login:', error);
@@ -111,6 +112,7 @@ export class AuthService implements OnDestroy {
   isLoggedIn(): boolean {
     return !!this.userSubject.value
   }
+
 
 
 

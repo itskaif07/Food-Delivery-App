@@ -17,6 +17,10 @@
       </div>
     </div>
 
+    @if(errorMessage && errorMessage !== ''){
+      <p class="text-sm text-red-500">Email already in use</p>
+      }
+
 
     <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()" class="w-full h-full">
 
