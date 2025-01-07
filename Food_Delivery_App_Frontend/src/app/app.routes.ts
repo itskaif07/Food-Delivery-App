@@ -100,7 +100,7 @@ export const routes: Routes =
             path: "order-list",
             component: OrderListComponent
         },
-        { path: 'add-order/:menuId/:restaurentId/:quantity?', component: AddOrderComponent },
+        { path: 'add-order/:menuId/:restaurentId/:quantity?/:cartId?', component: AddOrderComponent },
         { path: 'add-order/:menuId/:restaurentId', component: AddOrderComponent },
 
 

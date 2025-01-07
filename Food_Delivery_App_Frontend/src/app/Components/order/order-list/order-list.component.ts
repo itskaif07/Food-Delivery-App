@@ -22,6 +22,7 @@ export class OrderListComponent implements OnInit {
   deliveryTime:any = ''
   TotalItems:number = 0
   totalAmount:number = 0
+  totalQuantity:number = 0
 
   ngOnInit(): void {
     this.getUser()
@@ -44,7 +45,7 @@ export class OrderListComponent implements OnInit {
       this.orderList = res
       this.TotalItems = this.orderList.length;
       this.calTotalAmount()
-      console.log(this.orderList)
+      // console.log(this.orderList)
     }, (error) => {
       console.log("Some error happened", error)
     })
@@ -61,6 +62,10 @@ export class OrderListComponent implements OnInit {
     this.totalAmount = this.orderList.reduce((accumulator, item)=>{
       return accumulator + (item.price * item.quantity)
     }, 0)
+
+    this.totalQuantity = this.orderList.reduce((sum, item)=> sum + item.quantity, 0)
   }
+  
+
 
 }

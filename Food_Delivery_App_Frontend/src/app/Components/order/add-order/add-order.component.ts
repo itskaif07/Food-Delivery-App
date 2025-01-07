@@ -5,6 +5,7 @@ import { AuthService } from '../../../Services/auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MenuServiceService } from '../../../Services/menu-service.service';
 import { OrderService } from '../../../Services/order.service';
+import { CartService } from '../../../Services/cart.service';
 
 @Component({
   selector: 'app-add-order',
@@ -21,6 +22,7 @@ export class AddOrderComponent implements OnInit {
   authService = inject(AuthService)
   menuService = inject(MenuServiceService)
   orderService = inject(OrderService)
+  cartService = inject(CartService)
 
   //User properties
 
@@ -42,6 +44,7 @@ export class AddOrderComponent implements OnInit {
   Total: number = 0
   deliveryTime: any = ''
   paramQuantity: number = 0
+  cartId: number = 0
 
   //form
 
@@ -64,7 +67,7 @@ export class AddOrderComponent implements OnInit {
   ngOnInit(): void {
     this.getuser()
     this.getParams()
-    this.getQuantity()
+    this.getCartData()
     this.setFormState()
     console.log('Route params:', this.activeRoute.snapshot.params);
     this.getMenuDetails()
@@ -107,12 +110,14 @@ export class AddOrderComponent implements OnInit {
     });
   }
 
-  getQuantity() {
+  getCartData() {
     this.activeRoute.paramMap.subscribe(params => {
-      const quantity = params.get('quantity?'); 
+      const quantity = params.get('quantity?');
       this.paramQuantity = quantity ? +quantity : 1;
       this.currentQuantity = this.paramQuantity
-      console.log(this.paramQuantity)
+      const cartIdParam = params.get('cartId?');
+      this.cartId = cartIdParam ? +cartIdParam : 1
+      console.log(this.cartId)
     });
   }
 
@@ -170,6 +175,12 @@ export class AddOrderComponent implements OnInit {
     }
 
     this.orderService.addOrder(orderObj).subscribe((res: any) => {
+      if (this.cartId) {
+        this.cartService.removeCart(this.cartId).subscribe((res: any) => {
+        }, error => {
+          console.log('error deleting cart', error)
+        })
+      }
       this.router.navigateByUrl('/order-list')
     }, error => {
       console.log(error)

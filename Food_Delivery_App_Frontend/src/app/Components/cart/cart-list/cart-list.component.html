@@ -26,7 +26,7 @@
             </div>
 
             <div class="w-[95%] sm:w-1/2 lg:w-[95%] flex flex-col xl:flex-row items-start justify-start xl:justify-center space-y-2 xl:space-y-0 xl:space-x-2">
-                <button [routerLink]="['/add-order', item.menuItemId, item.restaurentId, item.quantity]" class="flex items-center justify-start px-2 custom-orange-bg py-2 w-full text-white font-medium hover:shadow-lg">
+                <button [routerLink]="['/add-order', item.menuItemId, item.restaurentId, item.quantity, item.id]" class="flex items-center justify-start px-2 custom-orange-bg py-2 w-full text-white font-medium hover:shadow-lg">
                     Order Now
                 </button>
                 <button (click)="removeCart(item.id)" class="flex items-center justify-start px-2 bg-red-500 py-2 w-full text-white font-medium hover:shadow-lg">
