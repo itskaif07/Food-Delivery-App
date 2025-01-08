@@ -4,6 +4,7 @@ import { applyActionCode, Auth } from '@angular/fire/auth'; // Correct imports f
 import { sendEmailVerification } from 'firebase/auth';
 import { CommonModule } from '@angular/common';
 import { LoaderService } from '../../../Shared/service/loader.service';
+import { AuthService } from '../../../Services/auth.service';
 
 @Component({
   selector: 'app-email-verification',
@@ -14,14 +15,14 @@ import { LoaderService } from '../../../Shared/service/loader.service';
 
 export class EmailVerificationComponent implements OnInit {
   verificationCode: string | null = '';
-
   router = inject(Router);
   activeRoute = inject(ActivatedRoute);
   auth = inject(Auth);
-  loader = inject(LoaderService)
+  loader = inject(LoaderService);
+  authService = inject(AuthService)
 
-  infoMessage: string | null = null
-  errorMessage: string | null = null
+  infoMessage: string | null = null;
+  errorMessage: string | null = null;
 
   ngOnInit(): void {
     this.activeRoute.queryParams.subscribe((params) => {
@@ -33,42 +34,59 @@ export class EmailVerificationComponent implements OnInit {
   }
 
   verifyEmail(code: string) {
-    applyActionCode(this.auth, code) // Call modular SDK's applyActionCode
+    this.loader.showLoader();
+    applyActionCode(this.auth, code)
       .then(() => {
-        console.log('Email successfully verified');
-        this.router.navigateByUrl('/');
+        this.loader.hideLoader();
+        this.infoMessage = 'Your email has been successfully verified!';
+        this.logInUser()
       })
       .catch((error) => {
+        this.loader.hideLoader();
         if (error.code === 'auth/invalid-action-code') {
-          console.error('The link is invalid or has already been used.');
-          this.errorMessage = 'The link is invalid or has already been used.'
-
+          this.errorMessage = 'The link is invalid or has already been used.';
         } else if (error.code === 'auth/action-code-expired') {
-          console.error('The verification link has expired.');
-          this.errorMessage = "The verification link has expired."
+          this.errorMessage = 'The verification link has expired. Please request a new one.';
         } else {
-          console.error('Error during email verification:', error);
-          this.errorMessage = "Error during email verification"
+          this.errorMessage = 'Error during email verification.';
         }
-      })
+      });
   }
 
+  logInUser() {
+    const email = localStorage.getItem('email')
+    const password = localStorage.getItem('password')
+    console.log(email, password)
+
+    if (email && password) {
+      this.authService.logIn(email, password).subscribe((res: any) => {
+        this.router.navigateByUrl('/');
+      }, error => {
+        console.log("some error while login", error)
+      })
+    }
+  }
+
+
   resendVerificationEmail() {
-    const user = this.auth.currentUser
+    const user = this.auth.currentUser;
     if (user) {
-      this.loader.showLoader()
+      this.loader.showLoader();
       sendEmailVerification(user)
         .then(() => {
-          this.loader.hideLoader()
-          this.infoMessage = "A new verification link sent to your Email"
+          this.loader.hideLoader();
+          this.infoMessage = 'A new verification email has been sent to your email address.';
         })
-        .catch(() => {
-          this.loader.hideLoader()
-          this.errorMessage = "'Failed to resend verification email. Please try again"
-        })
-    }
-    else {
-      alert('User not found. Please log in again.');
+        .catch((error) => {
+          this.loader.hideLoader();
+          if (error.code === 'auth/too-many-requests') {
+            this.errorMessage = 'Too many requests. Please try again later.';
+          } else {
+            this.errorMessage = 'Failed to resend verification email. Please try again later.';
+          }
+        });
+    } else {
+      alert('User not logged in. Please log in to resend the verification email.');
     }
   }
 }

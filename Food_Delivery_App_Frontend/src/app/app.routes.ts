@@ -89,7 +89,12 @@ export const routes: Routes =
         },
         {
             path: "email-ver",
-            component:EmailVerificationComponent
+            component: EmailVerificationComponent
+        },
+        
+        {
+            path: '**',
+            redirectTo: '/'
         },
 
         // Cart
@@ -105,8 +110,16 @@ export const routes: Routes =
             path: "order-list",
             component: OrderListComponent
         },
-        { path: 'add-order/:menuId/:restaurentId/:quantity?/:cartId?', component: AddOrderComponent },
-        { path: 'add-order/:menuId/:restaurentId', component: AddOrderComponent },
+
+        {
+            path: 'add-order/:menuId/:restaurentId/:quantity?/:cartId?',
+            component: AddOrderComponent
+        },
+
+        {
+            path: 'add-order/:menuId/:restaurentId',
+            component: AddOrderComponent
+        },
 
 
     ];

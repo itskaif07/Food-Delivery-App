@@ -42,9 +42,12 @@ export class SignupComponent implements OnInit {
     const rawForm = this.signUpForm.getRawValue();
 
     this.loader.showLoader()
+    localStorage.setItem('email', rawForm.email)
+    localStorage.setItem('password', rawForm.password)
+    
     this.authService.signUp(rawForm.name, rawForm.email, rawForm.password, rawForm.username, rawForm.phone, rawForm.address, rawForm.pincode)
-      .pipe(finalize(() => this.loader.hideLoader()))
-      .subscribe({
+    .pipe(finalize(() => this.loader.hideLoader()))
+    .subscribe({
         next: () => this.router.navigateByUrl('/email-ver'),
         error: err => {
             this.errorMessage = err
