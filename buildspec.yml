@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - dotnet restore  # This restores the project dependencies
+
+  build:
+    commands:
+      - echo Building the app...
+      - dotnet build  # This builds the application
+
+  post_build:
+    commands:
+      - echo Publishing the app...
+      - dotnet publish -c Release -o /output  # This publishes the app to an output directory
+
+artifacts:
+  files:
+    - /output/**/*  # This defines the published output
