@@ -19,3 +19,6 @@ phases:
 artifacts:
   files:
     - /output/**/*  # This defines the published output
+ test:
+    commands:
+      - echo "No tests are defined. Skipping tests..."
