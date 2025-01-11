@@ -4,18 +4,18 @@ phases:
   install:
     commands:
       - echo "Installing dependencies..."
-      - dotnet restore  # This restores the project dependencies
+      - dotnet restore
 
   build:
     commands:
       - echo "Building application..."
-      - echo "Additional commands can go here"
+      - dotnet build  # Optional, explicitly building the application
 
   post_build:
     commands:
       - echo "Publishing the app..."
-      - dotnet publish -c Release -o /output  # This publishes the app to an output directory
+      - dotnet publish -c Release -o output
 
 artifacts:
   files:
-    - '**/*'  # Correct wildcard to capture output files
+    - 'output/**/*'  # Updated path for published files
