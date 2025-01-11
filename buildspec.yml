@@ -8,8 +8,8 @@ phases:
 
   build:
     commands:
-      - echo Building the app...
-      - dotnet build  # This builds the application
+      - echo "Building application..."
+      - echo "Additional commands can go here"
 
   post_build:
     commands:
