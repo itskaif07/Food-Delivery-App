@@ -4,18 +4,7 @@ phases:
   install:
     commands:
       - echo "Installing dependencies..."
-      - dotnet restore
 
   build:
     commands:
       - echo "Building application..."
-      - dotnet build  # Optional, explicitly building the application
-
-  post_build:
-    commands:
-      - echo "Publishing the app..."
-      - dotnet publish -c Release -o output
-
-artifacts:
-  files:
-    - 'output/**/*'  # Updated path for published files
