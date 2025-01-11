@@ -13,7 +13,7 @@ phases:
 
   post_build:
     commands:
-      - echo Publishing the app...
+      - echo "Publishing the app..."
       - dotnet publish -c Release -o /output  # This publishes the app to an output directory
 
 artifacts:
