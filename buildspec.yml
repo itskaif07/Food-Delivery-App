@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies...
+      - echo "Installing dependencies..."
       - dotnet restore  # This restores the project dependencies
 
   build:
@@ -18,7 +18,4 @@ phases:
 
 artifacts:
   files:
-    - /output/**/*  # This defines the published output
- test:
-    commands:
-      - echo "No tests are defined. Skipping tests..."
+    - '**/*'  # Correct wildcard to capture output files
