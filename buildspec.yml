@@ -8,7 +8,7 @@ phases:
 
   build:
     commands:
-      - echo "Building the application..."
+      - echo "Building application..."
       - dotnet build
 
   post_build:
