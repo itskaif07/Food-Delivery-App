@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|d:\\asp.net web api\\food delivery app\\food delivery app backend\\services\\firebaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|solutionrelative:services\\firebaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|d:\\asp.net web api\\food delivery app\\food delivery app backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DADDCAA-36DF-4D97-8BD9-388A1DBE99DD}|Food Delivery App Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,32 +55,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FirebaseService.cs",
-              "DocumentMoniker": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Services\\FirebaseService.cs",
-              "RelativeDocumentMoniker": "Services\\FirebaseService.cs",
-              "ToolTip": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Services\\FirebaseService.cs",
-              "RelativeToolTip": "Services\\FirebaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T09:04:33.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T09:02:04.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "D:\\ASP.NET Web Api\\Food Delivery App\\Food Delivery App Backend\\Repository\\OrderRepository.cs",
               "RelativeDocumentMoniker": "Repository\\OrderRepository.cs",
@@ -92,8 +75,7 @@
               "RelativeToolTip": "Repository\\OrderRepository.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAwwCwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T10:47:43.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T10:47:43.029Z"
             }
           ]
         }

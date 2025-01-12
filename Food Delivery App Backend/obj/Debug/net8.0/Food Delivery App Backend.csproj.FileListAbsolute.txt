@@ -172,7 +172,6 @@ D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Food Delivery App Backend.props
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Food Delivery App Backend.props
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\staticwebassets.pack.json
-D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\Food Del.239457AD.Up2Date
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\Food Delivery App Backend.dll
 D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\obj\Debug\net8.0\refint\Food Delivery App Backend.dll
