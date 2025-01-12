@@ -79,11 +79,14 @@ export class MenuDetailsComponent implements OnInit {
   // admin role
 
   async checkAdminRole() {
-    const user = getAuth().currentUser
-    if (user) {
-      const idToken = await user.getIdTokenResult()
-      const claims = idToken.claims as any;
-      this.isAdmin = claims['admin'] ? true : false
+    const user = getAuth().currentUser;
+    
+    if (user && user.emailVerified) {
+      if (user.email == "kaifk8402@gmail.com") {
+        this.isAdmin = true
+      }
+    } else {
+      console.log('User is either not logged in or email is not verified.');
     }
   }
 

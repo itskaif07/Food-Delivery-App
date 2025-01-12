@@ -17,36 +17,42 @@ export class RestaurantDetailsComponent implements OnInit {
   restService = inject(RestaurantServiceService)
   loader = inject(LoaderService)
 
-  RestaurantDetails:any = []
-  isAdmin:boolean = false;
-  restaurantId:number = 0
+  RestaurantDetails: any = []
+  isAdmin: boolean = false;
+  restaurantId: number = 0
 
   ngOnInit(): void {
     this.getDetails()
     this.checkAdminRole()
   }
 
- async checkAdminRole(){
+  async checkAdminRole() {
     const user = getAuth().currentUser;
-    if(user){
-      const idToken = await user.getIdTokenResult();
-      const claims = idToken.claims as any;
-      this.isAdmin = claims['admin'] ? true : false;
+
+    // Check if user is authenticated and email is verified
+    if (user && user.emailVerified) {
+      if (user.email == "kaifk8402@gmail.com") {
+        this.isAdmin = true
+      }
+    } else {
+      console.log('User is either not logged in or email is not verified.');
     }
   }
 
-  getDetails(){
+
+
+  getDetails() {
     this.loader.showLoader()
-    this.activeRoute.paramMap.subscribe(params=>{
+    this.activeRoute.paramMap.subscribe(params => {
       this.restaurantId = +params.get('restaurentId')!
     })
 
-    this.restService.restaurantDetails(this.restaurantId).subscribe((res:any)=>{
-      if(res){
+    this.restService.restaurantDetails(this.restaurantId).subscribe((res: any) => {
+      if (res) {
         this.RestaurantDetails = res
         this.loader.hideLoader()
       }
-    }, err =>{
+    }, err => {
       console.log("Error", err)
       this.loader.hideLoader()
     })

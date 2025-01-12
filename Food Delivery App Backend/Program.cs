@@ -47,10 +47,14 @@ host.WebHost.UseUrls("http://0.0.0.0:7205");
 
 
 // Admin Role
-FirebaseApp.Create(new AppOptions()
+if (FirebaseApp.DefaultInstance == null)
 {
-    Credential = GoogleCredential.FromFile(@"D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\key\sample-firebase-ai-app-7b76d-firebase-adminsdk-ovvts-fd9e1ab117.json")
-});
+    FirebaseApp.Create(new AppOptions()
+    {
+        Credential = GoogleCredential.FromFile(@"key/sample-firebase-ai-app-7b76d-firebase-adminsdk-ovvts-c1eefe9e32.json")
+    });
+}
+
 
 
 var app = builder.Build();

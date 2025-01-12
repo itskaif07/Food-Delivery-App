@@ -92,10 +92,6 @@ export const routes: Routes =
             component: EmailVerificationComponent
         },
         
-        {
-            path: '**',
-            redirectTo: '/'
-        },
 
         // Cart
 
@@ -119,6 +115,11 @@ export const routes: Routes =
         {
             path: 'add-order/:menuId/:restaurentId',
             component: AddOrderComponent
+        },
+
+        {
+            path: '**',
+            redirectTo: '/'
         },
 
 

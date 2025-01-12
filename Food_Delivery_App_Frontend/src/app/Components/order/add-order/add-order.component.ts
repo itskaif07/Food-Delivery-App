@@ -76,6 +76,7 @@ export class AddOrderComponent implements OnInit {
 
   getuser() {
     const currentUser = this.authService.userSubject.value;
+    console.log(currentUser)
     if (currentUser) {
       this.uid = currentUser.uid
       this.name = currentUser.fullName || ''

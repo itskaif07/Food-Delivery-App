@@ -1,4 +1,4 @@
-import { inject, Injectable, NgZone, OnDestroy } from '@angular/core';
+import { inject, Injectable, OnDestroy } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile } from '@angular/fire/auth';
 import { Firestore } from '@angular/fire/firestore';
 import { sendEmailVerification } from 'firebase/auth';
@@ -12,7 +12,6 @@ export class AuthService implements OnDestroy {
 
   auth: Auth = inject(Auth)
   fireStore: Firestore = inject(Firestore)
-  ngZone = inject(NgZone)
 
 
   userSubject: BehaviorSubject<any> = new BehaviorSubject<any>(null)
@@ -108,12 +107,9 @@ export class AuthService implements OnDestroy {
   }
 
 
-
   isLoggedIn(): boolean {
     return !!this.userSubject.value
   }
-
-
 
 
   ngOnDestroy(): void {
