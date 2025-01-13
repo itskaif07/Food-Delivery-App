@@ -15,7 +15,7 @@ A modern and responsive food delivery application built with **Angular** and **A
 ## Technologies Used
 - **Frontend:**
   - **Angular (v19)**: Responsive design and smooth user experience.
-  - **HTML/CSS/TypeScript**: For the structure and logic.
+  - **HTML/Tailwind/TypeScript**: For the structure and logic.
 - **Backend:**
   - **ASP.NET Web API**: Provides the API to interact with the frontend.
 - **Database:**
