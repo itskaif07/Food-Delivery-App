@@ -37,3 +37,8 @@ A modern and responsive food delivery application built with **Angular** and **A
 
 ![image](https://github.com/user-attachments/assets/1c341705-cf15-4116-91ba-52a1c24cd63e)
 
+![image](https://github.com/user-attachments/assets/46d5be8d-e25e-4130-9cfd-00155ab5ebed)
+
+![image](https://github.com/user-attachments/assets/735f8aa3-7b24-4404-9383-c0d80c49052c)
+
+
