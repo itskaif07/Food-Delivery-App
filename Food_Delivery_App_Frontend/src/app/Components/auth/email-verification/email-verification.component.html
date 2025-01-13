@@ -1,7 +1,7 @@
 <div class="flex justify-center items-center h-[60vh]">
-  <div class="text-center">
+  <div class="w-full text-center md:w-4/5 space-y-6">
     <h2 class="text-2xl font-bold">Email Verification</h2>
-    <p *ngIf="!errorMessage && !infoMessage">Please wait while we verify your email...</p>
+    <p *ngIf="!errorMessage && !infoMessage">A verification email has been sent to your email address. Please check your inbox to complete the verification process.</p>
 
     <!-- Display error message -->
     <p *ngIf="errorMessage" class="text-red-500 text-lg">{{ errorMessage }}</p>

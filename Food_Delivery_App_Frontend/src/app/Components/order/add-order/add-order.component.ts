@@ -67,16 +67,14 @@ export class AddOrderComponent implements OnInit {
   ngOnInit(): void {
     this.getuser()
     this.getParams()
-    this.getCartData()
     this.setFormState()
-    console.log('Route params:', this.activeRoute.snapshot.params);
+    this.getCartData()
     this.getMenuDetails()
     this.getDeliveryTime()
   }
 
   getuser() {
     const currentUser = this.authService.userSubject.value;
-    console.log(currentUser)
     if (currentUser) {
       this.uid = currentUser.uid
       this.name = currentUser.fullName || ''
@@ -105,7 +103,6 @@ export class AddOrderComponent implements OnInit {
 
   getParams() {
     this.activeRoute.paramMap.subscribe(params => {
-      console.log("Full route params (paramMap):", params);  // Logs all route params
       this.menuItemId = +params.get('menuId')!;
       this.restaurentId = +params.get('restaurentId')!
     });
@@ -118,7 +115,6 @@ export class AddOrderComponent implements OnInit {
       this.currentQuantity = this.paramQuantity
       const cartIdParam = params.get('cartId?');
       this.cartId = cartIdParam ? +cartIdParam : 1
-      console.log(this.cartId)
     });
   }
 
