@@ -1,2 +1,3 @@
 /key/
-/appsettings.json
+appsettings.json
+/Food Delivery App Backend/bin/Debug/net8.0/key/*.json
