@@ -80,7 +80,7 @@
 
             </div>
 
-            <button type="submit"
+            <button type="submit" [disabled]="orderForm.invalid" [ngClass]="{'custom-orange-bg': !orderForm.invalid, 'custom-hover-bg': orderForm.invalid}"
                 class="hidden lg:flex items-center justify-center flex-col w-1/2 h-12 custom-orange-bg rounded-md transition-all duration-75 ease-in custom-orange-hover cursor-pointer">
                 <h1 class="font-medium text-white">Place Order</h1>
             </button>
@@ -90,12 +90,12 @@
     </div>
 
     <div
-        class="w-full lg:w-1/2 h-full flex flex-col items-start justify-between py-12 rounded-lg lg:pr-16 space-y-4 lg:space-y-0">
+        class="w-full lg:w-1/2 h-full flex flex-col items-start justify-between lg:justify-end py-12 rounded-lg lg:pr-16 space-y-4">
 
         <div
             class="w-full h-full lg:h-1/3 lg:flex flex-col lg:flex-row items-center justify-between space-y-4 lg:space-x-10 px-4 lg:px-0">
 
-            <div class="w-full lg:w-1/2 h-full">
+            <div class="w-full lg:w-1/2 h-full sm:h-80 lg:h-full">
                 <img src="{{menuDetails.imageUrl || 'assets/noImage.jpg'}}" alt="image"
                     class="w-full h-full object-cover origin-center">
             </div>
@@ -181,7 +181,7 @@
     </div>
 
     <div class="lg:hidden flex items-center justify-start w-full px-4">
-        <button type="submit"
+        <button type="submit" [disabled]="orderForm.invalid"
             class="flex items-center justify-center flex-col w-full h-12 custom-orange-bg rounded-md transition-all duration-75 ease-in custom-orange-hover cursor-pointer">
             <h1 class="font-medium text-white">Place Order</h1>
         </button>

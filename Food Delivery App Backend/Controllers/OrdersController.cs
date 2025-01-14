@@ -48,6 +48,25 @@ namespace Food_Delivery_App_Backend.Controllers
             }
         }
 
+        [HttpGet("{orderId}")]
+
+        public async Task<ActionResult> OrderDetails(int orderId)
+        {
+            try
+            {
+                var details = await _orderRepository.OrderDetails(orderId);
+                if(details == null)
+                {
+                    return BadRequest(new { message = "No order found" });
+                }
+                return Ok(details);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(new { message = $"Something went wrong: {ex.Message}" });
+            }
+        }
+
         [HttpDelete]
         public async Task<ActionResult> DeleteOrder(int orderId)
         {

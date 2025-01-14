@@ -33,6 +33,14 @@ body, html {
     color: #232C3A;
   }
   
+  .custom-hover-text {
+    color: #CC6922;;
+  }
+
+  .custom-hover-bg {
+    background-color: #CC6922;;
+  }
+  
   .center{
     display: flex;
     align-items: center;

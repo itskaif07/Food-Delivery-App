@@ -33,6 +33,10 @@ namespace Food_Delivery_App_Backend.Data
             modelBuilder.Entity<Order>()
                 .Property(c => c.Price)
                 .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Order>()
+                .Property(c => c.Discount)
+                .HasColumnType("decimal(18,2)");
         }
     }
 }

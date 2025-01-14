@@ -1,0 +1,151 @@
+<div
+    class="w-full h-full lg:h-[87vh] flex flex-col space-y-8 lg:space-y-0 lg:flex-row items-center justify-center lg:justify-between px-4 lg:overflow-y-hidden">
+
+    <div class="w-full lg:w-3/5 h-full flex items-start flex-col justify-start space-y-12 px-4 lg:px-0">
+
+        <div class="w-full lg:w-4/5 flex items-start justify-start flex-col space-y-4 px-4 lg:px-0">
+
+            <div class="w-full h-full flex items-start justify-start flex-col">
+                <h1 class="font-bold text-lg tracking-wider">Contact Details</h1>
+                <p class="custom-blue-bg h-1 rounded-xl w-full"></p>
+            </div>
+
+            <div class="max-[400px]:w-full w-4/5 flex items-start justify-start flex-col py-4 space-y-3">
+
+                <div class="w-full h-full flex items-start justify-start space-x-6">
+                    <p>Name: <span class="font-medium">{{OrderDetails.fullName || ''}}</span></p>
+                </div>
+
+                <div class="w-full h-full flex items-start justify-start space-x-6">
+                    <p>Email: <span class="font-medium">{{OrderDetails.email}}</span></p>
+                </div>
+
+                <div class="w-full h-full flex items-start justify-start space-x-6">
+                    <p>Phone number: <span class="font-medium">{{OrderDetails.phoneNumber}}</span></p>
+                </div>
+
+                <div class="w-full h-full flex items-start justify-start space-x-6">
+                    <p>Pin code: <span class="font-medium">{{OrderDetails.pincode}}</span></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-full lg:w-4/5 flex items-start justify-start flex-col space-y-4 px-4 lg:px-0">
+
+            <div class="w-full h-full flex items-start justify-start flex-col">
+                <h1 class="font-bold text-lg tracking-wider">Delivery Details</h1>
+                <p class="custom-blue-bg h-1 rounded-xl w-full"></p>
+            </div>
+
+            <div class="w-4/5 flex items-start justify-start flex-col py-4 space-y-3">
+
+                <div class="w-full h-full flex items-start justify-start space-x-6">
+                    <p>Delivery Time: <span class="font-medium text-green-600">{{DeliveryTime(OrderDetails.deliveryTime) || ''}}</span></p>
+                </div>
+
+                <div class="w-full h-full flex items-start justify-start space-x-6">
+                    <p>Delivery Address: <span class="font-medium">{{OrderDetails.address || ''}}</span></p>
+                </div>
+
+                <div class="w-full h-full flex items-start justify-start space-x-6">
+                    <p>Delivery Status: <span class="font-medium custom-hover-text">{{OrderDetails.orderStatus}}</span></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="w-full lg:w-4/5 flex items-start justify-start flex-col space-y-4 px-4 lg:px-0">
+
+            <div class="w-full h-full flex items-start justify-start flex-col">
+                <h1 class="font-bold text-lg tracking-wider">Payment Details</h1>
+                <p class="custom-blue-bg h-1 rounded-xl w-full"></p>
+            </div>
+
+            <div class="w-4/5 flex items-start justify-start flex-col py-4 space-y-3">
+
+                
+                <div class="w-full h-full flex items-start justify-start space-x-6">
+                    <p>Payment Method: <span class="font-medium">Cash on delivery</span></p>
+                </div>
+
+                <div class="w-full h-full flex items-start justify-start space-x-6">
+                    <p>Payment Status: <span class="font-medium custom-hover-text">{{OrderDetails.paymentStatus}}</span></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="w-full lg:w-2/5 h-full flex items-start flex-col justify-start bg-[#222222] text-white py-4 px-4 space-y-16">
+
+        <div class="w-full flex flex-col justify-start items-start space-y-8">
+
+            <h1 class="font-bold text-xl">Order Summary</h1>
+            <div class="w-full h-72 lg:h-48 rounded-full">
+                <img src="{{OrderDetails.itemImage}}" alt="" class="w-full h-full object-cover object-center">
+            </div>
+
+            <div class="w-full flex items-center justify-start space-x-6">
+                <p>{{OrderDetails.itemName}}</p>
+            </div>
+
+        </div>
+
+        <div class="w-full flex flex-col justify-start items-start space-y-6">
+
+            <div class="w-full flex flex-col items-center justify-end space-y-3 px-4 lg:px-0">
+
+                <div class="w-full flex items-center justify-between space-x-4">
+                    <h1>Item price: </h1>
+                    <h1>{{OrderDetails.price}}</h1>
+                </div>
+
+                <div class="w-full flex items-center justify-between space-x-4">
+                    <h1>Discount: </h1>
+                    <h1>- {{OrderDetails.discount || 0 }}%</h1>
+                </div>
+
+                <div class="w-full h-[1px] custom-blue-bg"></div>
+
+
+                <div class="w-full flex items-center justify-between space-x-4">
+                    <h1>Subtotal: </h1>
+                    <h1>{{OrderDetails.price - (OrderDetails.price * OrderDetails.discount/100) }}</h1>
+                </div>
+
+                <div class="w-full flex items-center justify-between space-x-4">
+                    <h1>Quantity: </h1>
+                    <h1>x {{OrderDetails.quantity}}</h1>
+                </div>
+
+                <div class="w-full flex items-center justify-between space-x-4">
+                    <h1>Shipping charges: </h1>
+                    <h1>Free</h1>
+                </div>
+
+                <div class="w-full h-[1px] custom-blue-bg"></div>
+
+
+                <div class="w-full flex items-center justify-between space-x-4">
+                    <h1>Total ({{OrderDetails.quantity}} Item): </h1>
+                    <h1>{{OrderDetails.totalPrice - (OrderDetails.totalPrice * OrderDetails.discount/100)}}</h1>
+                </div>
+
+                <div class="w-full h-[1px] custom-blue-bg"></div>
+
+                <div class="w-full flex items-center justify-between space-x-4">
+                    <h1>Rounded to: </h1>
+                    <h1 class="text-green-600 text-lg font-medium">{{OrderDetails.totalPrice - (OrderDetails.totalPrice
+                        * OrderDetails.discount/100) | number:'1.0-0'}}</h1>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -20,6 +20,7 @@ export class AuthService implements OnDestroy {
 
   constructor() {
     this.authSubscription = this.auth.onAuthStateChanged(user => {
+      console.log('Firebase User:', user);
       this.userSubject.next(user)
     })
   }

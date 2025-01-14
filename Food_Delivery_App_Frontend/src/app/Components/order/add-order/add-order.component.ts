@@ -56,9 +56,9 @@ export class AddOrderComponent implements OnInit {
       name: [''],
       username: ['', Validators.required],
       address: ['', Validators.required],
-      phone: ['', Validators.required],
+      phone: ['', [Validators.required, Validators.pattern('^[0-9]{6}$')]],
       email: ['', Validators.email],
-      pincode: ['', [Validators.minLength(6), Validators.maxLength(6)]],
+      pincode: ['', [Validators.pattern('^[0-9]{6}$')]],
       quantity: [1, [Validators.required, Validators.minLength(1)]]
     })
   }
@@ -67,39 +67,55 @@ export class AddOrderComponent implements OnInit {
   ngOnInit(): void {
     this.getuser()
     this.getParams()
-    this.setFormState()
     this.getCartData()
     this.getMenuDetails()
     this.getDeliveryTime()
   }
 
   getuser() {
-    const currentUser = this.authService.userSubject.value;
-    if (currentUser) {
-      this.uid = currentUser.uid
-      this.name = currentUser.fullName || ''
-      this.username = currentUser.displayName
-      this.address = currentUser.address || ''
-      this.phone = currentUser.phone || ''
-      this.email = currentUser.email
-      this.pincode = currentUser.pincode
-    }
-    else {
-      this.router.navigateByUrl('/log-in')
-    }
+  this.authService.user$.subscribe(currentUser =>{
+    console.log('Firebase User from component:', currentUser);
+      if (currentUser) {
+        this.uid = currentUser.uid
+        this.name = currentUser.fullName || ''
+        this.username = currentUser.displayName
+        this.address = currentUser.address || ''
+        this.phone = currentUser.phone || ''
+        this.email = currentUser.email
+        this.pincode = currentUser.pincode
+        this.setFormState()
+      }
+      else {
+        this.router.navigateByUrl('/log-in')
+      }
+    })
   }
 
   setFormState() {
-    this.orderForm = this.fb.group({
-      name: [this.name],
-      username: [this.username, Validators.required],
-      address: [this.address, Validators.required],
-      phone: [this.phone, [Validators.required, Validators.pattern('^[0-9]{6}$')]],
-      email: [this.email, Validators.email],
-      pincode: [this.pincode, Validators.pattern('^[0-9]{6}$')],
-      quantity: [this.currentQuantity, [Validators.required, Validators.minLength(1)]]
-    })
+
+    this.orderForm.patchValue({
+      name: this.name || 'Default Name',  // Provide default value if name is empty
+      username: this.username || 'Default Username',
+      address: this.address || 'Default Address',
+      phone: this.phone || '0000000000',
+      email: this.email || 'example@example.com',
+      pincode: this.pincode || '000000',
+      quantity: this.currentQuantity || 1
+    });
+
+    console.log('Patching data:', {
+      name: this.name,
+      username: this.username,
+      address: this.address,
+      phone: this.phone,
+      email: this.email,
+      pincode: this.pincode,
+      quantity: this.currentQuantity
+    });
+
   }
+  
+  
 
   getParams() {
     this.activeRoute.paramMap.subscribe(params => {
@@ -160,6 +176,7 @@ export class AddOrderComponent implements OnInit {
       restaurentId: this.restaurentId,
       price: this.menuDetails.price,
       itemImage: this.menuDetails.imageUrl,
+      discount: this.menuDetails.discount,
       itemName: this.menuDetails.name,
       deliveryTime: this.deliveryTime,
       quantity: this.orderForm.value.quantity,

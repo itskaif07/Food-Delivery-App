@@ -18,4 +18,14 @@ export class OrderService {
   addOrder(obj:any): Observable<any>{
     return this.http.post(this.apiUrl, obj)
   }
+
+  orderDetails(id:number): Observable<any>{
+    return this.http.get(`${this.apiUrl}/${id}`)
+  }
+
+  deleteOrder(id:number): Observable<any>{
+    return this.http.delete(`${this.apiUrl}?orderId=${id}`)
+  }
+
+
 }

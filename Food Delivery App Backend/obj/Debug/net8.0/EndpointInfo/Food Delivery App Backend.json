@@ -408,6 +408,29 @@
         }
       }
     },
+    "/api/Orders/{orderId}": {
+      "get": {
+        "tags": [
+          "Orders"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Restaurant": {
       "get": {
         "tags": [
@@ -699,6 +722,10 @@
             "type": "number",
             "format": "double"
           },
+          "discount": {
+            "type": "number",
+            "format": "double"
+          },
           "totalPrice": {
             "type": "number",
             "format": "double",
@@ -778,6 +805,10 @@
             "format": "int32"
           },
           "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "discount": {
             "type": "number",
             "format": "double"
           },

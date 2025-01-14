@@ -1,23 +1,33 @@
 @if (orderList.length > 0)
 {
-<div class="w-full h-full flex items-start justify-between px-4 ">
+<div class="w-full h-full flex items-start justify-between px-1 sm:px-4">
 
-    <div class="w-[98%] md:w-11/12 lg:w-3/4 h-full flex items-center justify-start flex-wrap space-y-4 py-10">
+    <div class="w-full md:w-11/12 lg:w-3/4 h-full flex items-center justify-start flex-wrap space-y-4 py-10">
         @for (item of orderList; track $index) {
         <div
-            class="w-full max-[400px]:h-full h-60 border-2 rounded shadow-lg flex max-[400px]:flex-col items-start justify-start max-[400px]:space-x-2 space-x-8">
-            <div class="w-full lg:w-1/2 h-full">
+            class="w-full  max-[400px]:h-full h-60 border-2 rounded shadow-lg flex max-[400px]:flex-col items-start justify-start max-[400px]:space-x-2 space-x-8">
+            <div class="w-full relative lg:w-1/2 h-full">
                 <img src="{{item.itemImage || 'assets/noImage.jpg'}}" alt=""
                     class="w-full h-full object-cover object-center">
+
+                    
+                <div class="lg:hidden flex items-center justify-center space-x-2 absolute inset-x-0 bottom-2">
+                    <div class="w-20 h-6 rounded-full border-[1px] bg-white border-black text-xs center hover:bg-[#222222] hover:text-white transition-all duration-150 ease-out cursor-pointer" [routerLink]="['/order-details', item.orderId]">Details</div>
+                    <div class="w-20 h-6 rounded-full border-[1px] bg-white border-black text-xs center hover:bg-red-500 hover:text-white transition-all duration-150 ease-out cursor-pointer" [routerLink]="['/delete-order', item.orderId]">Cancel</div>
+                </div>
             </div>
             <div
-                class="py-2 w-full lg:w-1/2  h-full flex items-start justify-between flex-col max-[400px]:space-y-2 text-sm max-[400px]:py-6">
+                class="py-2 w-full lg:w-1/2  h-full flex items-start justify-between flex-col max-[400px]:space-y-2 text-sm max-[400px]:py-6 relative">
+
+                <div class="hidden lg:flex items-center justify-center space-x-2 absolute right-2 top-2">
+                    <div class="w-20 h-6 rounded-full border-[1px] border-black text-xs center hover:bg-[#222222] hover:text-white transition-all duration-150 ease-out cursor-pointer" [routerLink]="['/order-details', item.orderId]">Details</div>
+                    <div class="w-20 h-6 rounded-full border-[1px] border-black text-xs center hover:bg-red-500 hover:text-white transition-all duration-150 ease-out cursor-pointer" [routerLink]="['/delete-order', item.orderId]">Cancel</div>
+                </div>
+
                 <p class="font-medium">{{item.itemName}}</p>
                 <p class="font-medium">Quantity: {{item.quantity}}</p>
-                <p class="font-medium ">Total Price: <span class="text-green-600">₹ {{item.price *
-                        item.quantity}}</span></p>
+                <p class="font-medium ">Total Price: <span class="text-green-600">₹ {{item.totalPrice - (item.totalPrice * item.discount/100)}}</span></p>
                 <p class="font-medium">Delivery at: {{ DeliveryTime(item.deliveryTime) }}</p>
-                <p class="font-medium overflow-clip">Delivery address: {{ item.address + ', ' + item.pincode }}</p>
                 <p class="font-medium">Order Status: <span class="custom-orange-text">{{item.orderStatus}}</span> </p>
             </div>
         </div>

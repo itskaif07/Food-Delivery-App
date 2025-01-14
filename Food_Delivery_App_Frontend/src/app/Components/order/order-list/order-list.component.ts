@@ -14,15 +14,15 @@ export class OrderListComponent implements OnInit {
 
   orderService = inject(OrderService)
   authService = inject(AuthService)
-  menuService= inject(MenuServiceService)
+  menuService = inject(MenuServiceService)
   router = inject(Router)
 
   uid: string = ``
   orderList: any[] = []
-  deliveryTime:any = ''
-  TotalItems:number = 0
-  totalAmount:number = 0
-  totalQuantity:number = 0
+  deliveryTime: any = ''
+  TotalItems: number = 0
+  totalAmount: number = 0
+  totalQuantity: number = 0
 
   ngOnInit(): void {
     this.getUser()
@@ -45,27 +45,27 @@ export class OrderListComponent implements OnInit {
       this.orderList = res
       this.TotalItems = this.orderList.length;
       this.calTotalAmount()
-      // console.log(this.orderList)
+      console.log(this.orderList)
     }, (error) => {
       console.log("Some error happened", error)
     })
   }
 
-  
+
   DeliveryTime(timeObj: any): string {
     const time = new Date(timeObj);
     const localTime = new Date(time.getTime() - (time.getTimezoneOffset() * 60000));
     return localTime.toLocaleTimeString("en-US", { hour: '2-digit', minute: '2-digit', hour12: true });
   }
 
-  calTotalAmount(){
-    this.totalAmount = this.orderList.reduce((accumulator, item)=>{
+  calTotalAmount() {
+    this.totalAmount = this.orderList.reduce((accumulator, item) => {
       return accumulator + (item.price * item.quantity)
     }, 0)
 
-    this.totalQuantity = this.orderList.reduce((sum, item)=> sum + item.quantity, 0)
+    this.totalQuantity = this.orderList.reduce((sum, item) => sum + item.quantity, 0)
   }
-  
+
 
 
 }

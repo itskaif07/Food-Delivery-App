@@ -260,6 +260,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.OrdersController",
+    "Method": "OrderDetails",
+    "RelativePath": "api/Orders/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Food_Delivery_App_Backend.Controllers.RestaurantController",
     "Method": "GetAllRestaurant",
     "RelativePath": "api/Restaurant",

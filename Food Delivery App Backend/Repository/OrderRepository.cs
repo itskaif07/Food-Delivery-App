@@ -35,6 +35,7 @@ namespace Food_Delivery_App_Backend.Repository
                 RestaurentId = orderDto.RestaurentId,
                 MenuItemId = orderDto.MenuItemId,
                 Price = orderDto.Price,
+                Discount = orderDto.Discount,
                 Quantity = orderDto.Quantity,
                 FullName = orderDto.FullName,
                 Username = orderDto.Username,
@@ -52,6 +53,18 @@ namespace Food_Delivery_App_Backend.Repository
 
             await _context.orders.AddAsync(order);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<Order> OrderDetails(int orderId)
+        {
+            var order = await _context.orders.FindAsync(orderId);
+
+            if(order == null)
+            {
+                throw new Exception("Order not found");
+            }
+
+            return order;
         }
 
 

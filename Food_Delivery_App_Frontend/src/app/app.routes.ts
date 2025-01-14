@@ -16,6 +16,8 @@ import { CartListComponent } from './Components/cart/cart-list/cart-list.compone
 import { OrderListComponent } from './Components/order/order-list/order-list.component';
 import { AddOrderComponent } from './Components/order/add-order/add-order.component';
 import { EmailVerificationComponent } from './Components/auth/email-verification/email-verification.component';
+import { DeleteOrderComponent } from './Components/order/delete-order/delete-order.component';
+import { OrderDetailsComponent } from './Components/order/order-details/order-details.component';
 
 
 export const routes: Routes =
@@ -118,9 +120,20 @@ export const routes: Routes =
         },
 
         {
+            path:'order-details/:orderId',
+            component:OrderDetailsComponent
+        },
+
+        {
+            path: 'delete-order/:orderId',
+            component:DeleteOrderComponent
+        },
+
+        //Other
+
+        {
             path: '**',
             redirectTo: '/'
         },
-
 
     ];

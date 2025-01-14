@@ -13,13 +13,12 @@ namespace Food_Delivery_App_Backend.Model
         public int MenuItemId { get; set; }
         public int Quantity { get; set; }
         public decimal Price { get; set; }
+
+        public decimal Discount { get; set; } = 0;
         public decimal TotalPrice => Quantity * Price;
         public DateTime TimeAdded { get; set; } = DateTime.UtcNow;
-
         public string OrderStatus { get; set; } = "Pending";
-
         public string PaymentStatus { get; set; } = "Pending";
-
         public string? FullName { get; set; }
         public string Username { get; set; }
         public string Address { get; set; }
