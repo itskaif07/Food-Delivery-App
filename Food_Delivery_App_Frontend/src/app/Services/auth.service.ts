@@ -15,6 +15,9 @@ export class AuthService implements OnDestroy {
 
 
   userSubject: BehaviorSubject<any> = new BehaviorSubject<any>(null)
+  get user$() {
+    return this.userSubject.asObservable();
+  }
 
   private authSubscription;
 
@@ -103,9 +106,6 @@ export class AuthService implements OnDestroy {
   }
 
 
-  get user$() {
-    return this.userSubject.asObservable();
-  }
 
 
   isLoggedIn(): boolean {

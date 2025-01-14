@@ -1,6 +1,0 @@
-@Food_Delivery_App_Backend_HostAddress = http://localhost:5076
-
-GET {{Food_Delivery_App_Backend_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

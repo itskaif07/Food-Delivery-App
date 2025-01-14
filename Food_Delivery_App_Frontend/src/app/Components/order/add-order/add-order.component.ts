@@ -51,19 +51,6 @@ export class AddOrderComponent implements OnInit {
   fb = inject(FormBuilder)
   orderForm: FormGroup = new FormGroup({})
 
-  constructor() {
-    this.orderForm = this.fb.group({
-      name: [''],
-      username: ['', Validators.required],
-      address: ['', Validators.required],
-      phone: ['', [Validators.required, Validators.pattern('^[0-9]{6}$')]],
-      email: ['', Validators.email],
-      pincode: ['', [Validators.pattern('^[0-9]{6}$')]],
-      quantity: [1, [Validators.required, Validators.minLength(1)]]
-    })
-  }
-
-
   ngOnInit(): void {
     this.getuser()
     this.getParams()
@@ -74,7 +61,7 @@ export class AddOrderComponent implements OnInit {
 
   getuser() {
   this.authService.user$.subscribe(currentUser =>{
-    console.log('Firebase User from component:', currentUser);
+    console.log(currentUser.uid, currentUser.fullName,currentUser.displayName,currentUser.phone,currentUser.email,currentUser.pincode)
       if (currentUser) {
         this.uid = currentUser.uid
         this.name = currentUser.fullName || ''
@@ -83,6 +70,7 @@ export class AddOrderComponent implements OnInit {
         this.phone = currentUser.phone || ''
         this.email = currentUser.email
         this.pincode = currentUser.pincode
+        this.authService.fetchUserData(currentUser)
         this.setFormState()
       }
       else {
@@ -93,26 +81,15 @@ export class AddOrderComponent implements OnInit {
 
   setFormState() {
 
-    this.orderForm.patchValue({
-      name: this.name || 'Default Name',  // Provide default value if name is empty
-      username: this.username || 'Default Username',
-      address: this.address || 'Default Address',
-      phone: this.phone || '0000000000',
-      email: this.email || 'example@example.com',
-      pincode: this.pincode || '000000',
-      quantity: this.currentQuantity || 1
-    });
-
-    console.log('Patching data:', {
-      name: this.name,
-      username: this.username,
-      address: this.address,
-      phone: this.phone,
-      email: this.email,
-      pincode: this.pincode,
-      quantity: this.currentQuantity
-    });
-
+    this.orderForm = this.fb.group({
+      name: [this.name || ''],
+      username: [this.username, Validators.required],
+      address: [this.address, Validators.required],
+      phone: [this.phone || '', [Validators.required, Validators.pattern('^[0-9]{6}$')]],
+      email: [this.email , Validators.email],
+      pincode: [this.pincode, [Validators.pattern('^[0-9]{6}$')]],
+      quantity: [this.currentQuantity || 1, [Validators.required, Validators.minLength(1)]]
+    })
   }
   
   

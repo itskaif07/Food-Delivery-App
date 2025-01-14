@@ -51,3 +51,5 @@ Thumbs.db
 # Build output directories
 bin/
 obj/
+
+src/app/app.config.ts
