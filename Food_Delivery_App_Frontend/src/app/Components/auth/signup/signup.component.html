@@ -13,13 +13,14 @@
 
       <div class="w-full flex items-center justify-start space-x-2">
         <p class="tracking-wide text-sm">Already have and account ?</p>
-        <a class="text-[#EA7926] text-sm transform hover:scale-105 transition-all duration-200 ease-in-out" routerLink="/log-in">Log In</a>
+        <a class="text-[#EA7926] text-sm transform hover:scale-105 transition-all duration-200 ease-in-out"
+          routerLink="/log-in">Log In</a>
       </div>
     </div>
 
     @if(errorMessage && errorMessage !== ''){
-      <p class="text-sm text-red-500">Email already in use</p>
-      }
+    <p class="text-sm text-red-500">Email already in use</p>
+    }
 
 
     <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()" class="w-full h-full">
@@ -30,15 +31,16 @@
 
           <div class="w-full flex flex-col items-start justify-center">
             <input type="text" id="name" formControlName="name"
-              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]" placeholder="Full name">
+              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]"
+              placeholder="Full name">
 
-              @if (signUpForm.get('name')?.invalid && signUpForm.get('name')?.touched) {
-                <div class="text-red-500">
-                  @if (signUpForm.get('name')?.errors?.['required']) {
-                    <small>name is required</small>
-                  }
-                </div>
+            @if (signUpForm.get('name')?.invalid && signUpForm.get('name')?.touched) {
+            <div class="text-red-500">
+              @if (signUpForm.get('name')?.errors?.['required']) {
+              <small>name is required</small>
               }
+            </div>
+            }
           </div>
 
         </div>
@@ -47,7 +49,8 @@
 
           <div class="lg:w-1/2 flex flex-col items-start justify-center">
             <input type="text" id="username" formControlName="username"
-              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]" placeholder="Username">
+              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]"
+              placeholder="Display Name">
 
             @if(signUpForm.get('username')?.invalid && signUpForm.get('username')?.touched){
             <div class="text-red-500">
@@ -67,19 +70,20 @@
 
           <div class="w-1/2 flex flex-col items-start justify-center">
             <input type="text" id="email" formControlName="email"
-              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]" placeholder="Email">
+              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]"
+              placeholder="Email">
 
-              @if (signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched) {
-                <div class="text-red-500">
-                  @if (signUpForm.get('email')?.errors?.['required']) {
-                    <small>Email is required</small>
-                  }
-                  @if (signUpForm.get('email')?.errors?.['email']) {
-                    <small>Enter a valid email</small>
-                  }
-                </div>
+            @if (signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched) {
+            <div class="text-red-500">
+              @if (signUpForm.get('email')?.errors?.['required']) {
+              <small>Email is required</small>
               }
-              
+              @if (signUpForm.get('email')?.errors?.['email']) {
+              <small>Enter a valid email</small>
+              }
+            </div>
+            }
+
           </div>
         </div>
 
@@ -87,15 +91,16 @@
 
           <div class="w-full flex flex-col items-start justify-center">
             <input type="text" id="address" formControlName="address"
-              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]" placeholder="Address">
+              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]"
+              placeholder="Address">
 
-              @if (signUpForm.get('address')?.invalid && signUpForm.get('address')?.touched) {
-                <div class="text-red-500">
-                  @if (signUpForm.get('address')?.errors?.['required']) {
-                    <small>Address is required</small>
-                  }
-                </div>
+            @if (signUpForm.get('address')?.invalid && signUpForm.get('address')?.touched) {
+            <div class="text-red-500">
+              @if (signUpForm.get('address')?.errors?.['required']) {
+              <small>Address is required</small>
               }
+            </div>
+            }
           </div>
 
         </div>
@@ -105,51 +110,54 @@
 
           <div class="w-3/5 flex flex-col items-start justify-center">
             <input type="text" id="phone" formControlName="phone"
-              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]" placeholder="Phone">
+              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]"
+              placeholder="Phone">
 
-              @if (signUpForm.get('phone')?.invalid && signUpForm.get('phone')?.touched) {
-                <div class="text-red-500">
-                  @if (signUpForm.get('phone')?.errors?.['pattern']) {
-                    <small>Enter a valid 10-digit phone number</small>
-                  }
-                </div>
+            @if (signUpForm.get('phone')?.invalid && signUpForm.get('phone')?.touched) {
+            <div class="text-red-500">
+              @if (signUpForm.get('phone')?.errors?.['pattern']) {
+              <small>Enter a valid 10-digit phone number</small>
               }
+            </div>
+            }
           </div>
 
           <div class="w-2/5 flex flex-col items-start justify-center">
             <input type="text" id="pincode" formControlName="pincode"
-              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]" placeholder="Pincode">
+              class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-1 focus:ring-[#EA7926] focus:border-[#EA7926]"
+              placeholder="Pincode">
 
-              @if (signUpForm.get('pincode')?.invalid && signUpForm.get('pincode')?.touched) {
-                <div class="text-red-500">
-                  @if (signUpForm.get('pincode')?.errors?.['required']) {
-                    <small>Pincode is required</small>
-                  }
-                  @if (signUpForm.get('pincode')?.errors?.['pattern']) {
-                    <small>Enter a valid 6-digit pincode</small>
-                  }
-                </div>
+            @if (signUpForm.get('pincode')?.invalid && signUpForm.get('pincode')?.touched) {
+            <div class="text-red-500">
+              @if (signUpForm.get('pincode')?.errors?.['required']) {
+              <small>Pincode is required</small>
               }
+              @if (signUpForm.get('pincode')?.errors?.['pattern']) {
+              <small>Enter a valid 6-digit pincode</small>
+              }
+            </div>
+            }
 
           </div>
 
-      
+
         </div>
 
         <div class="w-full lg:w-11/12 flex flex-col items-start justify-center">
           <input type="password" id="password" formControlName="password"
-            class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-[1px] focus:ring-[#EA7926] focus:border-[#EA7926]" placeholder="password">
+            class="outline-none border-2 w-full rounded py-2 pl-2 border-gray-200 focus:ring-[1px] focus:ring-[#EA7926] focus:border-[#EA7926]"
+            placeholder="password">
 
-            @if (signUpForm.get('password')?.invalid && signUpForm.get('password')?.touched) {
-              <div class="text-red-500">
-                @if (signUpForm.get('password')?.errors?.['required']) {
-                  <small>Password is required</small>
-                }
-                @if (signUpForm.get('password')?.errors?.['minlength']) {
-                  <small>Minimum 6 characters required</small>
-                }
-              </div>
+          @if (signUpForm.get('password')?.invalid && signUpForm.get('password')?.touched) {
+          <div class="text-red-500">
+            @if (signUpForm.get('password')?.errors?.['required']) {
+            <small>Password is required</small>
             }
+            @if (signUpForm.get('password')?.errors?.['minlength']) {
+            <small>Minimum 6 characters required</small>
+            }
+          </div>
+          }
 
         </div>
 
@@ -157,11 +165,27 @@
           Create account
         </button>
 
+        <div class="w-11/12 flex flex-col items-center justify-between space-y-6">
 
+          <div class="flex items-center justify-center w-full space-x-8">
+            <h1 class="w-1/3 h-[1px] custom-blue-bg"></h1>
+            <h1>or signup with </h1>
+            <h1 class="w-1/3 h-[1px] custom-blue-bg"></h1>
+          </div>
+
+          <div class="w-11/12 flex items-center justify-center">
+
+            <div (click)="googleSignIn()"
+              class="w-[49%] h-12 border-[1px] border-black rounded-md flex items-center justify-center space-x-3 cursor-pointer">
+              <img src="/assets/google.webp" alt="" class="w-5">
+              <h1 class="font-semibold">Google</h1>
+            </div>
+          </div>
+
+        </div>
       </div>
 
 
     </form>
   </div>
 </div>
-

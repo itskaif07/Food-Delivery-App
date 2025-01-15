@@ -13,49 +13,60 @@ import { CartService } from './Services/cart.service';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Food_Delivery_App_Frontend';
 
-  constructor(private router: Router) {}
-
+  router = inject(Router)
   authService = inject(AuthService)
   orderService = inject(OrderService)
   cartService = inject(CartService)
 
-  userId:string = ''
-  orderItems:number = 0
-  cartItems:number = 0
-  orderList:any = []
-  cartList:any = []
+  userId: string = ''
+  orderItems: number = 0
+  cartItems: number = 0
+  orderList: any = []
+  cartList: any = []
+  username: string = ''
 
   isActiveRoute(route: string): boolean {
     return this.router.url === route;
   }
 
-  onMenuClick(){
-    gsap.to('#overlay',{
-      duration:0.5,
-      x:0,
-      ease:'power1.inOut'
+  ngOnInit(): void {
+    this.authService.user$.subscribe((user) => {
+      if (user) {
+        console.log(user)
+        this.username = this.authService.userSubject.value.displayName
+      }
+    })
+  }
+
+
+
+  onMenuClick() {
+    gsap.to('#overlay', {
+      duration: 0.5,
+      x: 0,
+      ease: 'power1.inOut'
     }
     )
   }
 
-  onXClick(){
-    gsap.to('#overlay',{
-      duration:0.5,
-      x:'100%',
-      ease:'back'
+  onXClick() {
+    gsap.to('#overlay', {
+      duration: 0.5,
+      x: '100%',
+      ease: 'back'
     }
     )
   }
 
-  onRouteClick(){
+  onRouteClick() {
     gsap.to('#overlay',
       {
-        duration:0.5,
-        x:'100%',
-        ease:'sine'
+        duration: 0.5,
+        x: '100%',
+        ease: 'sine'
       }
     )
   }

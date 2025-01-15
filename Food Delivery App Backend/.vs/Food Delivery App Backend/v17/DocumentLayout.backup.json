@@ -78,8 +78,7 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAwwCYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T20:10:42.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T20:10:42.52Z"
             },
             {
               "$type": "Document",
@@ -115,8 +114,7 @@
               "RelativeToolTip": "Controllers\\OrdersController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowEEAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:46:50.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T18:46:50.034Z"
             },
             {
               "$type": "Document",
@@ -141,8 +139,7 @@
               "RelativeToolTip": "Repository\\OrderRepository.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAwwCUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T10:47:43.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T10:47:43.029Z"
             }
           ]
         }

@@ -19,7 +19,6 @@ import { EmailVerificationComponent } from './Components/auth/email-verification
 import { DeleteOrderComponent } from './Components/order/delete-order/delete-order.component';
 import { OrderDetailsComponent } from './Components/order/order-details/order-details.component';
 
-
 export const routes: Routes =
     [
         {
@@ -93,7 +92,7 @@ export const routes: Routes =
             path: "email-ver",
             component: EmailVerificationComponent
         },
-        
+
 
         // Cart
 
@@ -120,13 +119,13 @@ export const routes: Routes =
         },
 
         {
-            path:'order-details/:orderId',
-            component:OrderDetailsComponent
+            path: 'order-details/:orderId',
+            component: OrderDetailsComponent
         },
 
         {
             path: 'delete-order/:orderId',
-            component:DeleteOrderComponent
+            component: DeleteOrderComponent
         },
 
         //Other

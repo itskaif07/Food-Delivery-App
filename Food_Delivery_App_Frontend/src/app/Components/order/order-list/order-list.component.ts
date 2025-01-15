@@ -3,6 +3,7 @@ import { OrderService } from '../../../Services/order.service';
 import { AuthService } from '../../../Services/auth.service';
 import { Router, RouterLink } from '@angular/router';
 import { MenuServiceService } from '../../../Services/menu-service.service';
+import { LoaderService } from '../../../Shared/service/loader.service';
 
 @Component({
   selector: 'app-order-list',
@@ -15,6 +16,7 @@ export class OrderListComponent implements OnInit {
   orderService = inject(OrderService)
   authService = inject(AuthService)
   menuService = inject(MenuServiceService)
+  loaderService = inject(LoaderService)
   router = inject(Router)
 
   uid: string = ``
@@ -41,12 +43,15 @@ export class OrderListComponent implements OnInit {
   }
 
   getOrderList() {
+    this.loaderService.showLoader()
     this.orderService.getOrderList(this.uid).subscribe((res: any) => {
       this.orderList = res
       this.TotalItems = this.orderList.length;
+      this.loaderService.hideLoader()
       this.calTotalAmount()
       console.log(this.orderList)
     }, (error) => {
+      this.loaderService.hideLoader()
       console.log("Some error happened", error)
     })
   }

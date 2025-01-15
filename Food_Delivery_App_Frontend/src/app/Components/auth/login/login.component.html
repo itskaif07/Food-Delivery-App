@@ -20,7 +20,7 @@
         </div>
 
 
-        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="w-full h-full">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="w-full ">
 
             <div class="w-full h-full items-start justify-center flex-col space-y-8">
 
@@ -74,13 +74,34 @@
 
             </div>
 
-
         </form>
+
+        <div class="w-11/12 flex flex-col items-center justify-between space-y-6">
+
+            <div class="flex items-center justify-center w-full space-x-8">
+                <h1 class="w-1/3 h-[1px] custom-blue-bg"></h1>
+                <h1>or Log in with </h1>
+                <h1 class="w-1/3 h-[1px] custom-blue-bg"></h1>
+            </div>
+
+            <div class="w-11/12 flex items-center justify-center">
+
+                <div (click)="googleSignIn()"
+                    class="w-[49%] h-12 border-[1px] border-black rounded-md flex items-center justify-center space-x-3 cursor-pointer">
+                    <img src="/assets/google.webp" alt="" class="w-5">
+                    <h1 class="font-semibold">Google</h1>
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
     }
     @else {
 
-    <div class="w-full px-2 sm:w-4/5 lg:w-1/2 h-full lg:h-[97%] space-y-12 overflow-auto lg:overflow-hidden py-4 lg:py-0">
+    <div
+        class="w-full px-2 sm:w-4/5 lg:w-1/2 h-full lg:h-[97%] space-y-12 overflow-auto lg:overflow-hidden py-4 lg:py-0">
 
         <div class="flex items-center justify-between lg:pr-4">
 
@@ -88,7 +109,8 @@
                 <h1 class="text-2xl font-bold tracking-wide">Let’s Get to Know You Better!</h1>
 
                 <div class="w-full flex items-center justify-start space-x-2">
-                    <p class="tracking-wide text-sm ">Explore Your Profile - Here's Everything About Your <span class="text-[#EA7926]">Account!</span> </p>
+                    <p class="tracking-wide text-sm ">Explore Your Profile - Here's Everything About Your <span
+                            class="text-[#EA7926]">Account!</span> </p>
                 </div>
             </div>
 
@@ -100,22 +122,14 @@
 
         <div class="w-full space-y-3 lg:mt-6 flex flex-col items-start justify-center">
 
-            @if(user?.fullName) {
-                <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
-                    <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
-                        <h1 class="font-semibold">Name :</h1>
-                    </div>
-                    <div class="w-full lg:w-3/4 bg-slate-100 rounded-md py-3 px-4">
-                        <h1>{{ user?.fullName }}</h1>
-                    </div>
-                </div>
-                }
+
 
 
             @if(user?.displayName) {
-            <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+            <div
+                class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
                 <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
-                    <h1 class="font-semibold">Username :</h1>
+                    <h1 class="font-semibold">Display Name :</h1>
                 </div>
                 <div class="w-full lg:w-3/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1>{{ user?.displayName }}</h1>
@@ -125,7 +139,8 @@
 
 
             @if(user?.email) {
-            <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+            <div
+                class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
                 <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1 class="font-semibold">Email :</h1>
                 </div>
@@ -133,42 +148,104 @@
                     <h1>{{ user?.email }}</h1>
                 </div>
             </div>
-
             }
 
-            @if(user?.phone) {
-            <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+            <div
+                class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+
+                <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
+                    <h1 class="font-semibold">Full name :</h1>
+                </div>
+                <div [ngClass]="isEditingName ? 'bg-white border-[1px] border-black' : 'bg-slate-100'"
+                    class="w-full lg:w-3/4 h-full rounded-md py-3 px-4 relative">
+
+                    <div (click)="toggleNameEdit()" [ngClass]="isEditingName? 'hover:bg-green-500':'hover:bg-blue-500'"
+                        class="w-20 h-6 rounded-full  bg-white border-black text-xs center absolute right-2 inset-y-3  hover:text-white transition-all duration-150 ease-out cursor-pointer">
+                        {{isEditingName? "Save": "Edit"}}</div>
+
+                    <input [ngClass]="isEditingName? 'bg-white':'bg-slate-100'" class="w-full h-full outline-none"
+                        [(ngModel)]="updatedName" [readOnly]="!isEditingName">
+                </div>
+            </div>
+
+            <div
+                class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+
                 <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1 class="font-semibold">Phone Number :</h1>
                 </div>
-                <div class="w-full lg:w-3/4 bg-slate-100 rounded-md py-3 px-4">
-                    <h1>{{ user.phone }}</h1>
+                <div [ngClass]="isEditingPhone ? 'bg-white border-[1px] border-black' : 'bg-slate-100'"
+                    class="w-full lg:w-3/4 h-full rounded-md py-3 px-4 relative">
+
+                    <div (click)="togglePhoneEdit()" [ngClass]="{
+                        'hover:bg-green-500': isEditingPhone && phone.valid,
+                        'hover:bg-red-600': isEditingPhone && phone.invalid,
+                        'hover:bg-blue-600': !isEditingPhone
+                        }"
+                        class="w-20 h-6 rounded-full  bg-white border-black text-xs center absolute right-2 inset-y-3  hover:text-white transition-all duration-150 ease-out cursor-pointer">
+                        {{isEditingPhone? "Save": "Edit"}}</div>
+
+                    <input [ngClass]="isEditingPhone? 'bg-white':'bg-slate-100'" class="w-full h-full outline-none"
+                        [(ngModel)]="updatedPhone" [readOnly]="!isEditingPhone" #phone="ngModel">
+
+                    <div *ngIf="phone.invalid && phone.touched" class="text-red-500 text-xs mt-1">
+                        <div *ngIf="phone.errors?.['minlength']">Phone number must be exactly 10 characters long.</div>
+                        <div *ngIf="phone.errors?.['maxlength']">Phone number must be exactly 10 characters long.</div>
+                    </div>
                 </div>
             </div>
-            }
 
 
-            @if(user?.address) {
-            <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+            <div
+                class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+
                 <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1 class="font-semibold">Address :</h1>
                 </div>
-                <div class="w-full lg:w-3/4 bg-slate-100 rounded-md py-3 px-4">
-                    <h1>{{ user.address }}</h1>
+                <div [ngClass]="isEditingAddress ? 'bg-white border-[1px] border-black' : 'bg-slate-100'"
+                    class="w-full lg:w-3/4 h-full rounded-md py-3 px-4 relative">
+
+                    <div (click)="toggleAddressEdit()"
+                        [ngClass]="isEditingAddress? 'hover:bg-green-500':'hover:bg-blue-500'"
+                        class="w-20 h-6 rounded-full  bg-white border-black text-xs center absolute right-2 inset-y-3  hover:text-white transition-all duration-150 ease-out cursor-pointer">
+                        {{isEditingAddress? "Save": "Edit"}}</div>
+
+                    <input [ngClass]="isEditingAddress? 'bg-white':'bg-slate-100'" class="w-full h-full outline-none"
+                        [(ngModel)]="updatedAddress" [readOnly]="!isEditingAddress">
                 </div>
             </div>
-            }
 
-            @if(user?.pincode) {
-            <div class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+
+            <div
+                class="w-[99%] flex flex-col lg:flex-row items-start lg:items-center justify-start space-y-2 lg:space-y-0 lg:space-x-2">
+
                 <div class="w-full lg:w-1/4 bg-slate-100 rounded-md py-3 px-4">
                     <h1 class="font-semibold">Pincode :</h1>
                 </div>
-                <div class="w-full lg:w-3/4 bg-slate-100 rounded-md py-3 px-4">
-                    <h1>{{ user.pincode }}</h1>
+                <div [ngClass]="isEditingPincode ? 'bg-white border-[1px] border-black' : 'bg-slate-100'"
+                    class="w-full lg:w-3/4 h-full rounded-md py-3 px-4 relative">
+
+                    <div (click)="togglePincodeEdit()" [ngClass]="{
+                        'hover:bg-green-500': isEditingPincode && pincode.valid,
+                        'hover:bg-red-600': isEditingPincode && pincode.invalid,
+                        'hover:bg-blue-500': !isEditingPincode
+                        }"
+                        class="w-20 h-6 rounded-full bg-white border-black text-xs center absolute right-2 inset-y-3 hover:text-white transition-all duration-150 ease-out cursor-pointer">
+                        {{ isEditingPincode ? "Save" : "Edit" }}
+                    </div>
+
+                    <input [ngClass]="isEditingPincode ? 'bg-white' : 'bg-slate-100'" class="w-full h-full outline-none"
+                        [(ngModel)]="updatedPin" [readOnly]="!isEditingPincode" minlength="6" maxlength="6" required
+                        #pincode="ngModel">
+
+                    <!-- Validation Message -->
+                    <div *ngIf="pincode.invalid && pincode.touched" class="text-red-500 text-xs mt-1">
+                        <div *ngIf="pincode.errors?.['minlength']">Pincode must be exactly 6 characters long.</div>
+                        <div *ngIf="pincode.errors?.['maxlength']">Pincode must be exactly 6 characters long.</div>
+                    </div>
                 </div>
             </div>
-            }
+
 
 
         </div>

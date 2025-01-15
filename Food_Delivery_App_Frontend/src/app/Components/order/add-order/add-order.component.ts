@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthService } from '../../../Services/auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -23,6 +23,7 @@ export class AddOrderComponent implements OnInit {
   menuService = inject(MenuServiceService)
   orderService = inject(OrderService)
   cartService = inject(CartService)
+  cdRef = inject(ChangeDetectorRef)
 
   //User properties
 
@@ -51,6 +52,18 @@ export class AddOrderComponent implements OnInit {
   fb = inject(FormBuilder)
   orderForm: FormGroup = new FormGroup({})
 
+  constructor() {
+    this.orderForm = this.fb.group({
+      name: [''],
+      username: ['', Validators.required],
+      address: ['', Validators.required],
+      phone: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+      email: ['', Validators.email],
+      pincode: ['', [Validators.pattern('^[0-9]{6}$')]],
+      quantity: [1, [Validators.required, Validators.minLength(1)]]
+    })
+  }
+
   ngOnInit(): void {
     this.getuser()
     this.getParams()
@@ -60,39 +73,48 @@ export class AddOrderComponent implements OnInit {
   }
 
   getuser() {
-  this.authService.user$.subscribe(currentUser =>{
-    console.log(currentUser.uid, currentUser.fullName,currentUser.displayName,currentUser.phone,currentUser.email,currentUser.pincode)
+    this.authService.user$.subscribe(currentUser => {
       if (currentUser) {
-        this.uid = currentUser.uid
-        this.name = currentUser.fullName || ''
-        this.username = currentUser.displayName
-        this.address = currentUser.address || ''
-        this.phone = currentUser.phone || ''
-        this.email = currentUser.email
-        this.pincode = currentUser.pincode
-        this.authService.fetchUserData(currentUser)
-        this.setFormState()
+
+        this.authService.fetchUserData(currentUser.uid).subscribe((res: any) => {
+
+          const combinedData = { ...this.authService.userSubject.value, ...res }
+
+          console.log(combinedData.uid, combinedData.fullName, combinedData.displayName, combinedData.address, combinedData.phone, combinedData.email, combinedData.pincode)
+
+          this.uid = combinedData.uid;
+          this.name = combinedData.fullName || '';
+          this.username = combinedData.displayName;
+          this.address = combinedData.address || '';
+          this.phone = combinedData.phone || '';
+          this.email = combinedData.email;
+          this.pincode = combinedData.pincode;
+
+          this.setFormState();
+          this.orderForm.markAllAsTouched();
+          this.cdRef.detectChanges()
+        })
+        
+      } else {
+        this.router.navigateByUrl('/log-in');
       }
-      else {
-        this.router.navigateByUrl('/log-in')
-      }
-    })
+    });
   }
+
 
   setFormState() {
-
-    this.orderForm = this.fb.group({
-      name: [this.name || ''],
-      username: [this.username, Validators.required],
-      address: [this.address, Validators.required],
-      phone: [this.phone || '', [Validators.required, Validators.pattern('^[0-9]{6}$')]],
-      email: [this.email , Validators.email],
-      pincode: [this.pincode, [Validators.pattern('^[0-9]{6}$')]],
-      quantity: [this.currentQuantity || 1, [Validators.required, Validators.minLength(1)]]
+    this.orderForm.patchValue({
+      name: this.name,
+      username: this.username,
+      address: this.address,
+      phone: this.phone,
+      email: this.email,
+      pincode: this.pincode,
+      quantity: this.currentQuantity
     })
   }
-  
-  
+
+
 
   getParams() {
     this.activeRoute.paramMap.subscribe(params => {

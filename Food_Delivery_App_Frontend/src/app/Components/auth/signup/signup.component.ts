@@ -5,6 +5,7 @@ import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { LoaderService } from '../../../Shared/service/loader.service';
 import { finalize } from 'rxjs';
+import { Auth, FacebookAuthProvider, GoogleAuthProvider, signInWithPopup } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-signup',
@@ -16,6 +17,7 @@ export class SignupComponent implements OnInit {
 
   authService = inject(AuthService)
   formBuilder = inject(FormBuilder)
+  auth = inject(Auth)
   router = inject(Router)
   loader = inject(LoaderService)
   signUpForm: FormGroup = new FormGroup({})
@@ -44,17 +46,28 @@ export class SignupComponent implements OnInit {
     this.loader.showLoader()
     localStorage.setItem('email', rawForm.email)
     localStorage.setItem('password', rawForm.password)
-    
+
     this.authService.signUp(rawForm.name, rawForm.email, rawForm.password, rawForm.username, rawForm.phone, rawForm.address, rawForm.pincode)
-    .pipe(finalize(() => this.loader.hideLoader()))
-    .subscribe({
+      .pipe(finalize(() => this.loader.hideLoader()))
+      .subscribe({
         next: () => this.router.navigateByUrl('/email-ver'),
         error: err => {
-            this.errorMessage = err
+          this.errorMessage = err
         }
       });
-
   }
 
+  googleSignIn() {
+    const provider = new GoogleAuthProvider();
+
+    signInWithPopup(this.auth, provider)
+      .then((result) => {
+        console.log('User Signed In:', result.user);
+        this.router.navigateByUrl("/log-in")
+      })
+      .catch((error) => {
+        console.error('Error during sign-in:', error);
+      })
+  }
 
 }

@@ -51,7 +51,7 @@ if (FirebaseApp.DefaultInstance == null)
 {
     FirebaseApp.Create(new AppOptions()
     {
-        Credential = GoogleCredential.FromFile(@"D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\key\sample-firebase-ai-app-7b76d-firebase-adminsdk-ovvts-276d8a1250.json")
+        Credential = GoogleCredential.FromFile(@"D:\ASP.NET Web Api\Food Delivery App\Food Delivery App Backend\key\sample-firebase-ai-app-7b76d-firebase-adminsdk-ovvts-ce5f889edc.json")
     });
 }
 

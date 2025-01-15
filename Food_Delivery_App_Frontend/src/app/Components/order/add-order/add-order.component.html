@@ -80,7 +80,7 @@
 
             </div>
 
-            <button type="submit" [disabled]="orderForm.invalid" [ngClass]="{'custom-orange-bg': !orderForm.invalid, 'custom-hover-bg': orderForm.invalid}"
+            <button type="submit" [disabled]="orderForm.invalid" [ngClass]="{'custom-orange-bg': orderForm.valid, 'custom-hover-bg': orderForm.invalid}"
                 class="hidden lg:flex items-center justify-center flex-col w-1/2 h-12 custom-orange-bg rounded-md transition-all duration-75 ease-in custom-orange-hover cursor-pointer">
                 <h1 class="font-medium text-white">Place Order</h1>
             </button>
@@ -181,7 +181,7 @@
     </div>
 
     <div class="lg:hidden flex items-center justify-start w-full px-4">
-        <button type="submit" [disabled]="orderForm.invalid"
+        <button type="submit" [disabled]="orderForm.invalid" [ngClass]="{'custom-orange-bg': orderForm.valid, 'custom-hover-bg': orderForm.invalid}"
             class="flex items-center justify-center flex-col w-full h-12 custom-orange-bg rounded-md transition-all duration-75 ease-in custom-orange-hover cursor-pointer">
             <h1 class="font-medium text-white">Place Order</h1>
         </button>
