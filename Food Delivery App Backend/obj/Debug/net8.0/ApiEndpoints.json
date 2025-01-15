@@ -95,6 +95,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Food_Delivery_App_Backend.Controllers.HomeController",
+    "Method": "GetSearchedItems",
+    "RelativePath": "api/Home",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchQuery",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Food_Delivery_App_Backend.Controllers.MenuController",
     "Method": "AddMenu",
     "RelativePath": "api/Menu",

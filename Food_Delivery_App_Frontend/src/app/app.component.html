@@ -6,7 +6,8 @@
     <div
       class="flex items-center justify-center py-2 h-full shadow-xl pl-2 rounded-md space-x-3 w-4/5 sm:w-1/2 border-t-2">
       <img src="assets/search.png" alt="not available" class="w-6">
-      <input type="text" class="w-full h-full outline-none text-sm">
+      <input [(ngModel)]="searchQuery" type="text" class="w-full h-full outline-none text-sm"
+        (input)="itemsList(searchQuery)">
     </div>
 
     <div class="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md">
@@ -18,8 +19,7 @@
   <div class="mt-20 w-full">
     <div class="space-y-16 flex flex-col items-center justify-center w-full">
 
-      <div
-        class="w-full h-full flex items-start pl-3 justify-center  flex-col space-y-8 ">
+      <div class="w-full h-full flex items-start pl-3 justify-center  flex-col space-y-8 ">
 
         <a [routerLink]="'home'" (click)="onRouteClick()"
           class="w-4/5 py-3 px-3 text-left shadow-xl flex items-center justify-start hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
@@ -77,28 +77,57 @@
     <div class="hidden lg:flex items-center justify-end w-full h-full ">
 
       <div class="w-3/5">
-        <div class="flex items-center justify-center py-2 h-full shadow-xl pl-2 rounded-md space-x-3 w-11/12 border-t-2">
-          <img src="assets/search.png" alt="not available" class="w-6">
-          <input type="text" class="w-full h-full outline-none text-sm">
+        <div
+          class="flex items-center justify-center py-2 h-full shadow-xl pl-2 rounded-md w-11/12 border-t-2 relative z-30">
+          <img src="assets/search.png" alt="not available" class="w-6 mr-2">
+
+          <input [(ngModel)]="searchQuery" type="text" class="w-full h-full outline-none text-sm"
+            (input)="itemsList(searchQuery)">
+
+          <div id="searchResults" *ngIf="searchedList.length > 0"
+            class="w-full max-h-96 overflow-y-auto bg-[#222222] absolute top-full space-y-[2px] my-5 z-20 border-b-[1px] border-black rounded-md">
+
+            <div *ngFor="let item of searchedList; let i = index"
+              (click)="navigateRoute(item.menuId, item.restaurentId)"
+              class="w-full h-24 flex items-center justify-start bg-white space-x-4 cursor-pointer">
+
+              <div class="w-1/2 h-full">
+                <img src="{{item.imageUrl || 'assets/noImage.jpg'}}" alt=""
+                  class="w-full h-full object-cover object-center">
+              </div>
+
+              <div class="w-1/2 h-full flex items-start justify-center flex-col py-3 space-y-2">
+                <h1 class="text-sm">{{item.name}}</h1>
+                <h1 class="font-semibold text-sm text-green-600">₹ {{item.price}}</h1>
+                <h1 class="text-sm">{{item.category}}</h1>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
 
+
       <div class="flex items-center justify-between w-2/5">
 
-        <div [routerLink]="'cart-list'"
-        class="w-12 h-12 relative rounded-full shadow-xl flex items-center justify-center  hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in">
-        @if(!authService.isLoggedIn && cartList.length > 0){
-          <div class="custom-blue-bg w-8 h-8 rounded-full flex items-center justify-center absolute top-0 right-0">{{cartItems}}</div>
-        }
-          <img src="assets/cart.png" alt="" class="w-6">
+        <div [routerLink]="'cart-list'" [ngClass]="{'bg-[#222222]': isActiveRoute('/cart-list')}"
+          class="w-12 h-12 relative rounded-full shadow-xl flex items-center justify-center group  hover:bg-[#222222] cursor-pointer transition-all duration-150 ease-in">
+          @if(!authService.isLoggedIn){
+          <div class="custom-blue-bg w-8 h-8 rounded-full flex items-center justify-center absolute top-0 right-0">
+            {{cartItems}}</div>
+          }
+          <img src="assets/cart.png" alt="" class="w-6 group-hover:invert group-hover:grayscale"
+            [ngClass]="{'invert grayscale': isActiveRoute('/cart-list')}">
         </div>
 
-        <div [routerLink]="'order-list'"
-          class="w-12 h-12 rounded-full shadow-xl flex items-center justify-center  hover:bg-gray-200 cursor-pointer transition-all duration-150 ease-in relative">
-          @if(!authService.isLoggedIn && orderList.length > 0){
-            <div class="custom-blue-bg w-8 h-8 rounded-full flex items-center justify-center absolute top-0 right-0">{{orderItems}}</div>
+        <div [routerLink]="'order-list'" [ngClass]="{'bg-[#222222]': isActiveRoute('/order-list')}"
+          class="w-12 h-12 rounded-full shadow-xl flex items-center justify-center group  hover:bg-[#222222] cursor-pointer transition-all duration-150 ease-in relative">
+          @if(!authService.isLoggedIn){
+          <div class="custom-blue-bg w-8 h-8 rounded-full flex items-center justify-center absolute top-0 right-0">
+            {{orderItems}}</div>
           }
-          <img src="assets/trolley.png" alt="" class="w-5">
+          <img src="assets/trolley.png" alt="" class="w-5 group-hover:invert group-hover:grayscale"
+            [ngClass]="{'invert grayscale': isActiveRoute('/order-list')}">
         </div>
 
         @if(!authService.isLoggedIn()){

@@ -25,11 +25,11 @@ export class LoginComponent implements OnInit, OnDestroy {
   errorMessage: string | null = ''
   uid: string = ''
 
-  updatedName:string = ''
-   updatedUsername:string = ''
-   updatedPhone:string = ''
-   updatedAddress:string = ''
-   updatedPin:string = ''
+  updatedName: string = ''
+  updatedUsername: string = ''
+  updatedPhone: string = ''
+  updatedAddress: string = ''
+  updatedPin: string = ''
 
   user: any = null;
 
@@ -45,9 +45,9 @@ export class LoginComponent implements OnInit, OnDestroy {
       if (user) {
         this.user = user;
         this.uid = user.uid
-        this.authService.fetchUserData(this.uid).subscribe((res:any)=>{
-          
-          const combinedData = {...this.authService.userSubject.value, ...res}
+        this.authService.fetchUserData(this.uid).subscribe((res: any) => {
+
+          const combinedData = { ...this.authService.userSubject.value, ...res }
 
           this.updatedName = combinedData.fullName ? combinedData.fullName : "Not Provided";
           this.updatedUsername = combinedData.displayName ? combinedData.displayName : "Not Provided";
@@ -99,8 +99,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     const provider = new GoogleAuthProvider();
 
     signInWithPopup(this.auth, provider)
-      .then((result) => {
-        console.log('User Signed In:', result.user);
+      .then(() => {
         this.router.navigateByUrl("/log-in")
       })
       .catch((error) => {
@@ -108,10 +107,10 @@ export class LoginComponent implements OnInit, OnDestroy {
       })
   }
 
-  isEditingName:boolean = false;
+  isEditingName: boolean = false;
 
-  toggleNameEdit(){
-    if(this.isEditingName){
+  toggleNameEdit() {
+    if (this.isEditingName) {
       this.updateName()
     }
 
@@ -132,10 +131,10 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
   }
 
-  isEditingUserName:boolean = false;
+  isEditingUserName: boolean = false;
 
-  toggleUsernameEdit(){
-    if(this.isEditingUserName){
+  toggleUsernameEdit() {
+    if (this.isEditingUserName) {
       this.updateUsername()
     }
 
@@ -155,17 +154,17 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
   }
 
-  isEditingPhone:boolean = false;
+  isEditingPhone: boolean = false;
 
-  togglePhoneEdit(){
-    if(this.isEditingPhone){
+  togglePhoneEdit() {
+    if (this.isEditingPhone) {
       this.updatePhone()
     }
 
     this.isEditingPhone = !this.isEditingPhone
   }
 
-  
+
   updatePhone() {
     if (this.uid) {
       this.authService.updateField(this.uid, 'phone', this.updatedPhone).subscribe({
@@ -179,11 +178,11 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
   }
 
-  isEditingAddress:boolean = false;
+  isEditingAddress: boolean = false;
 
 
-  toggleAddressEdit(){
-    if(this.isEditingAddress){
+  toggleAddressEdit() {
+    if (this.isEditingAddress) {
       this.updateAddress()
     }
 
@@ -194,7 +193,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (this.uid) {
       this.authService.updateField(this.uid, 'address', this.updatedAddress).subscribe({
         next: () => {
-          console.log('Name updated successfully');
+          console.log('Address updated successfully');
         },
         error: (err) => {
           console.error('Error updating name:', err);
@@ -203,11 +202,11 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
   }
 
-  isEditingPincode:boolean = false;
+  isEditingPincode: boolean = false;
 
-  
-  togglePincodeEdit(){
-    if(this.isEditingPincode){
+
+  togglePincodeEdit() {
+    if (this.isEditingPincode) {
       this.updatePincode()
     }
 

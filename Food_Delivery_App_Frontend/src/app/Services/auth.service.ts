@@ -113,16 +113,11 @@ export class AuthService implements OnDestroy {
   
     return from(getDoc(userRef)).pipe(
       switchMap((docSnap) => {
-        console.log('Document snapshot before update:', docSnap.data()); // Log existing data
-  
         if (docSnap.exists()) {
           return from(updateDoc(userRef, {
             [fieldName]: value
           })).pipe(
-            switchMap(() => from(getDoc(userRef))), // Fetch updated data
-            map((updatedDocSnap) => {
-              console.log('Updated document snapshot:', updatedDocSnap.data()); // Log updated data
-            }),
+            switchMap(() => from(getDoc(userRef))),
             catchError((error) => {
               console.error(`Error updating ${fieldName} in Firestore:`, error);
               return throwError(() => new Error(error));
@@ -132,10 +127,7 @@ export class AuthService implements OnDestroy {
           return from(setDoc(userRef, {
             [fieldName]: value
           })).pipe(
-            switchMap(() => from(getDoc(userRef))), // Fetch updated data
-            map((updatedDocSnap) => {
-              console.log('Created document snapshot:', updatedDocSnap.data()); // Log new data
-            }),
+            switchMap(() => from(getDoc(userRef))),
             catchError((error) => {
               console.error(`Error creating ${fieldName} in Firestore:`, error);
               return throwError(() => new Error(error));
