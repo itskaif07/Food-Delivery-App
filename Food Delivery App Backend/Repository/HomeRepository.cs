@@ -15,7 +15,7 @@ namespace Food_Delivery_App_Backend.Repository
 
         public async Task<List<MenuItem>> GetSearchedItems(string searchQuery)
         {
-            var searchedItems = await _context.menuItems.Where(m => m.Name.Contains(searchQuery) || (m.Description != null && m.Description.Contains(searchQuery))).ToListAsync();
+            var searchedItems = await _context.menuItems.Where(m => m.Name.Contains(searchQuery) || (m.Description != null && m.Description.Contains(searchQuery))).OrderBy(m => m.Name).ToListAsync();
 
             return searchedItems;
         }

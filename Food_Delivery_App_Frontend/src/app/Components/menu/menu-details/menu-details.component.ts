@@ -3,11 +3,9 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { MenuServiceService } from '../../../Services/menu-service.service';
 import { getAuth } from 'firebase/auth';
 import { CartService } from '../../../Services/cart.service';
-import { Cart } from '../../../Models/cart';
 import { LoaderService } from '../../../Shared/service/loader.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { AuthService } from '../../../Services/auth.service';
-import { HttpParams } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
 @Component({

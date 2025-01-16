@@ -70,7 +70,8 @@ export class AppComponent implements OnInit {
 
   navigateRoute(menuId: number, restaurentId: number) {
     this.searchedList = []; 
-    this.router.navigate(['/menu-details', restaurentId, menuId]); // Then navigate
+    this.router.navigate(['/menu-details', restaurentId, menuId]);
+    this.onRouteClick()
   }
   
 

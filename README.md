@@ -25,6 +25,8 @@ A modern and responsive food delivery application built with **Angular** and **A
 
 ![image](https://github.com/user-attachments/assets/9a809bfd-1f48-4138-b80a-bc981b963ef7)
 
+![image](https://github.com/user-attachments/assets/06cf18ea-e538-4028-9fa9-3af881d68ced)
+
 ![image](https://github.com/user-attachments/assets/952aa5a9-54d9-4b23-bacd-10963de89f1b)
 
 ![image](https://github.com/user-attachments/assets/8549e5d7-569b-4b43-95f4-592be536073a)
@@ -35,11 +37,11 @@ A modern and responsive food delivery application built with **Angular** and **A
 
 ![image](https://github.com/user-attachments/assets/40bedddf-76f1-4ce9-be35-58cbdaf6080d)
 
-![image](https://github.com/user-attachments/assets/ae79c3e0-83ab-4c43-b710-05ae92917b06)
+![image](https://github.com/user-attachments/assets/5bab60ef-4dec-4f8e-8494-7c71fd90a4b6)
 
 ![image](https://github.com/user-attachments/assets/e805e6b1-b0c9-4ad1-bec6-48986edb80d1)
 
-![image](https://github.com/user-attachments/assets/46d5be8d-e25e-4130-9cfd-00155ab5ebed)
+![image](https://github.com/user-attachments/assets/079efebb-af80-4319-b794-efcc3fa7216c)
 
 ![image](https://github.com/user-attachments/assets/ff08b3d6-9697-4c82-acb2-24fefcebb260)
 

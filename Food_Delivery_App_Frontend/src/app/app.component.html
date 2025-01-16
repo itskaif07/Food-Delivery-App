@@ -1,16 +1,37 @@
 <div id="overlay"
   class="translate-x-full lg:hidden bg-gradient-to-t fixed top-0 right-0 left-0 from-[#F5F5F5] to-white w-full h-full z-40">
 
-  <div class="flex items-center justify-between pt-6 px-1" (click)="onXClick()">
+  <div class="flex items-center justify-between pt-6 px-1" >
 
     <div
-      class="flex items-center justify-center py-2 h-full shadow-xl pl-2 rounded-md space-x-3 w-4/5 sm:w-1/2 border-t-2">
+      class="flex items-center justify-center py-2 h-full shadow-xl pl-2 rounded-md space-x-3 w-4/5  border-t-2 relative">
       <img src="assets/search.png" alt="not available" class="w-6">
-      <input [(ngModel)]="searchQuery" type="text" class="w-full h-full outline-none text-sm"
-        (input)="itemsList(searchQuery)">
+        <input [(ngModel)]="searchQuery" type="text" class="w-full h-full outline-none text-sm"
+            (input)="itemsList(searchQuery)">
+
+                      <div id="searchResults" *ngIf="searchedList.length > 0"
+            class="w-full max-h-96 overflow-y-auto bg-[#222222] absolute top-full space-y-[2px] my-5 z-20 border-b-[1px] border-black rounded-md">
+
+            <div *ngFor="let item of searchedList; let i = index"
+              (click)="navigateRoute(item.menuId, item.restaurentId)"
+              class="w-full h-24 flex items-center justify-start bg-white space-x-4 cursor-pointer">
+
+              <div class="w-1/2 h-full">
+                <img src="{{item.imageUrl || 'assets/noImage.jpg'}}" alt=""
+                  class="w-full h-full object-cover object-center">
+              </div>
+
+              <div class="w-1/2 h-full flex items-start justify-center flex-col py-3 space-y-2">
+                <h1 class="text-sm">{{item.name}}</h1>
+                <h1 class="font-semibold text-sm text-green-600">₹ {{item.price}}</h1>
+                <h1 class="text-sm">{{item.category}}</h1>
+              </div>
+            </div>
+
+          </div>
     </div>
 
-    <div class="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md">
+    <div class="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md" (click)="onXClick()">
       <h1 class="font-mono font-black text-xl">X</h1>
     </div>
 
